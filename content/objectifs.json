@@ -1,12 +1,12 @@
 {
   "read-and-select": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "pourcentage",
+    "objectif": 85,
     "actuel": null
   },
   "fill-in-the-blanks": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "pourcentage",
+    "objectif": 80,
     "actuel": null
   },
   "read-and-complete": {
@@ -15,58 +15,58 @@
     "actuel": 9
   },
   "interactive-reading": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "pourcentage",
+    "objectif": 80,
     "actuel": null
   },
   "listen-and-type": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "phrases exactes sur 5",
+    "objectif": 5,
+    "actuel": 4
   },
   "interactive-listening": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "pourcentage",
+    "objectif": 75,
     "actuel": null
   },
   "dictee-longue": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "sur 10 au premier passage",
+    "objectif": 6,
     "actuel": null
   },
   "write-about-the-photo": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "mots en 60 s",
+    "objectif": 55,
+    "actuel": 38
   },
   "interactive-writing": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "mots en 5 min",
+    "objectif": 180,
     "actuel": null
   },
   "writing-sample": {
-    "metrique": "",
-    "objectif": null,
+    "metrique": "mots en 5 min",
+    "objectif": 200,
     "actuel": null
   },
   "speak-about-the-photo": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "mots en 90 s",
+    "objectif": 130,
+    "actuel": 97
   },
   "read-then-speak": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "mots en 90 s",
+    "objectif": 120,
+    "actuel": 83
   },
   "interactive-speaking": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "mots par réponse de 35 s",
+    "objectif": 60,
+    "actuel": 55
   },
   "speaking-sample": {
-    "metrique": "",
-    "objectif": null,
-    "actuel": null
+    "metrique": "mots par minute sur 3 min",
+    "objectif": 80,
+    "actuel": 57
   }
 }
