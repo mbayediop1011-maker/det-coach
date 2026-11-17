@@ -39,7 +39,7 @@ Tout est dans `content/`. Aucun fichier de code n'est à toucher.
 
 ### `content/consignes.json`
 
-Une entrée par exercice, affichée avant chaque exercice en 5 blocs. Seule `read-and-complete` est remplie ; les autres sont vides, et l'écran affiche « Consignes pas encore écrites par ton professeur ».
+Une entrée par exercice, affichée avant chaque exercice en 5 blocs. Une entrée vide affiche « Consignes pas encore écrites par ton professeur ». La clé `summarize-the-conversation` est une étape d'`interactive-listening` : elle s'affiche dans l'écran de consignes de cet exercice, sous « Étape 3 ».
 
 ```json
 "read-and-complete": {

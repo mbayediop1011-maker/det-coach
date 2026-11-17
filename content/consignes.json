@@ -40,11 +40,29 @@
     "methode": [],
     "piege": ""
   },
+  "summarize-the-conversation": {
+    "format": "Tu résumes par écrit la conversation que tu viens d'entendre. 75 secondes, chronomètre séparé. Le temps des deux tâches précédentes NE se reporte PAS.",
+    "mesure": "Ta capacité à restituer le fond d'un échange, pas ton style. Quatre phrases suffisent.",
+    "methode": [
+      "Première personne. Tu étais dans la conversation : I told him that…, We agreed that…",
+      "Phrase 1 — le fond : qui voulait quoi. Si tu n'écris qu'une seule phrase, c'est celle-là.",
+      "Phrase 2 — He said that… : ce que l'autre a dit.",
+      "Phrase 3 — I told him that… : ce que tu as répondu.",
+      "Phrase 4 — In the end, we agreed that… : l'issue."
+    ],
+    "piege": "75 secondes, c'est quatre phrases, pas cinq. Tu commences toujours par planter le décor et tu arrives au fond trop tard. Ici, si tu ne commences pas par le fond, tu n'y arriveras jamais."
+  },
   "dictee-longue": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Dix phrases de 9 à 16 mots, lues à vitesse de conversation réelle. Exactement deux écoutes, imposées. Tu écris après chacune. Cet exercice n'existe pas dans le test : c'est de l'entraînement pur.",
+    "mesure": "Ton score au PREMIER passage. C'est le seul chiffre qui dise ce que tu comprends réellement. Le second mesure autre chose : ta capacité à réparer.",
+    "methode": [
+      "Écris ce que tu as entendu, même si c'est incohérent. Un mot entendu de travers m'en dit plus qu'une case vide.",
+      "Ne t'arrête jamais pendant la lecture pour réfléchir à un mot. Tu suis jusqu'au bout, tu écris après.",
+      "Pose d'abord les mots porteurs que tu as saisis, puis remplis les petits mots entre eux. Une phrase anglaise se reconstruit par le squelette, pas de gauche à droite.",
+      "Pendant la deuxième écoute, ne relis pas ce que tu as écrit. Écoute, puis corrige.",
+      "Relis ton orthographe avant de valider. Un mot bien entendu mais mal écrit est compté faux."
+    ],
+    "piege": "Deux choses. Tes frontières de mots : tu cherches 'want' et 'to' quand le locuteur a dit 'wanna'. Et ton orthographe sous pression : fondemental, mathematicas, particalar, wether — des mots que tu connais, écrits de travers."
   },
   "write-about-the-photo": {
     "format": "",

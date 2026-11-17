@@ -159,6 +159,23 @@ async function openExercise(id) {
 }
 
 // ---------- Écran de consignes ----------
+// Consignes propres à une étape d'un exercice (clé dédiée dans consignes.json).
+const SUB_STEPS = {
+  'interactive-listening': [['summarize-the-conversation', 'Étape 3 · Summarize the Conversation']],
+};
+function subSteps(id, consignes, block) {
+  const out = [];
+  for (const [key, title] of SUB_STEPS[id] || []) {
+    const c = consignes[key];
+    if (!c) continue;
+    out.push(h('h2', { class: 'mt', style: { margin: '14px 0 2px' } }, title),
+      block('1 · Ce que c’est', c.format),
+      block('2 · Ce que ça mesure vraiment', c.mesure),
+      block('3 · La méthode', c.methode),
+      block('4 · Ton piège', c.piege, 'trap'));
+  }
+  return out;
+}
 async function briefView(id) {
   const ex = byId(id);
   if (!ex) return go('home');
@@ -196,10 +213,13 @@ async function briefView(id) {
     h('div', { class: 'brief-head' }, h('div', { class: 'ico', html: icon(ex.icon) }),
       h('div', {}, h('div', { class: 'muted small', style: { fontWeight: 800 } }, SKILLS[ex.skill].name + ' · ' + ex.time), h('h1', {}, ex.name))),
     h('div', { class: 'blocks' },
-      block('1 · Ce que c’est', c.format),
-      block('2 · Ce que ça mesure vraiment', c.mesure),
-      block('3 · La méthode', c.methode),
-      block('4 · Ton piège', c.piege, 'trap'),
+      ...([c.format, c.mesure, c.methode, c.piege].some(hasText)
+        ? [block('1 · Ce que c’est', c.format),
+          block('2 · Ce que ça mesure vraiment', c.mesure),
+          block('3 · La méthode', c.methode),
+          block('4 · Ton piège', c.piege, 'trap')]
+        : [h('div', { class: 'block empty' }, h('div', { class: 'bt' }, '1 à 4 · Consignes'), h('div', {}, 'Consignes pas encore écrites par ton professeur.'))]),
+      ...subSteps(id, consignes, block),
       goal),
     h('div', { class: 'brief-actions' }, start, toggle,
       h('button', { class: 'btn ghost', 'data-nav': 'home' }, 'Retour')));
