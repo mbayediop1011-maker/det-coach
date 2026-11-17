@@ -1,0 +1,1358 @@
+{
+ "_note": "scenario : texte lu par la voix A (réécoutable à volonté). complete : 3 ou 4 phrases à compléter (___). conversation : répliques de l'interlocuteur (voix B) et choix de l'utilisateur ; la bonne réponse est toujours la première de options (mélangées à l'affichage). Guide 2026 §3.6.",
+ "items": [
+  {
+   "id": "il001",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Martin",
+   "scenario": "You are a student in an introductory economics course. You missed last Tuesday's lecture because you were sick, and you are worried because the professor announced the topic of the next essay during that class. You decide to visit Professor Martin during her office hours to find out what you missed and to ask whether you can still choose your essay topic.",
+   "complete": [
+    {
+     "text": "You missed the lecture because you were ___.",
+     "answer": "sick"
+    },
+    {
+     "text": "During that class, the professor announced ___.",
+     "answer": "the topic of the next essay"
+    },
+    {
+     "text": "You visit the professor during ___.",
+     "answer": "her office hours"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hello, come in. What can I do for you?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Hi, Professor Martin. I missed Tuesday's lecture because I was sick, and I wanted to catch up.",
+      "Hi. I don't really like economics, to be honest.",
+      "Good morning. Can you lend me your car this weekend?",
+      "Hello. I already know everything about the essay."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "I'm sorry to hear that. Are you feeling better now?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes, much better, thank you. I heard you announced the essay topic on Tuesday.",
+      "No, I've never been to Tuesday's class.",
+      "Yes, I'd like a coffee, please.",
+      "I think the library closes at nine."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's right. Students can choose between two topics: inflation or unemployment. The essay is due in three weeks."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great. Is it still possible for me to choose, or have the topics already been assigned?",
+      "Three weeks? That's the same as yesterday.",
+      "Inflation is a type of vegetable, isn't it?",
+      "I'd prefer not to write anything this semester."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "You can still choose. Just send me an email with your choice by Friday."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Perfect, I'll do that. Are the slides from the lecture available online?",
+      "Friday is too early, I'll send it next year.",
+      "I don't have an email address at all.",
+      "Could you write the essay for me instead?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Yes, they're on the course website, under week five."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thank you so much. I'll look at them tonight and send you my choice by Friday.",
+      "I've never heard of the course website.",
+      "Week five was very cold, wasn't it?",
+      "Okay, but I won't read them."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il002",
+   "tags": [
+    "études"
+   ],
+   "partner": "student",
+   "partnerName": "Jake",
+   "scenario": "You and your classmate Jake have to give a group presentation on renewable energy next Monday. You have not divided the work yet, and Jake has sent you a message suggesting you meet at the library. You want to decide who will prepare each part of the presentation and agree on a time to rehearse together before Monday.",
+   "complete": [
+    {
+     "text": "Your presentation is about ___.",
+     "answer": "renewable energy"
+    },
+    {
+     "text": "Jake suggested meeting at ___.",
+     "answer": "the library"
+    },
+    {
+     "text": "You want to agree on a time to ___ before Monday.",
+     "answer": "rehearse together"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hey! Thanks for coming. So, how do you want to split the presentation?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I was thinking I could cover solar power, and you could take wind energy.",
+      "I don't think I'll come to the presentation.",
+      "The library is a very old building.",
+      "Monday is my favorite day of the week."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Sounds good. What about the introduction and the conclusion?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Why don't we write the introduction together and each add a sentence to the conclusion?",
+      "I've never written a conclusion before in my life.",
+      "Let's skip both, nobody listens anyway.",
+      "The introduction is on page twelve."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Fine with me. When should we practice the whole thing?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "How about Saturday afternoon? That gives us time to fix any problems.",
+      "We practiced it last year.",
+      "I'm afraid I don't like Saturdays.",
+      "Practice makes perfect, as they say."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Saturday works. Should we meet here again?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Sure, let's meet here at two o'clock and bring our slides.",
+      "No, the library doesn't exist anymore.",
+      "I'd rather meet in the swimming pool.",
+      "Two o'clock is too late for breakfast."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Great, see you on Saturday then."
+    },
+    {
+     "who": "you",
+     "options": [
+      "See you! I'll send you my part of the slides by Friday night.",
+      "Who are you, sorry?",
+      "I hope it rains on Saturday.",
+      "I'll probably forget about it."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il003",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Chen",
+   "scenario": "You are taking a chemistry lab course. During the last experiment, your results were very different from those of your classmates, and you are not sure whether you made a mistake. You go to see Professor Chen to ask for advice on how to write your lab report when your data does not match the expected results.",
+   "complete": [
+    {
+     "text": "You are taking a ___ course.",
+     "answer": "chemistry lab"
+    },
+    {
+     "text": "Your results were ___ from your classmates' results.",
+     "answer": "very different"
+    },
+    {
+     "text": "You want advice on how to write your ___.",
+     "answer": "lab report"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Good afternoon. You wanted to talk about the last experiment?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes. My results were very different from everyone else's, and I'm not sure what to do.",
+      "Yes, I'd like to change my major to music.",
+      "No, I came to return your umbrella.",
+      "Yes, the experiment was on a Wednesday."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That happens more often than you think. Did you follow the procedure exactly?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I think so, but I may have used the wrong amount of one chemical.",
+      "I didn't read the procedure because it was too long.",
+      "Procedures are not very interesting.",
+      "Exactly what time is it now?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Then the best thing is to be honest about it in your report."
+    },
+    {
+     "who": "you",
+     "options": [
+      "So I should explain the possible error instead of changing my data?",
+      "So I should copy my classmate's results?",
+      "Should I write the report in French?",
+      "Honesty is not important in science."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Exactly. Describe what you observed and suggest reasons for the difference."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That makes sense. Will I lose points if my results are wrong?",
+      "Can I suggest that the lab was haunted?",
+      "I observed that the weather was nice.",
+      "I'd prefer not to write any reasons."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Not if your analysis is clear and thoughtful. That's what I'm really grading."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's a relief. Thank you, I'll focus on a careful analysis.",
+      "So the results don't matter at all, then?",
+      "I'll grade your analysis too.",
+      "Thoughtful people are usually quiet."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il004",
+   "tags": [
+    "société"
+   ],
+   "partner": "student",
+   "partnerName": "Emma",
+   "scenario": "Your roommate Emma has been playing loud music late at night for the past week, and you have an important exam on Thursday. You get along well with Emma and do not want to start an argument, but you need to sleep and study. You decide to talk to her in the kitchen and find a solution that works for both of you.",
+   "complete": [
+    {
+     "text": "Emma has been playing ___ late at night.",
+     "answer": "loud music"
+    },
+    {
+     "text": "You have an important exam on ___.",
+     "answer": "Thursday"
+    },
+    {
+     "text": "You want to find a solution that ___.",
+     "answer": "works for both of you"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hey, you look tired. Is everything okay?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Honestly, I haven't been sleeping well. The music at night has been a bit loud for me.",
+      "Everything is perfect, I love your music at three a.m.",
+      "I'm tired of you, to be honest.",
+      "Yes, I bought a new kitchen table."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Oh no, I'm so sorry! I didn't realize you could hear it in your room."
+    },
+    {
+     "who": "you",
+     "options": [
+      "No problem, I know you didn't mean it. It's just that I have an exam on Thursday.",
+      "Of course you realized, you did it on purpose.",
+      "Rooms are usually quieter in winter.",
+      "I can't hear anything, actually."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Of course. What if I use headphones after ten o'clock?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "That would be perfect. Thank you for understanding.",
+      "Headphones are terrible for your ears, don't use them.",
+      "Ten o'clock is too early for dinner.",
+      "I'd rather you moved out."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "No worries. And good luck with your exam! What's it on?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "It's on European history. I still have two chapters to review.",
+      "It's on Thursday, as I said.",
+      "I don't need luck, I need music.",
+      "My exam is with the music."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "If you want, I can quiz you on Wednesday evening."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That would be great! Let's do it after dinner.",
+      "No thanks, I never study with friends.",
+      "Wednesday is after Thursday.",
+      "Quizzes are only for children."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il005",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Davis",
+   "scenario": "You are interested in doing a summer internship at a research laboratory, and the application requires a letter of recommendation. You took Professor Davis's biology course last semester and received a very good grade. You go to her office to ask whether she would be willing to write a letter for you and what information she needs.",
+   "complete": [
+    {
+     "text": "You want to do a summer internship at ___.",
+     "answer": "a research laboratory"
+    },
+    {
+     "text": "The application requires ___.",
+     "answer": "a letter of recommendation"
+    },
+    {
+     "text": "You took Professor Davis's ___ course last semester.",
+     "answer": "biology"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hi, nice to see you again. How can I help?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'm applying for a summer internship in a research lab, and I was wondering if you could write me a recommendation letter.",
+      "I'd like to complain about my grade from last semester.",
+      "Could you recommend a good restaurant near campus?",
+      "I'm here to fix your computer."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "I'd be happy to. When is the deadline?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "The application is due on March fifteenth, so in about three weeks.",
+      "The deadline was last year, unfortunately.",
+      "I don't know, and I don't really care.",
+      "Deadlines make me nervous, so I avoid them."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's fine. Could you send me some information about the position?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Of course. I'll email you the description and my CV this afternoon.",
+      "There's no information, it's a secret position.",
+      "I'll tell you everything about it next summer.",
+      "Positions are usually advertised online."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "It would also help if you reminded me of the project you did in my class."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Sure, I'll include a short summary of my project on plant growth.",
+      "I didn't do any project in your class.",
+      "Projects are boring, let's not mention it.",
+      "I'll remind you when it's too late."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Perfect. I'll have the letter ready in a week or so."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thank you very much. I really appreciate your help.",
+      "A week is too long, I need it in an hour.",
+      "Please don't write anything positive.",
+      "I'll write the letter myself, then."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il006",
+   "tags": [
+    "loisirs"
+   ],
+   "partner": "student",
+   "partnerName": "Leo",
+   "scenario": "Your friend Leo has invited you to join the university hiking club on a weekend trip to the mountains. You love nature, but you have never hiked for more than a few hours, and you are worried about the difficulty of the trip and the equipment you would need. You talk to Leo after class to get more details before deciding.",
+   "complete": [
+    {
+     "text": "Leo invited you on a weekend trip to ___.",
+     "answer": "the mountains"
+    },
+    {
+     "text": "You have never hiked for more than ___.",
+     "answer": "a few hours"
+    },
+    {
+     "text": "You are worried about the difficulty and ___.",
+     "answer": "the equipment you would need"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "So, are you coming with us this weekend?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'd love to, but I'm a bit worried. How long are the hikes?",
+      "No, I hate nature and everything in it.",
+      "Yes, I'm coming to your class tomorrow.",
+      "The weekend is two days long."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Around five hours each day, but we take lots of breaks."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Okay, that sounds manageable. What equipment do I need?",
+      "Five hours? That's a short nap.",
+      "Breaks are not allowed in my family.",
+      "I'll bring my laptop and some books."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Good walking shoes, a rain jacket and a warm sleeping bag. The club can lend you the sleeping bag."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great, I have shoes and a jacket. I'd be happy to borrow a sleeping bag.",
+      "I don't need anything, I'll sleep on the ground.",
+      "Rain jackets are only useful in the city.",
+      "Could you lend me some shoes instead?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Perfect. We leave on Saturday at seven in the morning."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Seven is early, but I'll be there. Where do we meet?",
+      "I'll arrive around noon, if that's okay.",
+      "Saturday at seven in the evening, right?",
+      "I never wake up before ten."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "In front of the main library. I'll text you the details."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thanks, Leo. I'm really looking forward to it.",
+      "The library is closed on Saturdays, so I won't come.",
+      "Please don't text me.",
+      "I'm not sure who you are."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il007",
+   "tags": [
+    "études",
+    "travail"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Okafor",
+   "scenario": "You are in your second year of university and are thinking about changing your major from business to computer science. You are not sure whether the credits you have already earned will count toward the new degree. You visit Professor Okafor, an academic advisor, to discuss the process and the consequences of changing majors.",
+   "complete": [
+    {
+     "text": "You want to change your major from business to ___.",
+     "answer": "computer science"
+    },
+    {
+     "text": "You are not sure whether your ___ will count.",
+     "answer": "credits"
+    },
+    {
+     "text": "Professor Okafor is an ___.",
+     "answer": "academic advisor"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Come in. I understand you're thinking about changing majors?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes. I'm in business, but I've realized I'm much more interested in computer science.",
+      "No, I'm thinking about changing apartments.",
+      "Yes, I want to become a professional dancer tomorrow.",
+      "I'm not thinking about anything today."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's a big decision. Have you taken any programming courses yet?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I've taken two introductory courses as electives, and I really enjoyed them.",
+      "No, but I play a lot of video games.",
+      "Programming courses are too expensive.",
+      "I took business, as I said."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Good. Some of your business credits will count as general electives."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's good news. Will I need to stay an extra semester to graduate?",
+      "So I can graduate tomorrow?",
+      "I don't want any credits, thank you.",
+      "Electives are always on Mondays."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Probably one extra semester, unless you take summer courses."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'd be willing to take summer courses. Could you help me plan them?",
+      "Summer is for holidays only.",
+      "One extra semester is impossible for me, so I'll stay in business forever.",
+      "I'd rather take winter courses on the beach."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Of course. Let's make another appointment next week with your transcript."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great, I'll bring my transcript next week. Thank you for your time.",
+      "I lost my transcript, so I can't come.",
+      "Next week I'll be in Spain.",
+      "Appointments make me uncomfortable."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il008",
+   "tags": [
+    "études"
+   ],
+   "partner": "student",
+   "partnerName": "Sara",
+   "scenario": "Your classmate Sara missed the last statistics class and has asked to borrow your notes. You are happy to help, but your notes are messy and some of the formulas were explained only on the board. You meet Sara in the cafeteria to give her the notes and explain the most difficult parts.",
+   "complete": [
+    {
+     "text": "Sara missed the last ___ class.",
+     "answer": "statistics"
+    },
+    {
+     "text": "Sara asked to borrow your ___.",
+     "answer": "notes"
+    },
+    {
+     "text": "Some formulas were explained only ___.",
+     "answer": "on the board"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Thank you so much for meeting me. I was really lost."
+    },
+    {
+     "who": "you",
+     "options": [
+      "No problem! Here are my notes, but I warn you, they're a bit messy.",
+      "I'm not giving you anything, sorry.",
+      "You're welcome to my cafeteria.",
+      "I was lost too, on my way here."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's okay. Was there anything really important in the class?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes, the professor explained how to calculate standard deviation, which will be on the exam.",
+      "No, the class was about cooking.",
+      "Important things are never said in class.",
+      "I can't remember if I went."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Oh no, I don't understand that at all."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Don't worry, I can show you an example now if you have ten minutes.",
+      "Then you'll probably fail.",
+      "That's your problem, not mine.",
+      "Me neither, let's forget about it."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That would be amazing. Can I buy you a coffee to say thanks?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's really kind of you. Sure, I'd love a coffee.",
+      "No, coffee is against the law.",
+      "Only if you buy me lunch for a week.",
+      "I don't know what coffee is."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Great. Let's start with the example then."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Okay, first we need to find the average of the numbers.",
+      "Let's start by going home.",
+      "Examples are not on the exam.",
+      "I forgot my notes at home, sorry."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il009",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Rossi",
+   "scenario": "You received a lower grade than you expected on your history essay. The comments say that your arguments were interesting but not supported by enough evidence. You want to understand how to improve, so you visit Professor Rossi during office hours to ask for specific advice for your next essay.",
+   "complete": [
+    {
+     "text": "You received a lower grade on your ___.",
+     "answer": "history essay"
+    },
+    {
+     "text": "Your arguments were not supported by ___.",
+     "answer": "enough evidence"
+    },
+    {
+     "text": "You want specific advice for ___.",
+     "answer": "your next essay"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hello. You wanted to talk about your essay?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes. I read your comments, and I'd like to understand how I can improve next time.",
+      "Yes, I think you made a mistake, and I deserve the highest grade.",
+      "No, I want to talk about football.",
+      "Yes, my essay was about a famous painter."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Of course. Your ideas were original, but you didn't use many sources."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I see. How many sources would you expect for an essay of that length?",
+      "Sources are not important in history.",
+      "I used one source, it was enough.",
+      "I'd rather not use any sources at all."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "At least five, and ideally a mix of books and academic articles."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's helpful. Could you recommend where to find good academic articles?",
+      "Five is too many, I'll use two.",
+      "Books are old-fashioned, I only use videos.",
+      "I don't read articles."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "The library's online database is the best place to start. The librarians can show you how to use it."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great, I'll ask the librarians this week. Could I show you an outline before I write the next essay?",
+      "I don't like librarians.",
+      "Databases are dangerous.",
+      "I'll ask them next year."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Yes, that's a good idea. Bring it to my office hours."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thank you, Professor. I'll bring an outline next Tuesday.",
+      "I'll send it after the deadline.",
+      "Your office is too far away.",
+      "An outline is not necessary for me."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il010",
+   "tags": [
+    "ville"
+   ],
+   "partner": "student",
+   "partnerName": "Noah",
+   "scenario": "You and your classmate Noah are looking for an apartment to share next year. You have found two options: one is close to campus but small and expensive, and the other is larger and cheaper but forty minutes away by bus. You meet Noah to compare the two apartments and decide which one to visit first.",
+   "complete": [
+    {
+     "text": "You and Noah are looking for ___ to share.",
+     "answer": "an apartment"
+    },
+    {
+     "text": "The first option is close to campus but ___.",
+     "answer": "small and expensive"
+    },
+    {
+     "text": "The second apartment is ___ away by bus.",
+     "answer": "forty minutes"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "So, which apartment do you prefer?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'm not sure. The one near campus is convenient, but it's quite expensive.",
+      "I prefer to live alone in a tent.",
+      "I don't want an apartment, I want a car.",
+      "The bus is blue."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "True. The other one is cheaper, but forty minutes is a long commute."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's what worries me. We'd have to leave very early for morning classes.",
+      "Forty minutes is nothing, I can run there.",
+      "Commutes are fun because you can sleep standing.",
+      "Let's buy the bus company."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "How much more is the first one each month?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "About two hundred dollars more, so a hundred each.",
+      "About two hundred years more.",
+      "It's free, actually.",
+      "I never check prices."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Hmm, a hundred each isn't too bad if we save on bus tickets."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Exactly. Should we visit the one near campus first, then?",
+      "Bus tickets are my favorite thing to buy.",
+      "Let's not visit anything.",
+      "Saving money is not important to me."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Yes, let's call the owner this afternoon."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great, I'll call at three and ask if we can visit tomorrow.",
+      "I don't have a phone, so I can't.",
+      "The owner is probably asleep.",
+      "Tomorrow is too far away."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il011",
+   "tags": [
+    "travail",
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Ahmed",
+   "scenario": "Professor Ahmed is looking for a research assistant to help with a project on urban transportation. The position is part-time and paid, and it would give you valuable experience for graduate school. You go to his office to express your interest and to ask about the responsibilities and the weekly schedule.",
+   "complete": [
+    {
+     "text": "The project is about ___.",
+     "answer": "urban transportation"
+    },
+    {
+     "text": "The position is ___ and paid.",
+     "answer": "part-time"
+    },
+    {
+     "text": "You want to ask about the responsibilities and ___.",
+     "answer": "the weekly schedule"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hello. Are you here about the research assistant position?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes, I saw the announcement and I'm very interested in transportation research.",
+      "No, I'm here to sell you a bicycle.",
+      "Yes, but I don't like research.",
+      "I'm here about the parking problem."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Wonderful. The job mostly involves collecting data and organizing it in spreadsheets."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That sounds good. I've used spreadsheets a lot in my statistics courses.",
+      "I've never used a computer before.",
+      "Spreadsheets are too boring for me.",
+      "Data should never be organized."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "How many hours per week could you work?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I could work about ten hours a week, mostly on Tuesdays and Thursdays.",
+      "I could work about ten minutes a year.",
+      "I can only work at night, after midnight.",
+      "Hours are not my thing."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That fits well with what we need. Do you have any questions for me?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes, would there be a chance to contribute to a publication?",
+      "No questions, I don't care about the project.",
+      "What's your favorite color?",
+      "Can I work from the beach?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Possibly, if the work goes well. Please send me your CV by Friday."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I will. Thank you for considering me.",
+      "My CV is secret.",
+      "Friday is my day off.",
+      "I'll send it after the summer."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il012",
+   "tags": [
+    "santé"
+   ],
+   "partner": "student",
+   "partnerName": "Mia",
+   "scenario": "Your friend Mia has seemed very stressed lately. She is working at a café twenty hours a week while taking a full course load, and she told you she is falling behind in two classes. You meet her for lunch and want to listen to her and suggest some ways she could reduce her stress.",
+   "complete": [
+    {
+     "text": "Mia works at a café ___ a week.",
+     "answer": "twenty hours"
+    },
+    {
+     "text": "She is falling behind in ___.",
+     "answer": "two classes"
+    },
+    {
+     "text": "You want to suggest ways to ___.",
+     "answer": "reduce her stress"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Sorry I'm late. Work ran over again."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Don't worry about it. You seem really busy lately. How are you doing?",
+      "You're always late. It's very annoying.",
+      "I'm late too, actually, I'm not here.",
+      "Work is a great place to eat lunch."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Honestly, not great. I can't keep up with my classes and my job."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That sounds exhausting. Have you thought about asking for fewer hours at the café?",
+      "Then quit university immediately.",
+      "Everyone is stressed, it's normal.",
+      "Let's talk about my problems instead."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "I need the money, but maybe I could drop a few hours."
+    },
+    {
+     "who": "you",
+     "options": [
+      "You could also talk to your professors. They might give you a little extra time.",
+      "Professors never help anyone.",
+      "Money is not important at all.",
+      "Let's order dessert first."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's a good idea. I'm just afraid they'll think I'm lazy."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I don't think so. Explaining your situation shows you're taking your classes seriously.",
+      "They will, so don't tell them.",
+      "You are lazy, a little.",
+      "Lazy people don't work at cafés."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "You're right. Thanks for listening, I feel a bit better."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Anytime. Let me know if you want to study together this week.",
+      "Next time, please don't talk so much.",
+      "I wasn't really listening.",
+      "Good, now you can pay for lunch."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il013",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Laurent",
+   "scenario": "You have three exams scheduled in the same week, and one of them is on the same day and at the same time as a family wedding abroad that was planned long ago. You want to ask Professor Laurent whether it is possible to take his exam on a different day, and what documents you might need.",
+   "complete": [
+    {
+     "text": "You have three exams in ___.",
+     "answer": "the same week"
+    },
+    {
+     "text": "One exam is at the same time as ___.",
+     "answer": "a family wedding"
+    },
+    {
+     "text": "You want to know what ___ you might need.",
+     "answer": "documents"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Good morning. What brings you here?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Good morning. I have a conflict with the final exam, and I wanted to ask about my options.",
+      "I'm here to invite you to my wedding.",
+      "Nothing, I'm just walking around.",
+      "I'd like to cancel the exam for everyone."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "What kind of conflict?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "My sister is getting married abroad that day, and the date was set over a year ago.",
+      "I'd rather sleep late that day.",
+      "The exam is too difficult for me.",
+      "I have a conflict with my roommate."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "I see. We do allow alternative dates for important family events."
+    },
+    {
+     "who": "you",
+     "options": [
+      "That's great. Would I take it before or after the official date?",
+      "Can I skip the exam completely, then?",
+      "Family events are not important.",
+      "Do you allow alternative professors?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Usually before. You'd also need to fill in a form and attach the invitation."
+    },
+    {
+     "who": "you",
+     "options": [
+      "No problem, I can bring the invitation tomorrow. Where can I find the form?",
+      "I lost the invitation, can I invent one?",
+      "I don't like forms at all.",
+      "Before is too early, I'd prefer next year."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "It's on the department website. Send it to the secretary by next Friday."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thank you. I'll fill it in today and send it to the secretary.",
+      "The website doesn't work on Fridays.",
+      "I'll send it to you on the wedding day.",
+      "Who is the secretary?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il014",
+   "tags": [
+    "société",
+    "études"
+   ],
+   "partner": "student",
+   "partnerName": "Ryan",
+   "scenario": "Your classmate Ryan is organizing a charity event on campus to raise money for a local food bank. He has asked for volunteers to help with tickets, decorations and food. You would like to help, but you can only spare a few hours on the day of the event because of your part-time job. You talk to Ryan to see where you could be most useful.",
+   "complete": [
+    {
+     "text": "The event will raise money for ___.",
+     "answer": "a local food bank"
+    },
+    {
+     "text": "Ryan needs help with tickets, decorations and ___.",
+     "answer": "food"
+    },
+    {
+     "text": "You can only spare a few hours because of ___.",
+     "answer": "your part-time job"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hi! Did you see my message about the charity event?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Yes, I did. I'd like to help, but I only have a few hours free that day.",
+      "No, I never read messages from you.",
+      "Yes, but I think charity is a waste of time.",
+      "I saw a movie yesterday."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "That's totally fine. Every bit helps. When are you available?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'm free from ten until one, before my shift at work.",
+      "I'm available from midnight to two in the morning.",
+      "I'm never available, sorry.",
+      "Ten until one is a long lunch."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Perfect, that's when we're setting up. Could you help with decorations?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "Sure, I'm good at that. Should I bring anything?",
+      "Decorations are for children only.",
+      "I'd rather sit and watch.",
+      "Can I decorate my own room instead?"
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Maybe some tape and scissors if you have them."
+    },
+    {
+     "who": "you",
+     "options": [
+      "No problem, I'll bring both. Where should I meet you?",
+      "I don't own scissors, and I won't buy any.",
+      "Tape is very expensive these days.",
+      "I'll bring a sandwich instead."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "At the student center, in the main hall."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Great, see you there at ten. Thanks for organizing this.",
+      "The student center is too modern.",
+      "I'll come at noon, then.",
+      "Why are you organizing this?"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "il015",
+   "tags": [
+    "études"
+   ],
+   "partner": "professor",
+   "partnerName": "Professor Kim",
+   "scenario": "You are writing your final project for a psychology course and want to conduct a short survey with other students. Before you start, you need to know whether the survey requires official approval and how many participants you should include. You visit Professor Kim to discuss your project plan.",
+   "complete": [
+    {
+     "text": "Your final project is for a ___ course.",
+     "answer": "psychology"
+    },
+    {
+     "text": "You want to conduct ___ with other students.",
+     "answer": "a short survey"
+    },
+    {
+     "text": "You need to know how many ___ to include.",
+     "answer": "participants"
+    }
+   ],
+   "conversation": [
+    {
+     "who": "them",
+     "line": "Hello. Tell me about your project idea."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'd like to study how sleep affects students' stress levels, using a short survey.",
+      "I'd like to study how to become rich quickly.",
+      "I don't have any idea yet, can you choose for me?",
+      "My project is about the weather in Korea."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Interesting topic. Have you thought about how many students you'll survey?"
+    },
+    {
+     "who": "you",
+     "options": [
+      "I was hoping for about fifty. Is that enough?",
+      "Just one, my roommate.",
+      "As many as possible, maybe a million.",
+      "I haven't thought about anything yet."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Fifty is reasonable for a course project. But you'll need approval from the ethics committee."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I didn't know that. How long does the approval usually take?",
+      "Ethics committees are not necessary.",
+      "Can't I just ask people without telling anyone?",
+      "Approval is for professors, not students."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "About two weeks, so you should submit your application soon."
+    },
+    {
+     "who": "you",
+     "options": [
+      "I'll prepare it this week. Could you look at my questions before I submit it?",
+      "Two weeks? I'll do the survey tomorrow anyway.",
+      "I'll submit it after the course is over.",
+      "Applications are too complicated for me."
+     ]
+    },
+    {
+     "who": "them",
+     "line": "Of course. Email them to me by Wednesday."
+    },
+    {
+     "who": "you",
+     "options": [
+      "Thank you, I'll send them by Wednesday morning.",
+      "I don't use email, sorry.",
+      "Wednesday doesn't suit me, how about next month?",
+      "Can you write the questions for me?"
+     ]
+    }
+   ]
+  }
+ ]
+}

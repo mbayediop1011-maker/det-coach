@@ -1,0 +1,117 @@
+{
+ "_note": "Writing Sample : jusqu'à 30 s pour lire, puis jusqu'à 5 min. Guide 2026 §4.7.",
+ "items": [
+  {
+   "id": "ws001",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Describe the qualities of a good leader. Use examples from your own experience."
+  },
+  {
+   "id": "ws002",
+   "tags": [
+    "études"
+   ],
+   "prompt": "What is the most useful thing you have learned outside of school? Explain why it was important."
+  },
+  {
+   "id": "ws003",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "How has the internet changed the way people look for information? Give specific examples."
+  },
+  {
+   "id": "ws004",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "Describe an environmental problem in your country and suggest one solution."
+  },
+  {
+   "id": "ws005",
+   "tags": [
+    "ville"
+   ],
+   "prompt": "Describe a place in your city that you would show to a visitor. Explain why."
+  },
+  {
+   "id": "ws006",
+   "tags": [
+    "santé"
+   ],
+   "prompt": "Some people say that stress can be positive. Do you agree? Explain with examples."
+  },
+  {
+   "id": "ws007",
+   "tags": [
+    "voyage"
+   ],
+   "prompt": "Describe a trip that changed the way you see the world."
+  },
+  {
+   "id": "ws008",
+   "tags": [
+    "argent"
+   ],
+   "prompt": "Is it better to spend money on experiences or on objects? Explain your opinion."
+  },
+  {
+   "id": "ws009",
+   "tags": [
+    "société"
+   ],
+   "prompt": "What is one tradition from your culture that you would like to keep alive? Explain why."
+  },
+  {
+   "id": "ws010",
+   "tags": [
+    "loisirs"
+   ],
+   "prompt": "Describe a hobby you would like to start and explain what attracts you to it."
+  },
+  {
+   "id": "ws011",
+   "tags": [
+    "alimentation"
+   ],
+   "prompt": "How have eating habits changed in your country in recent years? Are these changes positive?"
+  },
+  {
+   "id": "ws012",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Would you prefer a job with a high salary and long hours, or a lower salary with more free time? Explain."
+  },
+  {
+   "id": "ws013",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Describe a teacher who had a strong influence on you and explain what made them special."
+  },
+  {
+   "id": "ws014",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "Do you think artificial intelligence will create more jobs than it destroys? Explain your view."
+  },
+  {
+   "id": "ws015",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Describe a challenge you faced and what you learned from it."
+  },
+  {
+   "id": "ws016",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "Should people be encouraged to have fewer cars, even if public transport is not perfect? Explain."
+  }
+ ]
+}

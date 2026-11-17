@@ -1,0 +1,146 @@
+{
+ "_note": "Notation [préfixe|mot complet]. Pas de trou dans la première ni la dernière phrase, jamais deux trous côte à côte (guide 2026 §3.3). Principe du C-test : un mot sur deux à partir de la deuxième phrase, 23 trous par texte.",
+ "items": [
+  {
+   "id": "rc001",
+   "title": "Sleep and learning",
+   "tags": [
+    "études",
+    "santé"
+   ],
+   "text": "Researchers have long argued that sleep plays a central role in learning. During [t|the] night, [t|the] brain [rep|replays] the [infor|information] it [rece|received] during [t|the] day [a|and] stores [t|the] most [impo|important] parts [i|in] long-term [mem|memory]. Students [w|who] stay [u|up] late [t|to] study [of|often] remember [le|less] than [th|those] who [g|get] a [fu|full] night [o|of] rest. In [o|one] experiment, [volun|volunteers] who [sl|slept] after learning a list of words recalled far more of them the next morning. Even a short nap in the afternoon can improve performance on difficult tasks. So the next time you have an exam, consider going to bed early."
+  },
+  {
+   "id": "rc002",
+   "title": "The return of the bicycle",
+   "tags": [
+    "ville",
+    "environnement"
+   ],
+   "text": "Many European cities are rediscovering the bicycle as a serious means of transport. Over [t|the] past [t|ten] years, [lo|local] governments [ha|have] built [hund|hundreds] of [kilom|kilometers] of [prot|protected] lanes [a|and] opened [pub|public] rental [sch|schemes]. As a [res|result], the [num|number] of [da|daily] cyclists [h|has] risen [sha|sharply], especially [am|among] young [profes|professionals]. Cycling [i|is] cheap, [hea|healthy] and [of|often] faster [th|than] driving [thr|through] crowded [str|streets] during rush hour. Shop owners were worried at first that fewer cars would mean fewer customers, but sales have generally increased. City planners now see the bicycle as a key part of a cleaner future."
+  },
+  {
+   "id": "rc003",
+   "title": "Working from home",
+   "tags": [
+    "travail",
+    "technologie"
+   ],
+   "text": "Remote work was once a rare privilege, but it has become normal for millions of employees. Many [peo|people] appreciate [t|the] time [th|they] save [b|by] not [comm|commuting] and [t|the] freedom [t|to] organize [th|their] own [sche|schedule]. However, [wor|working] alone [a|at] a [kit|kitchen] table [c|can] also [b|be] isolating, [a|and] some [wor|workers] find [i|it] hard [t|to] separate [th|their] job [fr|from] their [pri|private] life. Managers, [f|for] their [pa|part], worry that teams lose the informal conversations that often lead to new ideas. For this reason, many firms now prefer a hybrid model. Employees spend part of the week at home and part in the office."
+  },
+  {
+   "id": "rc004",
+   "title": "Food waste",
+   "tags": [
+    "alimentation",
+    "environnement"
+   ],
+   "text": "Every year, roughly a third of the food produced in the world is never eaten. Some [o|of] it [i|is] lost [o|on] farms [bec|because] of [po|poor] storage, [wh|while] the [re|rest] is [thr|thrown] away [b|by] shops, [resta|restaurants] and [house|households]. Supermarkets [of|often] reject [fr|fruit] and [veget|vegetables] simply [bec|because] they [d|do] not [lo|look] perfect, [ev|even] though [th|they] taste [exa|exactly] the [sa|same]. At [ho|home], people [te|tend] to buy more than they need and forget about items at the back of the fridge. Simple habits, such as planning meals and checking dates, can make a real difference. Reducing waste also helps families save money."
+  },
+  {
+   "id": "rc005",
+   "title": "The first museums",
+   "tags": [
+    "loisirs",
+    "société"
+   ],
+   "text": "The idea of a public museum is surprisingly recent in human history. For [cent|centuries], rare [obj|objects] and [wo|works] of [a|art] were [ke|kept] in [t|the] private [colle|collections] of [ki|kings], churches [a|and] wealthy [fami|families]. Only a [sm|small] number [o|of] guests [we|were] ever [all|allowed] to [s|see] them, [usu|usually] by [spe|special] invitation. In [t|the] eighteenth [cen|century], however, [sev|several] European [colle|collections] opened [th|their] doors [t|to] ordinary citizens for the first time. These institutions were meant to educate the public and to show the power of the nation. Today, museums welcome millions of visitors every year."
+  },
+  {
+   "id": "rc006",
+   "title": "Learning a second language",
+   "tags": [
+    "études"
+   ],
+   "text": "Learning a foreign language as an adult is difficult, but it is far from impossible. Children [se|seem] to [pi|pick] up [n|new] sounds [mo|more] easily, [y|yet] adults [ha|have] other [advan|advantages], such [a|as] discipline [a|and] a [bet|better] understanding [o|of] grammar. The [mo|most] effective [lear|learners] usually [com|combine] regular [st|study] with [re|real] conversations, [ev|even] when [th|they] still [ma|make] many [mist|mistakes]. Listening [t|to] podcasts, [watc|watching] series [a|and] reading simple articles can also expose them to natural expressions. What matters most is consistency rather than talent. A little practice every day is better than long sessions once a week."
+  },
+  {
+   "id": "rc007",
+   "title": "The rise of electric cars",
+   "tags": [
+    "technologie",
+    "environnement"
+   ],
+   "text": "Electric cars were once considered expensive toys for a small group of enthusiasts. Today, [th|they] represent a [gro|growing] share [o|of] new [vehi|vehicles] sold [i|in] many [coun|countries]. Their [suc|success] is [par|partly] explained [b|by] falling [bat|battery] prices [a|and] by [gover|government] incentives [th|that] make [th|them] more [affor|affordable]. Drivers [al|also] appreciate [t|the] quiet [eng|engine] and [t|the] low [co|cost] of [char|charging] at [ho|home]. Nevertheless, [sev|several] obstacles remain, including the limited number of public charging stations in rural areas. Experts believe that these problems will gradually disappear as the technology improves."
+  },
+  {
+   "id": "rc008",
+   "title": "Volunteering",
+   "tags": [
+    "société"
+   ],
+   "text": "Volunteering is often described as a way to help others, but it also benefits the volunteers themselves. People [w|who] give [th|their] time [t|to] a [ca|cause] frequently [rep|report] feeling [hap|happier] and [le|less] stressed. They [me|meet] new [fri|friends], develop [prac|practical] skills [a|and] sometimes [disc|discover] a [n|new] career [pa|path]. Employers [al|also] tend [t|to] value [th|this] kind [o|of] experience, [si|since] it [sh|shows] commitment [a|and] the [abi|ability] to [wo|work] in a team. Some companies even allow their staff to volunteer during working hours. For many, a few hours a month is enough to make a meaningful difference."
+  },
+  {
+   "id": "rc009",
+   "title": "Coffee culture",
+   "tags": [
+    "alimentation",
+    "loisirs"
+   ],
+   "text": "Coffee is one of the most widely consumed drinks on the planet. It [w|was] first [gr|grown] in East Africa [a|and] later [spr|spread] across [t|the] Middle East [bef|before] reaching Europe [i|in] the [seven|seventeenth] century. Coffee [hou|houses] quickly [bec|became] popular [pla|places] where [peo|people] met [t|to] discuss [poli|politics], business [a|and] science. Some [histo|historians] even [cl|claim] that [th|these] lively [spa|spaces] helped [t|to] shape [mod|modern] ideas [ab|about] public [deb|debate]. Today, the drink is just as social, although many customers now order it to take away. Few habits have travelled so far and lasted so long."
+  },
+  {
+   "id": "rc010",
+   "title": "Saving money",
+   "tags": [
+    "argent"
+   ],
+   "text": "Saving money is easier when it becomes an automatic habit rather than a monthly decision. Financial [advi|advisers] often [reco|recommend] transferring a [fi|fixed] amount [in|into] a [sepa|separate] account [a|as] soon [a|as] your [sal|salary] arrives. This [w|way], you [a|are] not [tem|tempted] to [sp|spend] money [th|that] you [h|had] planned [t|to] keep. It [i|is] also [use|useful] to [tr|track] your [expe|expenses] for a [f|few] weeks [i|in] order [t|to] identify [sm|small] costs that add up quickly. Subscriptions you no longer use are a common example. Over time, even modest savings can grow into a reassuring safety net."
+  },
+  {
+   "id": "rc011",
+   "title": "Urban gardens",
+   "tags": [
+    "ville",
+    "environnement"
+   ],
+   "text": "In many large cities, empty plots of land are being turned into community gardens. Residents [gr|grow] vegetables, [he|herbs] and [flo|flowers] in [spa|spaces] that [we|were] previously [aban|abandoned] or [cov|covered] in [rub|rubbish]. These [proj|projects] provide [fr|fresh] food [i|in] neighborhoods [wh|where] healthy [opt|options] are [of|often] expensive [o|or] hard [t|to] find. They [al|also] bring [toge|together] people [o|of] different [ag|ages] and [backg|backgrounds] who [mi|might] otherwise [ne|never] meet. Some schools use the gardens to teach children where food comes from and how plants grow. A small garden can change the atmosphere of an entire street."
+  },
+  {
+   "id": "rc012",
+   "title": "The value of boredom",
+   "tags": [
+    "société",
+    "santé"
+   ],
+   "text": "Most of us try to avoid boredom at all costs, usually by reaching for our phones. Psychologists, [how|however], suggest [th|that] moments [o|of] boredom [m|may] actually [b|be] useful [f|for] the [mi|mind]. When [w|we] have [not|nothing] to [d|do], our [thou|thoughts] begin [t|to] wander, [a|and] this [c|can] lead [t|to] creative [id|ideas] and [bet|better] problem [sol|solving]. Constant [entert|entertainment], on [t|the] other [ha|hand], leaves [lit|little] room [f|for] reflection or daydreaming. Some researchers recommend setting aside short periods of the day without screens. It may feel uncomfortable at first, but the brain seems to benefit from the rest."
+  },
+  {
+   "id": "rc013",
+   "title": "Tourism and local life",
+   "tags": [
+    "voyage",
+    "société"
+   ],
+   "text": "Tourism brings money and jobs to many popular destinations around the world. At [t|the] same [ti|time], large [num|numbers] of [visi|visitors] can [ma|make] daily [li|life] difficult [f|for] local [resi|residents]. In [so|some] historic [cen|centers], rents [ha|have] increased [s|so] much [th|that] families [c|can] no [lon|longer] afford [t|to] live [th|there]. Small [sh|shops] are [repl|replaced] by [souv|souvenir] stores, [a|and] streets [bec|become] crowded [f|for] most of the year. Several cities have started to limit the number of short-term rentals and cruise ships. The challenge is to welcome travelers without losing the character that attracts them in the first place."
+  },
+  {
+   "id": "rc014",
+   "title": "Reading on screens",
+   "tags": [
+    "technologie",
+    "études"
+   ],
+   "text": "More and more people now read news, articles and even novels on a screen. Digital [te|texts] are [conve|convenient] because [th|they] are [ch|cheap], portable [a|and] available [a|at] any [ti|time]. However, [sev|several] studies [sug|suggest] that [rea|readers] understand [lo|long] and [com|complex] texts [bet|better] on [pa|paper]. One [poss|possible] reason [i|is] that [w|we] tend [t|to] skim [qui|quickly] when [w|we] read [o|on] a [dev|device], jumping [fr|from] one line to another. Printed pages also give us a clearer sense of where we are in a text. For short messages, screens are perfectly fine, but serious study may still require a book."
+  },
+  {
+   "id": "rc015",
+   "title": "Team sports and children",
+   "tags": [
+    "loisirs",
+    "santé"
+   ],
+   "text": "Playing a team sport can have a lasting impact on a child's development. Beyond [t|the] obvious [phys|physical] benefits, [yo|young] players [le|learn] to [coop|cooperate], to [fol|follow] rules [a|and] to [co|cope] with [def|defeat]. They [al|also] discover [th|that] effort [a|and] regular [trai|training] usually [mat|matter] more [th|than] natural [abi|ability]. Coaches [pl|play] an [impo|important] role [b|by] encouraging [ev|every] member [o|of] the [gr|group], not [on|only] the most talented ones. Unfortunately, some parents put too much pressure on their children to win. When that happens, the game stops being fun and many young players simply give up."
+  },
+  {
+   "id": "rc016",
+   "title": "The four-day week",
+   "tags": [
+    "travail",
+    "société"
+   ],
+   "text": "Several companies have recently experimented with a four-day working week without reducing salaries. The [id|idea] is [th|that] employees [w|who] rest [mo|more] are [mo|more] focused [a|and] productive [wh|while] they [a|are] at [wo|work]. In [ma|many] trials, [mana|managers] reported [th|that] output [sta|stayed] the [sa|same] or [ev|even] improved [slig|slightly]. Staff [mem|members] said [th|they] felt [le|less] tired [a|and] had [mo|more] time [f|for] their [fami|families] and hobbies. Critics point out that the model may not suit every sector, especially hospitals or shops that must stay open. Still, the results have encouraged other firms to consider the change."
+  }
+ ]
+}

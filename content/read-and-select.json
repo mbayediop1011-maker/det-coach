@@ -1,0 +1,1430 @@
+{
+ "_note": "Un item = un mot. real = true pour un vrai mot anglais, false pour un mot inventé. 18 mots par séance.",
+ "items": [
+  {
+   "id": "w-skeptical",
+   "word": "skeptical",
+   "real": true
+  },
+  {
+   "id": "w-deventure",
+   "word": "deventure",
+   "real": false
+  },
+  {
+   "id": "w-scarbous",
+   "word": "scarbous",
+   "real": false
+  },
+  {
+   "id": "w-initiate",
+   "word": "initiate",
+   "real": true
+  },
+  {
+   "id": "w-imminent",
+   "word": "imminent",
+   "real": true
+  },
+  {
+   "id": "w-incandor",
+   "word": "incandor",
+   "real": false
+  },
+  {
+   "id": "w-acknowledge",
+   "word": "acknowledge",
+   "real": true
+  },
+  {
+   "id": "w-spectrify",
+   "word": "spectrify",
+   "real": false
+  },
+  {
+   "id": "w-perplixate",
+   "word": "perplixate",
+   "real": false
+  },
+  {
+   "id": "w-profound",
+   "word": "profound",
+   "real": true
+  },
+  {
+   "id": "w-tedious",
+   "word": "tedious",
+   "real": true
+  },
+  {
+   "id": "w-unvexible",
+   "word": "unvexible",
+   "real": false
+  },
+  {
+   "id": "w-plausible",
+   "word": "plausible",
+   "real": true
+  },
+  {
+   "id": "w-advocate",
+   "word": "advocate",
+   "real": true
+  },
+  {
+   "id": "w-strunch",
+   "word": "strunch",
+   "real": false
+  },
+  {
+   "id": "w-bremble",
+   "word": "bremble",
+   "real": false
+  },
+  {
+   "id": "w-drovel",
+   "word": "drovel",
+   "real": false
+  },
+  {
+   "id": "w-morsify",
+   "word": "morsify",
+   "real": false
+  },
+  {
+   "id": "w-arbitrary",
+   "word": "arbitrary",
+   "real": true
+  },
+  {
+   "id": "w-exploit",
+   "word": "exploit",
+   "real": true
+  },
+  {
+   "id": "w-entail",
+   "word": "entail",
+   "real": true
+  },
+  {
+   "id": "w-wandersome",
+   "word": "wandersome",
+   "real": false
+  },
+  {
+   "id": "w-commence",
+   "word": "commence",
+   "real": true
+  },
+  {
+   "id": "w-hinder",
+   "word": "hinder",
+   "real": true
+  },
+  {
+   "id": "w-flaction",
+   "word": "flaction",
+   "real": false
+  },
+  {
+   "id": "w-compelling",
+   "word": "compelling",
+   "real": true
+  },
+  {
+   "id": "w-untensive",
+   "word": "untensive",
+   "real": false
+  },
+  {
+   "id": "w-invoke",
+   "word": "invoke",
+   "real": true
+  },
+  {
+   "id": "w-stramble",
+   "word": "stramble",
+   "real": false
+  },
+  {
+   "id": "w-sulvate",
+   "word": "sulvate",
+   "real": false
+  },
+  {
+   "id": "w-contraduce",
+   "word": "contraduce",
+   "real": false
+  },
+  {
+   "id": "w-plinterous",
+   "word": "plinterous",
+   "real": false
+  },
+  {
+   "id": "w-remedy",
+   "word": "remedy",
+   "real": true
+  },
+  {
+   "id": "w-foster",
+   "word": "foster",
+   "real": true
+  },
+  {
+   "id": "w-scrandle",
+   "word": "scrandle",
+   "real": false
+  },
+  {
+   "id": "w-bureaucracy",
+   "word": "bureaucracy",
+   "real": true
+  },
+  {
+   "id": "w-furtious",
+   "word": "furtious",
+   "real": false
+  },
+  {
+   "id": "w-cortalize",
+   "word": "cortalize",
+   "real": false
+  },
+  {
+   "id": "w-marquish",
+   "word": "marquish",
+   "real": false
+  },
+  {
+   "id": "w-distort",
+   "word": "distort",
+   "real": true
+  },
+  {
+   "id": "w-ostrate",
+   "word": "ostrate",
+   "real": false
+  },
+  {
+   "id": "w-deadlock",
+   "word": "deadlock",
+   "real": true
+  },
+  {
+   "id": "w-fragile",
+   "word": "fragile",
+   "real": true
+  },
+  {
+   "id": "w-deprive",
+   "word": "deprive",
+   "real": true
+  },
+  {
+   "id": "w-prolagate",
+   "word": "prolagate",
+   "real": false
+  },
+  {
+   "id": "w-constraint",
+   "word": "constraint",
+   "real": true
+  },
+  {
+   "id": "w-diminish",
+   "word": "diminish",
+   "real": true
+  },
+  {
+   "id": "w-abrudent",
+   "word": "abrudent",
+   "real": false
+  },
+  {
+   "id": "w-flusk",
+   "word": "flusk",
+   "real": false
+  },
+  {
+   "id": "w-corrispond",
+   "word": "corrispond",
+   "real": false
+  },
+  {
+   "id": "w-obscure",
+   "word": "obscure",
+   "real": true
+  },
+  {
+   "id": "w-deplonish",
+   "word": "deplonish",
+   "real": false
+  },
+  {
+   "id": "w-threnchant",
+   "word": "threnchant",
+   "real": false
+  },
+  {
+   "id": "w-pundish",
+   "word": "pundish",
+   "real": false
+  },
+  {
+   "id": "w-gastrous",
+   "word": "gastrous",
+   "real": false
+  },
+  {
+   "id": "w-snorkish",
+   "word": "snorkish",
+   "real": false
+  },
+  {
+   "id": "w-obscurb",
+   "word": "obscurb",
+   "real": false
+  },
+  {
+   "id": "w-chastile",
+   "word": "chastile",
+   "real": false
+  },
+  {
+   "id": "w-frastic",
+   "word": "frastic",
+   "real": false
+  },
+  {
+   "id": "w-spontaneous",
+   "word": "spontaneous",
+   "real": true
+  },
+  {
+   "id": "w-brumptious",
+   "word": "brumptious",
+   "real": false
+  },
+  {
+   "id": "w-vortile",
+   "word": "vortile",
+   "real": false
+  },
+  {
+   "id": "w-condigle",
+   "word": "condigle",
+   "real": false
+  },
+  {
+   "id": "w-precountable",
+   "word": "precountable",
+   "real": false
+  },
+  {
+   "id": "w-curb",
+   "word": "curb",
+   "real": true
+  },
+  {
+   "id": "w-evade",
+   "word": "evade",
+   "real": true
+  },
+  {
+   "id": "w-recastulate",
+   "word": "recastulate",
+   "real": false
+  },
+  {
+   "id": "w-sever",
+   "word": "sever",
+   "real": true
+  },
+  {
+   "id": "w-quorlish",
+   "word": "quorlish",
+   "real": false
+  },
+  {
+   "id": "w-subtle",
+   "word": "subtle",
+   "real": true
+  },
+  {
+   "id": "w-resplendor",
+   "word": "resplendor",
+   "real": false
+  },
+  {
+   "id": "w-embark",
+   "word": "embark",
+   "real": true
+  },
+  {
+   "id": "w-precarious",
+   "word": "precarious",
+   "real": true
+  },
+  {
+   "id": "w-quellish",
+   "word": "quellish",
+   "real": false
+  },
+  {
+   "id": "w-confine",
+   "word": "confine",
+   "real": true
+  },
+  {
+   "id": "w-hypothesis",
+   "word": "hypothesis",
+   "real": true
+  },
+  {
+   "id": "w-cascuous",
+   "word": "cascuous",
+   "real": false
+  },
+  {
+   "id": "w-overt",
+   "word": "overt",
+   "real": true
+  },
+  {
+   "id": "w-anticipate",
+   "word": "anticipate",
+   "real": true
+  },
+  {
+   "id": "w-scrutiny",
+   "word": "scrutiny",
+   "real": true
+  },
+  {
+   "id": "w-prone",
+   "word": "prone",
+   "real": true
+  },
+  {
+   "id": "w-resilient",
+   "word": "resilient",
+   "real": true
+  },
+  {
+   "id": "w-assert",
+   "word": "assert",
+   "real": true
+  },
+  {
+   "id": "w-tempestate",
+   "word": "tempestate",
+   "real": false
+  },
+  {
+   "id": "w-bellivate",
+   "word": "bellivate",
+   "real": false
+  },
+  {
+   "id": "w-vexiloquent",
+   "word": "vexiloquent",
+   "real": false
+  },
+  {
+   "id": "w-abundant",
+   "word": "abundant",
+   "real": true
+  },
+  {
+   "id": "w-dismantile",
+   "word": "dismantile",
+   "real": false
+  },
+  {
+   "id": "w-outweigh",
+   "word": "outweigh",
+   "real": true
+  },
+  {
+   "id": "w-preclimate",
+   "word": "preclimate",
+   "real": false
+  },
+  {
+   "id": "w-fraglish",
+   "word": "fraglish",
+   "real": false
+  },
+  {
+   "id": "w-attain",
+   "word": "attain",
+   "real": true
+  },
+  {
+   "id": "w-glorped",
+   "word": "glorped",
+   "real": false
+  },
+  {
+   "id": "w-disperse",
+   "word": "disperse",
+   "real": true
+  },
+  {
+   "id": "w-stagnify",
+   "word": "stagnify",
+   "real": false
+  },
+  {
+   "id": "w-amend",
+   "word": "amend",
+   "real": true
+  },
+  {
+   "id": "w-plausitive",
+   "word": "plausitive",
+   "real": false
+  },
+  {
+   "id": "w-ambiguous",
+   "word": "ambiguous",
+   "real": true
+  },
+  {
+   "id": "w-meticulous",
+   "word": "meticulous",
+   "real": true
+  },
+  {
+   "id": "w-grievance",
+   "word": "grievance",
+   "real": true
+  },
+  {
+   "id": "w-emerge",
+   "word": "emerge",
+   "real": true
+  },
+  {
+   "id": "w-assumption",
+   "word": "assumption",
+   "real": true
+  },
+  {
+   "id": "w-mitigate",
+   "word": "mitigate",
+   "real": true
+  },
+  {
+   "id": "w-deter",
+   "word": "deter",
+   "real": true
+  },
+  {
+   "id": "w-negligible",
+   "word": "negligible",
+   "real": true
+  },
+  {
+   "id": "w-designate",
+   "word": "designate",
+   "real": true
+  },
+  {
+   "id": "w-grompish",
+   "word": "grompish",
+   "real": false
+  },
+  {
+   "id": "w-untrevious",
+   "word": "untrevious",
+   "real": false
+  },
+  {
+   "id": "w-plenture",
+   "word": "plenture",
+   "real": false
+  },
+  {
+   "id": "w-leverage",
+   "word": "leverage",
+   "real": true
+  },
+  {
+   "id": "w-dwindle",
+   "word": "dwindle",
+   "real": true
+  },
+  {
+   "id": "w-allocate",
+   "word": "allocate",
+   "real": true
+  },
+  {
+   "id": "w-integrity",
+   "word": "integrity",
+   "real": true
+  },
+  {
+   "id": "w-impair",
+   "word": "impair",
+   "real": true
+  },
+  {
+   "id": "w-hostile",
+   "word": "hostile",
+   "real": true
+  },
+  {
+   "id": "w-brivacy",
+   "word": "brivacy",
+   "real": false
+  },
+  {
+   "id": "w-erode",
+   "word": "erode",
+   "real": true
+  },
+  {
+   "id": "w-scrumble",
+   "word": "scrumble",
+   "real": false
+  },
+  {
+   "id": "w-befrumble",
+   "word": "befrumble",
+   "real": false
+  },
+  {
+   "id": "w-dramble",
+   "word": "dramble",
+   "real": false
+  },
+  {
+   "id": "w-daunting",
+   "word": "daunting",
+   "real": true
+  },
+  {
+   "id": "w-reluctant",
+   "word": "reluctant",
+   "real": true
+  },
+  {
+   "id": "w-wendful",
+   "word": "wendful",
+   "real": false
+  },
+  {
+   "id": "w-denote",
+   "word": "denote",
+   "real": true
+  },
+  {
+   "id": "w-peliscate",
+   "word": "peliscate",
+   "real": false
+  },
+  {
+   "id": "w-devise",
+   "word": "devise",
+   "real": true
+  },
+  {
+   "id": "w-nebbulous",
+   "word": "nebbulous",
+   "real": false
+  },
+  {
+   "id": "w-accomplish",
+   "word": "accomplish",
+   "real": true
+  },
+  {
+   "id": "w-clarivoyant",
+   "word": "clarivoyant",
+   "real": false
+  },
+  {
+   "id": "w-exacerbate",
+   "word": "exacerbate",
+   "real": true
+  },
+  {
+   "id": "w-cravantly",
+   "word": "cravantly",
+   "real": false
+  },
+  {
+   "id": "w-rampant",
+   "word": "rampant",
+   "real": true
+  },
+  {
+   "id": "w-adequate",
+   "word": "adequate",
+   "real": true
+  },
+  {
+   "id": "w-spundle",
+   "word": "spundle",
+   "real": false
+  },
+  {
+   "id": "w-steer",
+   "word": "steer",
+   "real": true
+  },
+  {
+   "id": "w-trevolent",
+   "word": "trevolent",
+   "real": false
+  },
+  {
+   "id": "w-deficit",
+   "word": "deficit",
+   "real": true
+  },
+  {
+   "id": "w-brittle",
+   "word": "brittle",
+   "real": true
+  },
+  {
+   "id": "w-ploother",
+   "word": "ploother",
+   "real": false
+  },
+  {
+   "id": "w-eloquent",
+   "word": "eloquent",
+   "real": true
+  },
+  {
+   "id": "w-jeopardy",
+   "word": "jeopardy",
+   "real": true
+  },
+  {
+   "id": "w-infer",
+   "word": "infer",
+   "real": true
+  },
+  {
+   "id": "w-notorious",
+   "word": "notorious",
+   "real": true
+  },
+  {
+   "id": "w-inspelt",
+   "word": "inspelt",
+   "real": false
+  },
+  {
+   "id": "w-crondulous",
+   "word": "crondulous",
+   "real": false
+  },
+  {
+   "id": "w-ominous",
+   "word": "ominous",
+   "real": true
+  },
+  {
+   "id": "w-garnicate",
+   "word": "garnicate",
+   "real": false
+  },
+  {
+   "id": "w-feasible",
+   "word": "feasible",
+   "real": true
+  },
+  {
+   "id": "w-draffle",
+   "word": "draffle",
+   "real": false
+  },
+  {
+   "id": "w-mediocre",
+   "word": "mediocre",
+   "real": true
+  },
+  {
+   "id": "w-blustrive",
+   "word": "blustrive",
+   "real": false
+  },
+  {
+   "id": "w-tholder",
+   "word": "tholder",
+   "real": false
+  },
+  {
+   "id": "w-crandible",
+   "word": "crandible",
+   "real": false
+  },
+  {
+   "id": "w-ambivate",
+   "word": "ambivate",
+   "real": false
+  },
+  {
+   "id": "w-linger",
+   "word": "linger",
+   "real": true
+  },
+  {
+   "id": "w-lucrative",
+   "word": "lucrative",
+   "real": true
+  },
+  {
+   "id": "w-repletive",
+   "word": "repletive",
+   "real": false
+  },
+  {
+   "id": "w-consensus",
+   "word": "consensus",
+   "real": true
+  },
+  {
+   "id": "w-hemblish",
+   "word": "hemblish",
+   "real": false
+  },
+  {
+   "id": "w-discreet",
+   "word": "discreet",
+   "real": true
+  },
+  {
+   "id": "w-wistrous",
+   "word": "wistrous",
+   "real": false
+  },
+  {
+   "id": "w-saffle",
+   "word": "saffle",
+   "real": false
+  },
+  {
+   "id": "w-dendular",
+   "word": "dendular",
+   "real": false
+  },
+  {
+   "id": "w-obvolate",
+   "word": "obvolate",
+   "real": false
+  },
+  {
+   "id": "w-deceive",
+   "word": "deceive",
+   "real": true
+  },
+  {
+   "id": "w-inevitable",
+   "word": "inevitable",
+   "real": true
+  },
+  {
+   "id": "w-precede",
+   "word": "precede",
+   "real": true
+  },
+  {
+   "id": "w-allegedly",
+   "word": "allegedly",
+   "real": true
+  },
+  {
+   "id": "w-implement",
+   "word": "implement",
+   "real": true
+  },
+  {
+   "id": "w-lenient",
+   "word": "lenient",
+   "real": true
+  },
+  {
+   "id": "w-flaw",
+   "word": "flaw",
+   "real": true
+  },
+  {
+   "id": "w-jostrous",
+   "word": "jostrous",
+   "real": false
+  },
+  {
+   "id": "w-distellish",
+   "word": "distellish",
+   "real": false
+  },
+  {
+   "id": "w-glistrate",
+   "word": "glistrate",
+   "real": false
+  },
+  {
+   "id": "w-genuine",
+   "word": "genuine",
+   "real": true
+  },
+  {
+   "id": "w-stendible",
+   "word": "stendible",
+   "real": false
+  },
+  {
+   "id": "w-moribble",
+   "word": "moribble",
+   "real": false
+  },
+  {
+   "id": "w-unwieldsome",
+   "word": "unwieldsome",
+   "real": false
+  },
+  {
+   "id": "w-prolong",
+   "word": "prolong",
+   "real": true
+  },
+  {
+   "id": "w-explicit",
+   "word": "explicit",
+   "real": true
+  },
+  {
+   "id": "w-rendivous",
+   "word": "rendivous",
+   "real": false
+  },
+  {
+   "id": "w-bleak",
+   "word": "bleak",
+   "real": true
+  },
+  {
+   "id": "w-nostrate",
+   "word": "nostrate",
+   "real": false
+  },
+  {
+   "id": "w-morphile",
+   "word": "morphile",
+   "real": false
+  },
+  {
+   "id": "w-oblivate",
+   "word": "oblivate",
+   "real": false
+  },
+  {
+   "id": "w-flimber",
+   "word": "flimber",
+   "real": false
+  },
+  {
+   "id": "w-incentive",
+   "word": "incentive",
+   "real": true
+  },
+  {
+   "id": "w-suplicate",
+   "word": "suplicate",
+   "real": false
+  },
+  {
+   "id": "w-farrable",
+   "word": "farrable",
+   "real": false
+  },
+  {
+   "id": "w-dwindlesome",
+   "word": "dwindlesome",
+   "real": false
+  },
+  {
+   "id": "w-rivulate",
+   "word": "rivulate",
+   "real": false
+  },
+  {
+   "id": "w-succinct",
+   "word": "succinct",
+   "real": true
+  },
+  {
+   "id": "w-ambrivate",
+   "word": "ambrivate",
+   "real": false
+  },
+  {
+   "id": "w-tremendate",
+   "word": "tremendate",
+   "real": false
+  },
+  {
+   "id": "w-apparent",
+   "word": "apparent",
+   "real": true
+  },
+  {
+   "id": "w-crumpish",
+   "word": "crumpish",
+   "real": false
+  },
+  {
+   "id": "w-rebuke",
+   "word": "rebuke",
+   "real": true
+  },
+  {
+   "id": "w-cumbersome",
+   "word": "cumbersome",
+   "real": true
+  },
+  {
+   "id": "w-tremulate",
+   "word": "tremulate",
+   "real": false
+  },
+  {
+   "id": "w-glimber",
+   "word": "glimber",
+   "real": false
+  },
+  {
+   "id": "w-decay",
+   "word": "decay",
+   "real": true
+  },
+  {
+   "id": "w-novice",
+   "word": "novice",
+   "real": true
+  },
+  {
+   "id": "w-retain",
+   "word": "retain",
+   "real": true
+  },
+  {
+   "id": "w-flummage",
+   "word": "flummage",
+   "real": false
+  },
+  {
+   "id": "w-blunt",
+   "word": "blunt",
+   "real": true
+  },
+  {
+   "id": "w-misprend",
+   "word": "misprend",
+   "real": false
+  },
+  {
+   "id": "w-fluctuate",
+   "word": "fluctuate",
+   "real": true
+  },
+  {
+   "id": "w-dravelous",
+   "word": "dravelous",
+   "real": false
+  },
+  {
+   "id": "w-trinkate",
+   "word": "trinkate",
+   "real": false
+  },
+  {
+   "id": "w-impartial",
+   "word": "impartial",
+   "real": true
+  },
+  {
+   "id": "w-reckless",
+   "word": "reckless",
+   "real": true
+  },
+  {
+   "id": "w-shrewd",
+   "word": "shrewd",
+   "real": true
+  },
+  {
+   "id": "w-frogle",
+   "word": "frogle",
+   "real": false
+  },
+  {
+   "id": "w-thrive",
+   "word": "thrive",
+   "real": true
+  },
+  {
+   "id": "w-breach",
+   "word": "breach",
+   "real": true
+  },
+  {
+   "id": "w-endorse",
+   "word": "endorse",
+   "real": true
+  },
+  {
+   "id": "w-unrestate",
+   "word": "unrestate",
+   "real": false
+  },
+  {
+   "id": "w-impervate",
+   "word": "impervate",
+   "real": false
+  },
+  {
+   "id": "w-fremulous",
+   "word": "fremulous",
+   "real": false
+  },
+  {
+   "id": "w-mirthfold",
+   "word": "mirthfold",
+   "real": false
+  },
+  {
+   "id": "w-scintrify",
+   "word": "scintrify",
+   "real": false
+  },
+  {
+   "id": "w-frugal",
+   "word": "frugal",
+   "real": true
+  },
+  {
+   "id": "w-inherent",
+   "word": "inherent",
+   "real": true
+  },
+  {
+   "id": "w-ponder",
+   "word": "ponder",
+   "real": true
+  },
+  {
+   "id": "w-trivial",
+   "word": "trivial",
+   "real": true
+  },
+  {
+   "id": "w-prevail",
+   "word": "prevail",
+   "real": true
+  },
+  {
+   "id": "w-grasp",
+   "word": "grasp",
+   "real": true
+  },
+  {
+   "id": "w-vandiloquent",
+   "word": "vandiloquent",
+   "real": false
+  },
+  {
+   "id": "w-chortilate",
+   "word": "chortilate",
+   "real": false
+  },
+  {
+   "id": "w-sparse",
+   "word": "sparse",
+   "real": true
+  },
+  {
+   "id": "w-blandify",
+   "word": "blandify",
+   "real": false
+  },
+  {
+   "id": "w-refine",
+   "word": "refine",
+   "real": true
+  },
+  {
+   "id": "w-detrimental",
+   "word": "detrimental",
+   "real": true
+  },
+  {
+   "id": "w-disclamber",
+   "word": "disclamber",
+   "real": false
+  },
+  {
+   "id": "w-bias",
+   "word": "bias",
+   "real": true
+  },
+  {
+   "id": "w-sustain",
+   "word": "sustain",
+   "real": true
+  },
+  {
+   "id": "w-bizarre",
+   "word": "bizarre",
+   "real": true
+  },
+  {
+   "id": "w-pernicate",
+   "word": "pernicate",
+   "real": false
+  },
+  {
+   "id": "w-stringent",
+   "word": "stringent",
+   "real": true
+  },
+  {
+   "id": "w-impremise",
+   "word": "impremise",
+   "real": false
+  },
+  {
+   "id": "w-intricate",
+   "word": "intricate",
+   "real": true
+  },
+  {
+   "id": "w-frendable",
+   "word": "frendable",
+   "real": false
+  },
+  {
+   "id": "w-cognitate",
+   "word": "cognitate",
+   "real": false
+  },
+  {
+   "id": "w-ostracate",
+   "word": "ostracate",
+   "real": false
+  },
+  {
+   "id": "w-lumbersome",
+   "word": "lumbersome",
+   "real": false
+  },
+  {
+   "id": "w-coincide",
+   "word": "coincide",
+   "real": true
+  },
+  {
+   "id": "w-hallowate",
+   "word": "hallowate",
+   "real": false
+  },
+  {
+   "id": "w-clondor",
+   "word": "clondor",
+   "real": false
+  },
+  {
+   "id": "w-rebunct",
+   "word": "rebunct",
+   "real": false
+  },
+  {
+   "id": "w-superficial",
+   "word": "superficial",
+   "real": true
+  },
+  {
+   "id": "w-gauge",
+   "word": "gauge",
+   "real": true
+  },
+  {
+   "id": "w-tentative",
+   "word": "tentative",
+   "real": true
+  },
+  {
+   "id": "w-plumeric",
+   "word": "plumeric",
+   "real": false
+  },
+  {
+   "id": "w-stagnant",
+   "word": "stagnant",
+   "real": true
+  },
+  {
+   "id": "w-contempt",
+   "word": "contempt",
+   "real": true
+  },
+  {
+   "id": "w-fusterable",
+   "word": "fusterable",
+   "real": false
+  },
+  {
+   "id": "w-tolerate",
+   "word": "tolerate",
+   "real": true
+  },
+  {
+   "id": "w-exceed",
+   "word": "exceed",
+   "real": true
+  },
+  {
+   "id": "w-candid",
+   "word": "candid",
+   "real": true
+  },
+  {
+   "id": "w-paramount",
+   "word": "paramount",
+   "real": true
+  },
+  {
+   "id": "w-coherent",
+   "word": "coherent",
+   "real": true
+  },
+  {
+   "id": "w-fratter",
+   "word": "fratter",
+   "real": false
+  },
+  {
+   "id": "w-concede",
+   "word": "concede",
+   "real": true
+  },
+  {
+   "id": "w-perceive",
+   "word": "perceive",
+   "real": true
+  },
+  {
+   "id": "w-enhance",
+   "word": "enhance",
+   "real": true
+  },
+  {
+   "id": "w-comprehensive",
+   "word": "comprehensive",
+   "real": true
+  },
+  {
+   "id": "w-fendable",
+   "word": "fendable",
+   "real": false
+  },
+  {
+   "id": "w-deliberate",
+   "word": "deliberate",
+   "real": true
+  },
+  {
+   "id": "w-prudent",
+   "word": "prudent",
+   "real": true
+  },
+  {
+   "id": "w-contemplate",
+   "word": "contemplate",
+   "real": true
+  },
+  {
+   "id": "w-mantigrade",
+   "word": "mantigrade",
+   "real": false
+  },
+  {
+   "id": "w-grintle",
+   "word": "grintle",
+   "real": false
+  },
+  {
+   "id": "w-deem",
+   "word": "deem",
+   "real": true
+  },
+  {
+   "id": "w-boast",
+   "word": "boast",
+   "real": true
+  },
+  {
+   "id": "w-obsolete",
+   "word": "obsolete",
+   "real": true
+  },
+  {
+   "id": "w-obtrudent",
+   "word": "obtrudent",
+   "real": false
+  },
+  {
+   "id": "w-compile",
+   "word": "compile",
+   "real": true
+  },
+  {
+   "id": "w-hesperate",
+   "word": "hesperate",
+   "real": false
+  },
+  {
+   "id": "w-deplete",
+   "word": "deplete",
+   "real": true
+  },
+  {
+   "id": "w-trolliver",
+   "word": "trolliver",
+   "real": false
+  },
+  {
+   "id": "w-conversely",
+   "word": "conversely",
+   "real": true
+  },
+  {
+   "id": "w-cautious",
+   "word": "cautious",
+   "real": true
+  },
+  {
+   "id": "w-sprandle",
+   "word": "sprandle",
+   "real": false
+  },
+  {
+   "id": "w-futile",
+   "word": "futile",
+   "real": true
+  },
+  {
+   "id": "w-quindle",
+   "word": "quindle",
+   "real": false
+  }
+ ]
+}

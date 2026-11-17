@@ -1,0 +1,197 @@
+{
+ "_note": "Speaking Sample : jusqu'à 30 s pour lire, puis jusqu'à 3 min de parole. La question reste affichée. Guide 2026 §4.8.",
+ "items": [
+  {
+   "id": "ss001",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Some people think that remote work will soon replace the traditional office. Do you agree?",
+   "bullets": [
+    "Give reasons for your opinion.",
+    "Mention advantages and disadvantages.",
+    "Use examples from your experience."
+   ]
+  },
+  {
+   "id": "ss002",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Should university education be free for everyone?",
+   "bullets": [
+    "Explain your position.",
+    "Consider the cost for society.",
+    "Describe the situation in your country."
+   ]
+  },
+  {
+   "id": "ss003",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "Is technology making people less patient?",
+   "bullets": [
+    "Explain your view.",
+    "Give concrete examples.",
+    "Suggest how people could change."
+   ]
+  },
+  {
+   "id": "ss004",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "What should your country do to reduce pollution?",
+   "bullets": [
+    "Describe the main sources of pollution.",
+    "Propose practical measures.",
+    "Explain who should pay for them."
+   ]
+  },
+  {
+   "id": "ss005",
+   "tags": [
+    "ville"
+   ],
+   "prompt": "Describe the advantages and disadvantages of living in a big city.",
+   "bullets": [
+    "Talk about daily life.",
+    "Talk about opportunities.",
+    "Say where you would prefer to live and why."
+   ]
+  },
+  {
+   "id": "ss006",
+   "tags": [
+    "santé"
+   ],
+   "prompt": "Why do so many people find it hard to sleep well today?",
+   "bullets": [
+    "Give several causes.",
+    "Explain their effects.",
+    "Suggest solutions."
+   ]
+  },
+  {
+   "id": "ss007",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Is it important to know about the history of your country?",
+   "bullets": [
+    "Explain why or why not.",
+    "Give an example of a historical event.",
+    "Explain how it affects people today."
+   ]
+  },
+  {
+   "id": "ss008",
+   "tags": [
+    "voyage"
+   ],
+   "prompt": "Does tourism do more good than harm?",
+   "bullets": [
+    "Discuss the economic effects.",
+    "Discuss the effects on local life.",
+    "Give your overall opinion."
+   ]
+  },
+  {
+   "id": "ss009",
+   "tags": [
+    "argent"
+   ],
+   "prompt": "Should young people start saving for retirement as soon as they start working?",
+   "bullets": [
+    "Explain your opinion.",
+    "Discuss the difficulties young people face.",
+    "Give practical advice."
+   ]
+  },
+  {
+   "id": "ss010",
+   "tags": [
+    "loisirs"
+   ],
+   "prompt": "Are video games a good way to spend free time?",
+   "bullets": [
+    "Mention possible benefits.",
+    "Mention possible risks.",
+    "Explain your own experience."
+   ]
+  },
+  {
+   "id": "ss011",
+   "tags": [
+    "alimentation"
+   ],
+   "prompt": "Should schools serve only healthy food?",
+   "bullets": [
+    "Explain your position.",
+    "Consider children's preferences.",
+    "Discuss the role of parents."
+   ]
+  },
+  {
+   "id": "ss012",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "What makes a workplace pleasant to work in?",
+   "bullets": [
+    "Talk about colleagues and managers.",
+    "Talk about the physical environment.",
+    "Describe your ideal workplace."
+   ]
+  },
+  {
+   "id": "ss013",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Describe the role of teachers in the age of the internet.",
+   "bullets": [
+    "Explain what has changed.",
+    "Explain what has stayed the same.",
+    "Give your opinion about the future."
+   ]
+  },
+  {
+   "id": "ss014",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Should voting be compulsory?",
+   "bullets": [
+    "Give arguments for.",
+    "Give arguments against.",
+    "State and justify your opinion."
+   ]
+  },
+  {
+   "id": "ss015",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "How will artificial intelligence change everyday life in the next ten years?",
+   "bullets": [
+    "Give examples at home.",
+    "Give examples at work.",
+    "Say whether you are optimistic or worried."
+   ]
+  },
+  {
+   "id": "ss016",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "Is it realistic to ask people to stop flying for holidays?",
+   "bullets": [
+    "Explain the environmental issue.",
+    "Discuss alternatives.",
+    "Give your personal opinion."
+   ]
+  }
+ ]
+}

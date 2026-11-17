@@ -1,0 +1,653 @@
+{
+ "_note": "sentences : partie 1 avec {bonne réponse|leurre|leurre|leurre}. passage : phrase manquante. after : suite du texte. highlight : 2 questions dont la réponse est un extrait exact du texte. idea et title : bonne réponse + 3 leurres. 8 min si 7 trous ou plus, sinon 7 min. Guide 2026 §3.5.",
+ "items": [
+  {
+   "id": "ir001",
+   "tags": [
+    "travail"
+   ],
+   "kind": "narrative",
+   "sentences": "When Maya started her first job at a small design studio, she was {convinced|confused|concerned|content} that she had to prove herself immediately. She arrived early, stayed late and rarely {asked|answered|allowed|offered} for help, even when a task seemed impossible. After a few weeks, she felt {exhausted|excited|exposed|expected}, and the quality of her work began to suffer. One afternoon, her manager invited her for a coffee and gently {pointed|picked|pushed|paid} out that everyone in the team relied on one another. Nobody, he explained, was {expected|exposed|extended|excused} to solve every problem alone.",
+   "passage": {
+    "answer": "He told her that asking a question early usually saved hours of work later.",
+    "distractors": [
+     "He told her that the studio would soon move to a bigger office downtown.",
+     "He explained that most designers prefer to work from home on Fridays.",
+     "He admitted that he had never liked coffee very much."
+    ]
+   },
+   "after": "Maya was surprised, but she decided to follow his advice. The following week, she shared an unfinished draft with two colleagues, who suggested simple changes she would never have thought of. The project was finished ahead of schedule, and for the first time, she left the office before dark. She realized that being independent did not mean working in isolation.",
+   "highlight": [
+    {
+     "question": "Why did the quality of Maya's work begin to suffer?",
+     "answer": "she felt exhausted"
+    },
+    {
+     "question": "What happened after Maya shared her draft with colleagues?",
+     "answer": "The project was finished ahead of schedule"
+    }
+   ],
+   "idea": {
+    "answer": "Accepting help from colleagues can make work both better and easier.",
+    "distractors": [
+     "New employees should always work longer hours than their managers.",
+     "Design studios are usually more relaxed than large companies.",
+     "Coffee breaks are the best moment to discuss difficult projects."
+    ]
+   },
+   "title": {
+    "answer": "Learning to Ask for Help",
+    "distractors": [
+     "A Career in Graphic Design",
+     "Why Managers Drink Coffee",
+     "Moving to a New Office"
+    ]
+   }
+  },
+  {
+   "id": "ir002",
+   "tags": [
+    "environnement"
+   ],
+   "kind": "expository",
+   "sentences": "Bees play an essential role in the production of much of the food we eat. As they move from flower to flower, they {transfer|transform|transport|translate} pollen, which allows plants to produce fruit and seeds. In recent decades, however, bee populations in many regions have {declined|decided|delayed|defined} sharply. Scientists believe that several factors are {responsible|reasonable|remarkable|reliable} for this trend, including pesticides, disease and the loss of natural habitats. Large farms that grow a single crop also {offer|order|owe|own} bees a poor and limited diet. Without enough healthy bees, the {cost|case|cause|course} of many fruits and vegetables could rise significantly.",
+   "passage": {
+    "answer": "Fortunately, there are simple measures that can help these insects recover.",
+    "distractors": [
+     "Bees are also known for the honey that they produce each summer.",
+     "Some people are afraid of bees because they can sting.",
+     "The first farms appeared thousands of years ago in the Middle East."
+    ]
+   },
+   "after": "Farmers can plant strips of wild flowers between their fields, and cities can reduce the use of chemicals in public parks. Even individuals can contribute by growing a variety of plants on balconies and in gardens. Researchers agree that such efforts, if repeated on a large scale, could make a real difference.",
+   "highlight": [
+    {
+     "question": "Why do large farms that grow a single crop cause problems for bees?",
+     "answer": "offer bees a poor and limited diet"
+    },
+    {
+     "question": "What can cities do to help bees?",
+     "answer": "reduce the use of chemicals in public parks"
+    }
+   ],
+   "idea": {
+    "answer": "Bee populations are falling, but practical actions can help protect them.",
+    "distractors": [
+     "Bees are dangerous insects that should be kept away from cities.",
+     "Pesticides are the only cause of the decline of bees.",
+     "Fruit and vegetables are becoming cheaper every year."
+    ]
+   },
+   "title": {
+    "answer": "Why Bees Need Our Help",
+    "distractors": [
+     "How to Produce Honey at Home",
+     "The History of Farming",
+     "Insects That Sting"
+    ]
+   }
+  },
+  {
+   "id": "ir003",
+   "tags": [
+    "voyage"
+   ],
+   "kind": "narrative",
+   "sentences": "Tom had planned his trip to Lisbon for months, so he was {horrified|honored|hopeful|hungry} when the airline told him his suitcase had been lost. All his clothes, his camera and the gifts for his hosts were {inside|instead|insight|inspired}. The employee at the desk promised that the bag would {arrive|appear|argue|attend} within two days, but Tom was not convinced. With only the clothes he was {wearing|warning|washing|waving}, he took a taxi to the small apartment he had rented in the old town.",
+   "passage": {
+    "answer": "The owner, an elderly woman named Rosa, immediately noticed that something was wrong.",
+    "distractors": [
+     "The taxi driver spoke very fast and did not understand English.",
+     "Lisbon is famous for its yellow trams and steep streets.",
+     "He had always preferred trains to planes for long journeys."
+    ]
+   },
+   "after": "When Tom explained the situation, she laughed kindly and lent him a sweater that had belonged to her son. She also showed him a market where he could buy basic things cheaply. By the time his suitcase finally arrived, Tom had made a friend, and he later said that the lost bag had given him his best memory of the trip.",
+   "highlight": [
+    {
+     "question": "What did Rosa lend Tom?",
+     "answer": "a sweater that had belonged to her son"
+    },
+    {
+     "question": "How did the airline employee respond to Tom's problem?",
+     "answer": "promised that the bag would arrive within two days"
+    }
+   ],
+   "idea": {
+    "answer": "An unpleasant event during a trip led to an unexpected friendship.",
+    "distractors": [
+     "Airlines lose more suitcases in Lisbon than anywhere else.",
+     "Travelers should never bring gifts for their hosts.",
+     "Old towns are the cheapest places to rent apartments."
+    ]
+   },
+   "title": {
+    "answer": "The Lost Suitcase",
+    "distractors": [
+     "Shopping in Lisbon's Markets",
+     "How to Rent an Apartment",
+     "A Taxi Ride Through the Old Town"
+    ]
+   }
+  },
+  {
+   "id": "ir004",
+   "tags": [
+    "technologie"
+   ],
+   "kind": "expository",
+   "sentences": "Most people check their phones dozens of times a day, often without {noticing|nodding|needing|naming}. Designers of apps understand this habit very well and build their products to {capture|capsize|captain|caption} as much attention as possible. Notifications, endless scrolling and colorful rewards all encourage users to {return|retire|reveal|refuse} again and again. Some experts compare these features to slot machines, because they offer {unpredictable|unbelievable|unforgettable|unavailable} rewards that are difficult to resist. As a result, many users feel that they have lost {control|contact|content|context} over the way they spend their time.",
+   "passage": {
+    "answer": "In response, a growing number of people are trying to change their digital habits.",
+    "distractors": [
+     "Smartphones were first sold to the public in the early 1990s.",
+     "Slot machines are illegal in some countries.",
+     "Colorful screens consume more battery than dark ones."
+    ]
+   },
+   "after": "Some turn off all non-essential notifications, while others leave their phones in another room at night. Several companies have also introduced tools that show users how many hours they spend on each app. Although these measures are modest, many people report that they sleep better and concentrate more easily after adopting them.",
+   "highlight": [
+    {
+     "question": "Why do some experts compare app features to slot machines?",
+     "answer": "they offer unpredictable rewards that are difficult to resist"
+    },
+    {
+     "question": "What benefits do people report after changing their habits?",
+     "answer": "they sleep better and concentrate more easily"
+    }
+   ],
+   "idea": {
+    "answer": "Apps are designed to hold our attention, but people can take steps to regain control.",
+    "distractors": [
+     "Smartphones should be banned for people under eighteen.",
+     "Notifications are the most useful feature of modern apps.",
+     "People who use phones at night are always tired."
+    ]
+   },
+   "title": {
+    "answer": "Taking Back Our Attention",
+    "distractors": [
+     "The History of the Smartphone",
+     "How Slot Machines Work",
+     "The Best Apps of the Year"
+    ]
+   }
+  },
+  {
+   "id": "ir005",
+   "tags": [
+    "études"
+   ],
+   "kind": "narrative",
+   "sentences": "Lina had always been afraid of speaking in public, so she {dreaded|dressed|dropped|dreamed} the presentation her professor had assigned. For days she {practiced|promised|produced|preferred} in front of the mirror, but her voice still shook every time she imagined the class watching her. The night before, she could {barely|bravely|briefly|broadly} sleep. When her turn finally came, she walked to the front of the room and {realized|recognized|replaced|recovered} that she had left her notes on her desk.",
+   "passage": {
+    "answer": "For a moment she froze, and then she decided to simply talk about what she knew.",
+    "distractors": [
+     "The classroom was on the third floor of an old building.",
+     "Her professor was known for giving very difficult exams.",
+     "Most students in her class were studying biology."
+    ]
+   },
+   "after": "To her surprise, the words came more easily without the paper in front of her. She made eye contact with her classmates, answered two questions and even made them laugh once. Afterwards, the professor told her it was one of the most natural presentations of the semester. Lina still feels nervous before speaking in public, but she no longer believes she cannot do it.",
+   "highlight": [
+    {
+     "question": "What did Lina realize when she walked to the front of the room?",
+     "answer": "she had left her notes on her desk"
+    },
+    {
+     "question": "What did the professor say after the presentation?",
+     "answer": "it was one of the most natural presentations of the semester"
+    }
+   ],
+   "idea": {
+    "answer": "An unexpected problem helped a nervous student discover she could speak confidently.",
+    "distractors": [
+     "Students should always memorize their presentations word for word.",
+     "Professors rarely give feedback after presentations.",
+     "Speaking in public is easy for most university students."
+    ]
+   },
+   "title": {
+    "answer": "Speaking Without Notes",
+    "distractors": [
+     "A Difficult Biology Exam",
+     "How to Choose a Topic",
+     "Sleeping Before an Exam"
+    ]
+   }
+  },
+  {
+   "id": "ir006",
+   "tags": [
+    "ville"
+   ],
+   "kind": "expository",
+   "sentences": "Public libraries are changing to meet the needs of modern communities. Although lending books {remains|reminds|repeats|refuses} an important part of their work, many libraries now offer much more. Visitors can {borrow|bother|borrowed|border} laptops, attend language classes or get help with job applications. In some neighborhoods, the library is one of the few public places where people can spend time without being {expected|excited|expanded|exempted} to buy anything. For families with limited {resources|reasons|results|records}, this makes it a valuable space for study and social contact.",
+   "passage": {
+    "answer": "However, these new services require funding that is not always guaranteed.",
+    "distractors": [
+     "The oldest library in the world was built thousands of years ago.",
+     "Many people prefer to read newspapers online.",
+     "Laptops are becoming lighter and cheaper every year."
+    ]
+   },
+   "after": "In several countries, local governments have reduced library budgets, forcing some branches to cut their opening hours or close entirely. Supporters argue that these cuts hit the most vulnerable residents hardest. They believe that investing in libraries is a cheap way to improve education, reduce isolation and strengthen local communities.",
+   "highlight": [
+    {
+     "question": "What has happened in countries where library budgets were reduced?",
+     "answer": "forcing some branches to cut their opening hours or close entirely"
+    },
+    {
+     "question": "Name one thing visitors can borrow at modern libraries besides books.",
+     "answer": "laptops"
+    }
+   ],
+   "idea": {
+    "answer": "Libraries now provide many community services, but they need reliable funding.",
+    "distractors": [
+     "Libraries are no longer useful because of the internet.",
+     "Most library visitors come to borrow laptops.",
+     "Local governments should close small libraries."
+    ]
+   },
+   "title": {
+    "answer": "More Than Just Books",
+    "distractors": [
+     "The Oldest Library in the World",
+     "How to Apply for a Job",
+     "Reading Newspapers Online"
+    ]
+   }
+  },
+  {
+   "id": "ir007",
+   "tags": [
+    "santé"
+   ],
+   "kind": "expository",
+   "sentences": "For many years, breakfast was described as the most important meal of the day. Recent research, however, suggests that the {picture|pitcher|patient|pressure} is more complicated. Some studies found that people who skip breakfast do not necessarily eat more later or {gain|gather|grant|grow} weight. What seems to matter most is the {quality|quantity|quietness|quarrel} of the food rather than the time at which it is eaten. A sugary pastry in the morning may actually {increase|include|indicate|inspire} hunger a few hours later, while a meal rich in protein keeps people full for longer.",
+   "passage": {
+    "answer": "Experts therefore recommend that people listen to their own bodies.",
+    "distractors": [
+     "Pastries were first made in France in the seventeenth century.",
+     "Many hotels offer free breakfast to their guests.",
+     "Coffee is the most popular morning drink in the world."
+    ]
+   },
+   "after": "Someone who is not hungry in the morning should not feel forced to eat, while others may concentrate better after a proper breakfast. The key is to choose balanced meals throughout the day and to avoid relying on snacks that are high in sugar.",
+   "highlight": [
+    {
+     "question": "According to the passage, what keeps people full for longer?",
+     "answer": "a meal rich in protein"
+    },
+    {
+     "question": "What does research suggest matters most about breakfast?",
+     "answer": "the quality of the food rather than the time at which it is eaten"
+    }
+   ],
+   "idea": {
+    "answer": "The quality of what we eat matters more than whether we eat breakfast.",
+    "distractors": [
+     "Everyone must eat a large breakfast every morning.",
+     "Skipping breakfast always leads to weight gain.",
+     "Protein is unhealthy when eaten in the morning."
+    ]
+   },
+   "title": {
+    "answer": "Rethinking Breakfast",
+    "distractors": [
+     "The History of the Pastry",
+     "Hotels With Free Breakfast",
+     "Why Coffee Is So Popular"
+    ]
+   }
+  },
+  {
+   "id": "ir008",
+   "tags": [
+    "société"
+   ],
+   "kind": "narrative",
+   "sentences": "When the old cinema in Daniel's village closed, most residents {assumed|assisted|assured|admired} that the building would become apartments. Daniel, a retired teacher, had a different idea. He {persuaded|performed|preserved|prevented} a few neighbors to help him clean the dusty hall and repair the broken seats. They borrowed a projector from a nearby school and {organized|originated|ordered|occupied} a free screening of an old comedy. Only fifteen people {attended|attempted|attracted|attached} the first evening, but they laughed so loudly that the story spread quickly.",
+   "passage": {
+    "answer": "The following month, more than a hundred people came, and some offered to volunteer.",
+    "distractors": [
+     "The comedy had been filmed in black and white in the 1950s.",
+     "Daniel had taught mathematics for more than thirty years.",
+     "Apartments in the village had become very expensive."
+    ]
+   },
+   "after": "Today, the cinema is run entirely by volunteers and shows films every Friday. Tickets are cheap, and the money pays for repairs and new equipment. Daniel says the films are not the most important part; what matters is that people of all ages have a reason to meet again.",
+   "highlight": [
+    {
+     "question": "Where did the volunteers get a projector?",
+     "answer": "from a nearby school"
+    },
+    {
+     "question": "What does Daniel think is the most important part of the cinema?",
+     "answer": "people of all ages have a reason to meet again"
+    }
+   ],
+   "idea": {
+    "answer": "A local initiative brought an old cinema back to life and reconnected a community.",
+    "distractors": [
+     "Old cinemas should be turned into apartments.",
+     "Comedies are more popular than any other kind of film.",
+     "Retired teachers often move to small villages."
+    ]
+   },
+   "title": {
+    "answer": "Saving the Village Cinema",
+    "distractors": [
+     "The Best Comedies of All Time",
+     "How to Repair Old Seats",
+     "Life as a Retired Teacher"
+    ]
+   }
+  },
+  {
+   "id": "ir009",
+   "tags": [
+    "argent"
+   ],
+   "kind": "expository",
+   "sentences": "Buying things on credit has never been easier. Many online shops now allow customers to {split|spill|spin|spit} a payment into several smaller ones, often without any interest. This option seems {attractive|attentive|accurate|adequate}, especially for young people who want expensive items but do not have enough savings. The problem is that small payments are easy to {underestimate|undergo|understand|undertake}. A person who uses this service in several shops at the same time may quickly {lose|lend|lift|lead} track of how much they owe in total.",
+   "passage": {
+    "answer": "Consumer groups warn that missed payments can lead to fees and damage a person's credit record.",
+    "distractors": [
+     "Online shopping became popular at the beginning of the century.",
+     "Young people often prefer to shop in physical stores.",
+     "Some shops offer free delivery on large orders."
+    ]
+   },
+   "after": "They advise customers to use such services only for necessary purchases and to keep a simple list of all their upcoming payments. Some banks have also started to include these debts in their assessments when people apply for a loan.",
+   "highlight": [
+    {
+     "question": "Why can small payments be a problem?",
+     "answer": "small payments are easy to underestimate"
+    },
+    {
+     "question": "What do consumer groups advise customers to keep?",
+     "answer": "a simple list of all their upcoming payments"
+    }
+   ],
+   "idea": {
+    "answer": "Splitting payments is convenient but can lead to debt if it is not carefully managed.",
+    "distractors": [
+     "Online shops should stop selling expensive items.",
+     "Interest-free payments are always a bad idea.",
+     "Banks refuse loans to anyone who shops online."
+    ]
+   },
+   "title": {
+    "answer": "The Hidden Risks of Easy Credit",
+    "distractors": [
+     "How to Open a Bank Account",
+     "Free Delivery for Everyone",
+     "Shopping in Physical Stores"
+    ]
+   }
+  },
+  {
+   "id": "ir010",
+   "tags": [
+    "loisirs"
+   ],
+   "kind": "narrative",
+   "sentences": "Every Sunday morning, Ahmed and his grandfather walked to the lake to go fishing. Ahmed found it {boring|boiling|bowing|borrowing} at first, because they often waited for hours without catching anything. His grandfather never seemed to {mind|mend|mine|mild}. He told stories about his childhood, pointed out birds and {taught|thought|tied|turned} Ahmed how to read the movement of the water. Slowly, Ahmed began to look forward to these quiet mornings, even when they went home with {empty|eager|early|equal} buckets.",
+   "passage": {
+    "answer": "Years later, after his grandfather passed away, Ahmed understood what those mornings had really been about.",
+    "distractors": [
+     "The lake was famous for its large population of trout.",
+     "Ahmed's school was on the other side of the town.",
+     "Fishing licenses are required in most countries."
+    ]
+   },
+   "after": "It had never been about the fish. It had been about patience, attention and time spent together without hurry. Now a father himself, Ahmed takes his own children to the same lake, and he tells them the stories he once heard there.",
+   "highlight": [
+    {
+     "question": "Why did Ahmed find fishing boring at first?",
+     "answer": "they often waited for hours without catching anything"
+    },
+    {
+     "question": "What does Ahmed do now with his own children?",
+     "answer": "takes his own children to the same lake"
+    }
+   ],
+   "idea": {
+    "answer": "Shared time with a grandparent taught a boy lessons he only understood later.",
+    "distractors": [
+     "Fishing is the best hobby for young children.",
+     "The lake had fewer fish every year.",
+     "Grandparents should not tell stories about the past."
+    ]
+   },
+   "title": {
+    "answer": "Sundays at the Lake",
+    "distractors": [
+     "How to Catch a Trout",
+     "Birds of the Lake",
+     "Buying a Fishing License"
+    ]
+   }
+  },
+  {
+   "id": "ir011",
+   "tags": [
+    "travail"
+   ],
+   "kind": "expository",
+   "sentences": "Job interviews are often seen as a test of the candidate, but they also give applicants a chance to {evaluate|evacuate|evaporate|educate} the employer. Asking thoughtful questions at the end of an interview can {reveal|relieve|remain|repair} a lot about a company's culture. For example, candidates might ask how success is {measured|managed|mentioned|merged} in the role or what a typical week looks like. Recruiters generally {appreciate|appreciated|approach|apply} such questions because they show genuine interest and preparation.",
+   "passage": {
+    "answer": "On the other hand, some questions are better left for later in the process.",
+    "distractors": [
+     "Most interviews last between thirty and sixty minutes.",
+     "Recruiters often work for specialized agencies.",
+     "Wearing a suit is no longer required in many offices."
+    ]
+   },
+   "after": "Asking about holidays or salary in the very first meeting can give the impression that the candidate is mainly interested in benefits. These topics are important, of course, but they are usually discussed once the employer has shown clear interest in hiring the person.",
+   "highlight": [
+    {
+     "question": "Why do recruiters appreciate thoughtful questions?",
+     "answer": "they show genuine interest and preparation"
+    },
+    {
+     "question": "When are salary and holidays usually discussed?",
+     "answer": "once the employer has shown clear interest in hiring the person"
+    }
+   ],
+   "idea": {
+    "answer": "Candidates should ask well-chosen questions in interviews, but timing matters.",
+    "distractors": [
+     "Candidates should never ask questions during an interview.",
+     "Salary is the first topic to discuss with a recruiter.",
+     "Interviews are only a test of the employer."
+    ]
+   },
+   "title": {
+    "answer": "Asking the Right Questions",
+    "distractors": [
+     "What to Wear to an Interview",
+     "Working for a Recruitment Agency",
+     "How Long Interviews Last"
+    ]
+   }
+  },
+  {
+   "id": "ir012",
+   "tags": [
+    "alimentation"
+   ],
+   "kind": "narrative",
+   "sentences": "Sofia opened her small bakery with very little money and a lot of {determination|destination|decoration|declaration}. The first months were difficult; customers were rare, and she often {threw|through|thought|threat} away bread at the end of the day. One evening, instead of wasting it, she {decided|divided|derived|devoted} to give the unsold loaves to a shelter nearby. A journalist who volunteered there {heard|held|hurt|hired} the story and wrote a short article about her.",
+   "passage": {
+    "answer": "Within a week, the number of customers had doubled.",
+    "distractors": [
+     "Bread is made with flour, water, salt and yeast.",
+     "The shelter had been open for more than ten years.",
+     "Sofia had learned to bake from her grandmother in Italy."
+    ]
+   },
+   "after": "Many of the new customers said they wanted to support a business that cared about its neighborhood. Sofia continued to donate her extra bread every evening, and she later convinced two other shops on the same street to do the same. Her bakery is now one of the most popular in town.",
+   "highlight": [
+    {
+     "question": "What did Sofia do with the unsold bread?",
+     "answer": "give the unsold loaves to a shelter nearby"
+    },
+    {
+     "question": "Why did many new customers come to the bakery?",
+     "answer": "they wanted to support a business that cared about its neighborhood"
+    }
+   ],
+   "idea": {
+    "answer": "A generous gesture helped a struggling bakery attract customers.",
+    "distractors": [
+     "Journalists often volunteer in shelters.",
+     "Opening a bakery requires a lot of money.",
+     "Unsold bread should always be thrown away."
+    ]
+   },
+   "title": {
+    "answer": "The Bakery That Gave Bread Away",
+    "distractors": [
+     "How to Make Bread at Home",
+     "A Journalist's Career",
+     "Italian Recipes"
+    ]
+   }
+  },
+  {
+   "id": "ir013",
+   "tags": [
+    "technologie",
+    "études"
+   ],
+   "kind": "expository",
+   "sentences": "Translation apps have improved dramatically in the past few years. Travelers can now point their phones at a menu and {instantly|intently|insistently|initially} read it in their own language. Some people {conclude|conduct|confess|connect} that learning foreign languages will soon become unnecessary. Language teachers, however, argue that translation is only one {aspect|aspire|access|attempt} of communication. Understanding humor, tone and cultural references often {requires|retires|rescues|reduces} knowledge that machines still struggle to capture.",
+   "passage": {
+    "answer": "Moreover, learning a language changes the way people think and connect with others.",
+    "distractors": [
+     "Menus in tourist areas are often very expensive.",
+     "Many phones now have two or three cameras.",
+     "Teachers usually work more than forty hours a week."
+    ]
+   },
+   "after": "Studies suggest that bilingual people may find it easier to switch between tasks and see problems from different perspectives. Speaking someone's language, even imperfectly, also creates a sense of trust that no app can fully replace.",
+   "highlight": [
+    {
+     "question": "What do language teachers say translation is?",
+     "answer": "only one aspect of communication"
+    },
+    {
+     "question": "What might bilingual people find easier, according to studies?",
+     "answer": "switch between tasks and see problems from different perspectives"
+    }
+   ],
+   "idea": {
+    "answer": "Despite better translation apps, learning languages remains valuable.",
+    "distractors": [
+     "Translation apps will soon replace all language teachers.",
+     "Travelers should avoid restaurants with foreign menus.",
+     "Bilingual people are always better at mathematics."
+    ]
+   },
+   "title": {
+    "answer": "Why Apps Cannot Replace Language Learning",
+    "distractors": [
+     "The Best Phone Cameras",
+     "Eating Abroad on a Budget",
+     "A Day in the Life of a Teacher"
+    ]
+   }
+  },
+  {
+   "id": "ir014",
+   "tags": [
+    "environnement",
+    "ville"
+   ],
+   "kind": "expository",
+   "sentences": "Cities are often several degrees warmer than the surrounding countryside, a phenomenon known as the urban heat island. Dark surfaces such as roads and roofs {absorb|abuse|adopt|adjust} heat during the day and release it slowly at night. The lack of trees also {means|meets|melts|mends} that there is less shade and less natural cooling. During heat waves, this can become {dangerous|delicious|distant|decent}, especially for elderly people and those who live in small apartments without air conditioning.",
+   "passage": {
+    "answer": "To address this problem, several cities are experimenting with creative solutions.",
+    "distractors": [
+     "Air conditioning was invented at the beginning of the twentieth century.",
+     "The countryside is usually quieter than the city.",
+     "Many elderly people prefer to live near their families."
+    ]
+   },
+   "after": "Some paint roofs white so that they reflect sunlight, while others replace parking lots with small parks. Planting trees along streets is one of the cheapest measures, and it also improves air quality. Experts say that combining these approaches could lower summer temperatures by several degrees.",
+   "highlight": [
+    {
+     "question": "Why are cities warmer at night?",
+     "answer": "release it slowly at night"
+    },
+    {
+     "question": "Why do some cities paint roofs white?",
+     "answer": "so that they reflect sunlight"
+    }
+   ],
+   "idea": {
+    "answer": "Cities trap heat, but simple changes can help cool them down.",
+    "distractors": [
+     "The countryside is becoming hotter than cities.",
+     "Air conditioning is the only solution to heat waves.",
+     "Elderly people should move out of cities in summer."
+    ]
+   },
+   "title": {
+    "answer": "Cooling Down Our Cities",
+    "distractors": [
+     "The Invention of Air Conditioning",
+     "Life in the Countryside",
+     "Choosing the Right Apartment"
+    ]
+   }
+  },
+  {
+   "id": "ir015",
+   "tags": [
+    "loisirs",
+    "société"
+   ],
+   "kind": "narrative",
+   "sentences": "Clara joined the local choir only because her friend {insisted|inspected|installed|invested}. She had never sung in front of anyone and was sure she would be {terrible|terrific|territory|tremble}. During the first rehearsal, she stood at the back and moved her lips without making a sound. The conductor, a cheerful man in his seventies, {noticed|nodded|named|needed} immediately but said nothing. At the end of the evening, he simply asked her to {come|calm|count|carry} back the following week.",
+   "passage": {
+    "answer": "Week after week, Clara's voice grew a little louder.",
+    "distractors": [
+     "The choir rehearsed in the hall of a primary school.",
+     "Her friend had been singing since she was a child.",
+     "Most choirs perform at Christmas and in the spring."
+    ]
+   },
+   "after": "By the spring concert, she was standing in the second row, singing with the others in front of two hundred people. She later admitted that the choir had given her more than a new hobby: it had given her confidence she now uses at work and in her daily life.",
+   "highlight": [
+    {
+     "question": "What did Clara do during the first rehearsal?",
+     "answer": "moved her lips without making a sound"
+    },
+    {
+     "question": "What did the choir give Clara besides a new hobby?",
+     "answer": "confidence she now uses at work and in her daily life"
+    }
+   ],
+   "idea": {
+    "answer": "A shy woman gained confidence by gradually taking part in a choir.",
+    "distractors": [
+     "Choirs only accept experienced singers.",
+     "Conductors usually choose the best singers for the front row.",
+     "Singing in public is easy for most adults."
+    ]
+   },
+   "title": {
+    "answer": "Finding Her Voice",
+    "distractors": [
+     "A Concert at Christmas",
+     "How to Become a Conductor",
+     "Rehearsing in a School Hall"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,355 @@
+{
+ "_note": "Une phrase de 8 à 20 mots, lue par la synthèse vocale. Jamais affichée avant validation. 5 phrases par séance.",
+ "items": [
+  {
+   "id": "lt001",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "The meeting has been moved to Thursday afternoon because the director is traveling."
+  },
+  {
+   "id": "lt002",
+   "tags": [
+    "études"
+   ],
+   "sentence": "Most students find the second part of the course much harder than the first."
+  },
+  {
+   "id": "lt003",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Could you tell me which platform the next train to the airport leaves from?"
+  },
+  {
+   "id": "lt004",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "Drinking enough water during the day can help you stay focused and alert."
+  },
+  {
+   "id": "lt005",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "I forgot to save my document before the computer suddenly shut down."
+  },
+  {
+   "id": "lt006",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "The new library downtown stays open until ten o'clock on weekdays."
+  },
+  {
+   "id": "lt007",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "She has been saving a little money every month to buy her first apartment."
+  },
+  {
+   "id": "lt008",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "Recycling programs only work when residents sort their waste correctly."
+  },
+  {
+   "id": "lt009",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "We usually go hiking in the mountains when the weather gets warmer."
+  },
+  {
+   "id": "lt010",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "The restaurant around the corner serves the best soup I have ever tasted."
+  },
+  {
+   "id": "lt011",
+   "tags": [
+    "société"
+   ],
+   "sentence": "Many people believe that public transport should be free for students."
+  },
+  {
+   "id": "lt012",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "Please send me the final version of the report by the end of the day."
+  },
+  {
+   "id": "lt013",
+   "tags": [
+    "études"
+   ],
+   "sentence": "He asked the professor whether the exam would include questions from the lab sessions."
+  },
+  {
+   "id": "lt014",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Our flight was cancelled, so we spent the night in a hotel near the airport."
+  },
+  {
+   "id": "lt015",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "The doctor told him to rest for a week and avoid lifting heavy objects."
+  },
+  {
+   "id": "lt016",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Did you know that the update changes the way notifications appear on your phone?"
+  },
+  {
+   "id": "lt017",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "It took us almost an hour to find a parking space in the city center."
+  },
+  {
+   "id": "lt018",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "Prices have gone up so quickly that many families are struggling to pay their bills."
+  },
+  {
+   "id": "lt019",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "The river has become much cleaner since the factory closed ten years ago."
+  },
+  {
+   "id": "lt020",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "I'm not sure I'll have time to finish the book before the club meets."
+  },
+  {
+   "id": "lt021",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "They decided to cook dinner at home instead of ordering food again."
+  },
+  {
+   "id": "lt022",
+   "tags": [
+    "société"
+   ],
+   "sentence": "Volunteers from the neighborhood helped the elderly residents during the storm."
+  },
+  {
+   "id": "lt023",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "If the client agrees to our terms, we can start the project next week."
+  },
+  {
+   "id": "lt024",
+   "tags": [
+    "études"
+   ],
+   "sentence": "Writing a summary after each lecture is a great way to remember the main ideas."
+  },
+  {
+   "id": "lt025",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Make sure your passport is valid for at least six months before you travel."
+  },
+  {
+   "id": "lt026",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "Getting enough sleep is just as important as eating well and exercising."
+  },
+  {
+   "id": "lt027",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "The battery on my laptop doesn't last as long as it used to."
+  },
+  {
+   "id": "lt028",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Several streets will be closed this weekend because of the marathon."
+  },
+  {
+   "id": "lt029",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "Would it be cheaper to rent a car or to take the bus for the whole trip?"
+  },
+  {
+   "id": "lt030",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "Scientists are worried that the ice is melting faster than they predicted."
+  },
+  {
+   "id": "lt031",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "The museum offers free guided tours on the first Sunday of every month."
+  },
+  {
+   "id": "lt032",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Fresh vegetables from the local market are often cheaper than in supermarkets."
+  },
+  {
+   "id": "lt033",
+   "tags": [
+    "société"
+   ],
+   "sentence": "The debate about working hours has divided the country for several months."
+  },
+  {
+   "id": "lt034",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "She was promoted after only two years because of her excellent results."
+  },
+  {
+   "id": "lt035",
+   "tags": [
+    "études"
+   ],
+   "sentence": "Why didn't anyone tell me the deadline for the essay had been extended?"
+  },
+  {
+   "id": "lt036",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "The hotel staff were incredibly helpful when we lost our luggage."
+  },
+  {
+   "id": "lt037",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "Walking for thirty minutes a day can significantly improve your mood."
+  },
+  {
+   "id": "lt038",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Most of my colleagues prefer video calls to long email exchanges."
+  },
+  {
+   "id": "lt039",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "The city plans to plant thousands of trees to reduce summer temperatures."
+  },
+  {
+   "id": "lt040",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "Before signing the contract, you should read the conditions very carefully."
+  },
+  {
+   "id": "lt041",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "Plastic bags have been banned in many countries over the last decade."
+  },
+  {
+   "id": "lt042",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "My brother has been learning to play the guitar since he was twelve."
+  },
+  {
+   "id": "lt043",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Could you pass me the salt and pepper from the other end of the table?"
+  },
+  {
+   "id": "lt044",
+   "tags": [
+    "société"
+   ],
+   "sentence": "Local elections tend to attract fewer voters than national ones."
+  },
+  {
+   "id": "lt045",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "The new software should make it easier to track our weekly sales."
+  },
+  {
+   "id": "lt046",
+   "tags": [
+    "études"
+   ],
+   "sentence": "The library was so quiet that you could hear people turning the pages."
+  },
+  {
+   "id": "lt047",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "We missed the last bus and had to walk all the way back to the hostel."
+  },
+  {
+   "id": "lt048",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "It's important to stretch properly before and after any intense workout."
+  },
+  {
+   "id": "lt049",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Online security has become a serious concern for small businesses."
+  },
+  {
+   "id": "lt050",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Rents in the old part of town have doubled since the tram line opened."
+  }
+ ]
+}

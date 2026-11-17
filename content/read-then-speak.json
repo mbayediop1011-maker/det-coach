@@ -1,0 +1,197 @@
+{
+ "_note": "Read Then Speak : 20 s de préparation, puis jusqu'à 90 s de parole. Les sous-questions (bullets) restent visibles. Guide 2026 §4.5.",
+ "items": [
+  {
+   "id": "rts001",
+   "tags": [
+    "voyage"
+   ],
+   "prompt": "Talk about a place you visited that surprised you.",
+   "bullets": [
+    "Where was it and when did you go?",
+    "What did you expect before you went?",
+    "What surprised you, and why?"
+   ]
+  },
+  {
+   "id": "rts002",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Describe a job you would love to do in the future.",
+   "bullets": [
+    "What does the job involve?",
+    "What skills would you need?",
+    "Why does it appeal to you?"
+   ]
+  },
+  {
+   "id": "rts003",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Talk about a skill you learned recently.",
+   "bullets": [
+    "What is the skill?",
+    "How did you learn it?",
+    "How has it been useful to you?"
+   ]
+  },
+  {
+   "id": "rts004",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "Describe an app or a piece of technology you use every day.",
+   "bullets": [
+    "What is it and what does it do?",
+    "How often do you use it?",
+    "How would your life be different without it?"
+   ]
+  },
+  {
+   "id": "rts005",
+   "tags": [
+    "ville"
+   ],
+   "prompt": "Talk about a change you would like to see in your town or city.",
+   "bullets": [
+    "What is the problem now?",
+    "What change would you make?",
+    "How would it improve people's lives?"
+   ]
+  },
+  {
+   "id": "rts006",
+   "tags": [
+    "santé"
+   ],
+   "prompt": "Describe something you do to stay healthy.",
+   "bullets": [
+    "What do you do?",
+    "When did you start?",
+    "What benefits have you noticed?"
+   ]
+  },
+  {
+   "id": "rts007",
+   "tags": [
+    "loisirs"
+   ],
+   "prompt": "Talk about a book, film or series that you recommend.",
+   "bullets": [
+    "What is it about?",
+    "Why did you enjoy it?",
+    "Who would you recommend it to?"
+   ]
+  },
+  {
+   "id": "rts008",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Describe a person in your community whom you admire.",
+   "bullets": [
+    "Who is this person?",
+    "What do they do?",
+    "Why do you admire them?"
+   ]
+  },
+  {
+   "id": "rts009",
+   "tags": [
+    "alimentation"
+   ],
+   "prompt": "Talk about a meal that is special to you.",
+   "bullets": [
+    "What is the meal?",
+    "When do you usually eat it?",
+    "Why is it important to you?"
+   ]
+  },
+  {
+   "id": "rts010",
+   "tags": [
+    "argent"
+   ],
+   "prompt": "Describe something you saved money to buy.",
+   "bullets": [
+    "What was it?",
+    "How long did it take you to save?",
+    "Was it worth it? Why or why not?"
+   ]
+  },
+  {
+   "id": "rts011",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "Talk about something your city does to protect the environment.",
+   "bullets": [
+    "What is the initiative?",
+    "Do people take part in it?",
+    "Do you think it is effective?"
+   ]
+  },
+  {
+   "id": "rts012",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Describe a time when you worked as part of a team.",
+   "bullets": [
+    "What was the task?",
+    "What was your role?",
+    "What did you learn from the experience?"
+   ]
+  },
+  {
+   "id": "rts013",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Talk about the best way to prepare for an important exam.",
+   "bullets": [
+    "How do you organize your time?",
+    "What methods work best for you?",
+    "What mistakes should students avoid?"
+   ]
+  },
+  {
+   "id": "rts014",
+   "tags": [
+    "loisirs"
+   ],
+   "prompt": "Describe your ideal weekend.",
+   "bullets": [
+    "Where would you be?",
+    "Who would you spend it with?",
+    "What would you do?"
+   ]
+  },
+  {
+   "id": "rts015",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Talk about a celebration or festival that you enjoy.",
+   "bullets": [
+    "What is the celebration?",
+    "How do people celebrate it?",
+    "What do you like most about it?"
+   ]
+  },
+  {
+   "id": "rts016",
+   "tags": [
+    "voyage"
+   ],
+   "prompt": "Describe a journey that went wrong.",
+   "bullets": [
+    "Where were you going?",
+    "What happened?",
+    "How did you solve the problem?"
+   ]
+  }
+ ]
+}

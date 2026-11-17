@@ -1,0 +1,133 @@
+{
+ "_note": "Étape 1 : prompt (jusqu'à 30 s de lecture, puis 5 min). Étape 2 : followUp (3 min, sans préparation). Guide 2026 §4.3.",
+ "items": [
+  {
+   "id": "iw001",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Some people prefer to work for a large company, while others prefer a small one. Which would you choose, and why?",
+   "followUp": "You explained your choice. Now describe a disadvantage of the option you chose and how you would deal with it."
+  },
+  {
+   "id": "iw002",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Should universities require all students to take courses outside their main field of study? Explain your opinion.",
+   "followUp": "Think about students who are working while studying. How would such a requirement affect them?"
+  },
+  {
+   "id": "iw003",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "Do you think smartphones have improved or damaged the quality of our relationships? Give reasons.",
+   "followUp": "What rules, if any, should families set about phone use at home?"
+  },
+  {
+   "id": "iw004",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "What is the most effective thing an individual can do to protect the environment? Explain your answer.",
+   "followUp": "Some people say individual actions are useless compared to what governments can do. Do you agree?"
+  },
+  {
+   "id": "iw005",
+   "tags": [
+    "ville"
+   ],
+   "prompt": "Would you rather live in a big city or in the countryside? Explain your preference.",
+   "followUp": "Describe how your ideal place to live might change when you are older."
+  },
+  {
+   "id": "iw006",
+   "tags": [
+    "santé"
+   ],
+   "prompt": "Many people find it difficult to maintain healthy habits. What do you think is the main reason for this?",
+   "followUp": "What could employers do to help their staff live healthier lives?"
+  },
+  {
+   "id": "iw007",
+   "tags": [
+    "voyage"
+   ],
+   "prompt": "Is it better to travel alone or with other people? Explain your opinion.",
+   "followUp": "Describe a situation in which your answer might be different."
+  },
+  {
+   "id": "iw008",
+   "tags": [
+    "argent"
+   ],
+   "prompt": "Should schools teach children how to manage money? Why or why not?",
+   "followUp": "At what age should children start receiving pocket money, and how should it be used?"
+  },
+  {
+   "id": "iw009",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Do you think people today have more free time or less free time than in the past? Explain.",
+   "followUp": "How do you think people will spend their free time in twenty years?"
+  },
+  {
+   "id": "iw010",
+   "tags": [
+    "loisirs"
+   ],
+   "prompt": "Some people believe that reading novels is a waste of time. Do you agree or disagree?",
+   "followUp": "Which kinds of entertainment, other than books, can also help people learn?"
+  },
+  {
+   "id": "iw011",
+   "tags": [
+    "alimentation"
+   ],
+   "prompt": "Should governments tax unhealthy food and drinks to improve public health? Explain your view.",
+   "followUp": "Who should be responsible for teaching people about nutrition: families, schools or the media?"
+  },
+  {
+   "id": "iw012",
+   "tags": [
+    "travail"
+   ],
+   "prompt": "Is it important to love your job, or is a good salary enough? Explain your answer.",
+   "followUp": "Describe what an employer could offer, besides money, to keep good employees."
+  },
+  {
+   "id": "iw013",
+   "tags": [
+    "études"
+   ],
+   "prompt": "Is online learning as effective as learning in a classroom? Explain your opinion.",
+   "followUp": "Which subjects do you think are especially difficult to learn online, and why?"
+  },
+  {
+   "id": "iw014",
+   "tags": [
+    "technologie"
+   ],
+   "prompt": "Should children be allowed to use social media before the age of fifteen? Give reasons.",
+   "followUp": "How could social media platforms make their services safer for young users?"
+  },
+  {
+   "id": "iw015",
+   "tags": [
+    "société"
+   ],
+   "prompt": "Is it better to have a few close friends or many acquaintances? Explain.",
+   "followUp": "How has technology changed the way people make and keep friends?"
+  },
+  {
+   "id": "iw016",
+   "tags": [
+    "environnement"
+   ],
+   "prompt": "Should cars be banned from city centers? Explain your opinion.",
+   "followUp": "How would such a ban affect people who live outside the city but work there?"
+  }
+ ]
+}

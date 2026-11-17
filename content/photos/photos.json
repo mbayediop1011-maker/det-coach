@@ -1,0 +1,258 @@
+{
+ "_note": "Pour ajouter une photo : dépose l'image dans ce dossier et ajoute une ligne ici (file, tags, description). Les sites statiques ne peuvent pas lister un dossier, d'où ce fichier.",
+ "photos": [
+  {
+   "file": "photo01.jpg",
+   "tags": [
+    "études"
+   ],
+   "title": "Free Education for Underprivileged children",
+   "description": "Three children sitting on a wall outside, looking at a laptop together.",
+   "author": "TAPAS KUMAR HALDER",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Free_Education_for_Underprivileged_children.jpg"
+  },
+  {
+   "file": "photo02.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "Quito Accordion player",
+   "description": "A man playing the accordion in the street, sitting next to an old case.",
+   "author": "Cayambe",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Quito_Accordion_player.jpg"
+  },
+  {
+   "file": "photo03.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "A group of children playing baloons, Ismailia, Egypt",
+   "description": "Children playing with balloons in a narrow street between buildings.",
+   "author": "Husseingallery",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:A_group_of_children_playing_baloons,_Ismailia,_Egypt.jpg"
+  },
+  {
+   "file": "photo04.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "Children playing on the beach",
+   "description": "A boy riding a bodyboard in shallow water at the beach.",
+   "author": "Wilfredor",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children_playing_on_the_beach.jpg"
+  },
+  {
+   "file": "photo05.jpg",
+   "tags": [
+    "ville"
+   ],
+   "title": "Cyclist crossing a street, Quebec City",
+   "description": "A cyclist with a basket crossing a city street on a sunny day.",
+   "author": "Wilfredor",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cyclist_crossing_a_street,_Quebec_City.jpg"
+  },
+  {
+   "file": "photo06.jpg",
+   "tags": [
+    "ville"
+   ],
+   "title": "Woman cycling in Quebec City",
+   "description": "A young woman riding a bicycle across a road in a city.",
+   "author": "Wilfredor",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Woman_cycling_in_Quebec_City.jpg"
+  },
+  {
+   "file": "photo07.jpg",
+   "tags": [
+    "alimentation"
+   ],
+   "title": "Chef cooking Mysore masala dosa in Mysuru, July 2013",
+   "description": "A cook preparing dosas on a large hot plate in a busy kitchen.",
+   "author": "Sunnya343",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Chef_cooking_Mysore_masala_dosa_in_Mysuru,_July_2013.jpg"
+  },
+  {
+   "file": "photo08.jpg",
+   "tags": [
+    "travail"
+   ],
+   "title": "Fishermen are pulling a net full of fish in Galle",
+   "description": "Many fishermen pulling a net out of the sea on a beach.",
+   "author": "Gethmaperera",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fishermen_are_pulling_a_net_full_of_fish_in_Galle.jpg"
+  },
+  {
+   "file": "photo09.jpg",
+   "tags": [
+    "travail"
+   ],
+   "title": "Group of fishermen pulling the net out of the sea, Egypt 2017",
+   "description": "A group of fishermen pulling a heavy net and a cart on the shore.",
+   "author": "Adelbayoumi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Group_of_fishermen_pulling_the_net_out_of_the_sea,_Egypt_2017.jpg"
+  },
+  {
+   "file": "photo10.jpg",
+   "tags": [
+    "travail"
+   ],
+   "title": "Construction workers at a site on Södra Hamngatan, Gothenburg",
+   "description": "Construction workers in bright yellow clothes working on a city street next to a tram.",
+   "author": "W.carter",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Construction_workers_at_a_site_on_S%C3%B6dra_Hamngatan,_Gothenburg.jpg"
+  },
+  {
+   "file": "photo11.jpg",
+   "tags": [
+    "études"
+   ],
+   "title": "Children's reading in Public Library 03",
+   "description": "An adult and children reading books on a large cushion in a library.",
+   "author": "Ngostary2k",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Children%27s_reading_in_Public_Library_03.jpg"
+  },
+  {
+   "file": "photo12.jpg",
+   "tags": [
+    "voyage"
+   ],
+   "title": "People on a platform waiting for a train, Basel SBB train station, Basel, Switzerland julesvernex2",
+   "description": "People waiting on a train platform under a large station roof.",
+   "author": "Jules Verne Times Two",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:People_on_a_platform_waiting_for_a_train,_Basel_SBB_train_station,_Basel,_Switzerland_julesvernex2.jpg"
+  },
+  {
+   "file": "photo13.jpg",
+   "tags": [
+    "voyage"
+   ],
+   "title": "Passengers Waiting Train at Kaohsiung Metro Zuoying Station 20170812",
+   "description": "Passengers standing and waiting on a metro platform.",
+   "author": "玄史生",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Passengers_Waiting_Train_at_Kaohsiung_Metro_Zuoying_Station_20170812.jpg"
+  },
+  {
+   "file": "photo14.jpg",
+   "tags": [
+    "société"
+   ],
+   "title": "Dinagyang Festival Street Dance",
+   "description": "Dancers in colorful feathered costumes performing in a street festival.",
+   "author": "FroyR",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Dinagyang_Festival_Street_Dance.jpg"
+  },
+  {
+   "file": "photo15.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "Pattaya Beach, Thai street musicians, Street music, Thailand",
+   "description": "A group of street musicians playing and singing together outdoors.",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pattaya_Beach,_Thai_street_musicians,_Street_music,_Thailand.jpg"
+  },
+  {
+   "file": "photo16.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "Men in Paris park playing chess",
+   "description": "Two older men playing chess at a table in a park while others watch.",
+   "author": "zoetnet",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Men_in_Paris_park_playing_chess.jpg"
+  },
+  {
+   "file": "photo17.jpg",
+   "tags": [
+    "loisirs"
+   ],
+   "title": "People playing chess",
+   "description": "Two young men concentrating on a game of chess outdoors.",
+   "author": "Nokedlyy",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:People_playing_chess.jpg"
+  },
+  {
+   "file": "photo18.jpg",
+   "tags": [
+    "alimentation"
+   ],
+   "title": "Barista prepares espresso at coffee shop",
+   "description": "A barista preparing an espresso with a coffee machine.",
+   "author": "Shixart1985",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Barista_prepares_espresso_at_coffee_shop.jpg"
+  },
+  {
+   "file": "photo19.jpg",
+   "tags": [
+    "environnement"
+   ],
+   "title": "Volunteers carry trees to planting sites (37287300136)",
+   "description": "Volunteers carrying young plants in green bags along a path.",
+   "author": "USFWS/Southeast",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Volunteers_carry_trees_to_planting_sites_(37287300136).jpg"
+  },
+  {
+   "file": "photo20.jpg",
+   "tags": [
+    "environnement"
+   ],
+   "title": "Volunteers planting (55066598042)",
+   "description": "Volunteers in bright vests planting in a dry, rocky landscape.",
+   "author": "Joshua Tree National Park",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Volunteers_planting_(55066598042).jpg"
+  },
+  {
+   "file": "photo21.jpg",
+   "tags": [
+    "travail"
+   ],
+   "title": "Farmer harvesting rice, Kampung Rawa 2014-06-20",
+   "description": "A farmer wearing a hat harvesting rice in a large field.",
+   "author": "Crisco 1492",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Farmer_harvesting_rice,_Kampung_Rawa_2014-06-20.jpg"
+  },
+  {
+   "file": "photo22.jpg",
+   "tags": [
+    "alimentation"
+   ],
+   "title": "Farmers harvesting tomatoes",
+   "description": "Farmers sorting a large pile of fresh tomatoes on a tarp.",
+   "author": "Emmanuel Ssekaggo",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Farmers_harvesting_tomatoes.jpg"
+  },
+  {
+   "file": "photo23.jpg",
+   "tags": [
+    "ville"
+   ],
+   "title": "Delft Beestenmarkt People sitting outside of Cafe Belvedere",
+   "description": "People sitting at tables outside a café in a town square.",
+   "author": "Ymblanter",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Delft_Beestenmarkt_People_sitting_outside_of_Cafe_Belvedere.jpg"
+  }
+ ]
+}

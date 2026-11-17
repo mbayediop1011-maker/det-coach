@@ -1,0 +1,341 @@
+{
+ "_note": "Notation [préfixe|mot complet] : le préfixe est affiché, l'utilisateur tape les lettres manquantes. 6 phrases par séance, 20 s chacune.",
+ "items": [
+  {
+   "id": "fb001",
+   "tags": [
+    "travail"
+   ],
+   "text": "The police finally had a solid [le|lead] in the investigation after weeks of silence."
+  },
+  {
+   "id": "fb002",
+   "tags": [
+    "travail"
+   ],
+   "text": "The new manager will [gr|grill] every candidate about their previous experience."
+  },
+  {
+   "id": "fb003",
+   "tags": [
+    "voyage"
+   ],
+   "text": "We were running [l|low] on fuel, so we stopped at the first gas station we saw."
+  },
+  {
+   "id": "fb004",
+   "tags": [
+    "travail"
+   ],
+   "text": "She decided to [ta|table] the proposal until the next meeting, when everyone could attend."
+  },
+  {
+   "id": "fb005",
+   "tags": [
+    "argent"
+   ],
+   "text": "The company managed to [po|post] record profits despite the difficult economic climate."
+  },
+  {
+   "id": "fb006",
+   "tags": [
+    "société"
+   ],
+   "text": "The senator tried to [add|address] the concerns of voters during the televised debate."
+  },
+  {
+   "id": "fb007",
+   "tags": [
+    "études"
+   ],
+   "text": "His argument doesn't really [ho|hold] water once you look at the actual data."
+  },
+  {
+   "id": "fb008",
+   "tags": [
+    "travail"
+   ],
+   "text": "I'll [r|run] the numbers again before we present the budget to the board."
+  },
+  {
+   "id": "fb009",
+   "tags": [
+    "santé"
+   ],
+   "text": "The doctor said the medication might [up|upset] my stomach if I took it without food."
+  },
+  {
+   "id": "fb010",
+   "tags": [
+    "ville"
+   ],
+   "text": "Traffic was so heavy that we had to [ki|kill] an hour in a café near the station."
+  },
+  {
+   "id": "fb011",
+   "tags": [
+    "argent"
+   ],
+   "text": "Interest rates are expected to [cl|climb] steadily over the next two years."
+  },
+  {
+   "id": "fb012",
+   "tags": [
+    "technologie"
+   ],
+   "text": "Please [ba|back] up your files before installing the new version of the software."
+  },
+  {
+   "id": "fb013",
+   "tags": [
+    "loisirs"
+   ],
+   "text": "The film was so moving that it brought [te|tears] to my eyes in the final scene."
+  },
+  {
+   "id": "fb014",
+   "tags": [
+    "travail"
+   ],
+   "text": "The project fell [thr|through] when the main investor withdrew at the last minute."
+  },
+  {
+   "id": "fb015",
+   "tags": [
+    "société"
+   ],
+   "text": "Many citizens feel that the government has failed to [me|meet] their basic needs."
+  },
+  {
+   "id": "fb016",
+   "tags": [
+    "environnement"
+   ],
+   "text": "Rising temperatures [po|pose] a serious threat to coastal communities around the world."
+  },
+  {
+   "id": "fb017",
+   "tags": [
+    "études"
+   ],
+   "text": "The professor asked us to [dr|draw] a clear distinction between facts and opinions."
+  },
+  {
+   "id": "fb018",
+   "tags": [
+    "argent"
+   ],
+   "text": "They had to [fo|foot] the bill for the repairs because the warranty had expired."
+  },
+  {
+   "id": "fb019",
+   "tags": [
+    "santé"
+   ],
+   "text": "After the long illness, it took him months to fully [rec|recover] his strength."
+  },
+  {
+   "id": "fb020",
+   "tags": [
+    "travail"
+   ],
+   "text": "Our team will [spea|spearhead] the new marketing campaign starting next month."
+  },
+  {
+   "id": "fb021",
+   "tags": [
+    "voyage"
+   ],
+   "text": "The flight was delayed, so we had to [be|bear] with long queues at the airport."
+  },
+  {
+   "id": "fb022",
+   "tags": [
+    "alimentation"
+   ],
+   "text": "This soup is a little [bl|bland]; it could use more salt and pepper."
+  },
+  {
+   "id": "fb023",
+   "tags": [
+    "société"
+   ],
+   "text": "The new law has [spa|sparked] a fierce debate across the country."
+  },
+  {
+   "id": "fb024",
+   "tags": [
+    "technologie"
+   ],
+   "text": "The update should [f|fix] most of the bugs reported by users last week."
+  },
+  {
+   "id": "fb025",
+   "tags": [
+    "ville"
+   ],
+   "text": "The old factory has been [conv|converted] into apartments and a small art gallery."
+  },
+  {
+   "id": "fb026",
+   "tags": [
+    "argent"
+   ],
+   "text": "Small businesses were hit [ha|hard] by the sudden increase in energy prices."
+  },
+  {
+   "id": "fb027",
+   "tags": [
+    "études"
+   ],
+   "text": "She managed to [pi|pick] up a lot of Spanish during her semester in Madrid."
+  },
+  {
+   "id": "fb028",
+   "tags": [
+    "travail"
+   ],
+   "text": "He was [l|let] go after the company decided to close its regional office."
+  },
+  {
+   "id": "fb029",
+   "tags": [
+    "loisirs"
+   ],
+   "text": "The concert was a huge success, and the tickets sold [o|out] within an hour."
+  },
+  {
+   "id": "fb030",
+   "tags": [
+    "santé"
+   ],
+   "text": "Regular exercise can significantly [lo|lower] the risk of heart disease."
+  },
+  {
+   "id": "fb031",
+   "tags": [
+    "environnement"
+   ],
+   "text": "Many species are struggling to [ad|adapt] to their rapidly changing habitats."
+  },
+  {
+   "id": "fb032",
+   "tags": [
+    "société"
+   ],
+   "text": "The mayor promised to [tac|tackle] the housing shortage as a top priority."
+  },
+  {
+   "id": "fb033",
+   "tags": [
+    "travail"
+   ],
+   "text": "Could you [br|brief] the new staff members on our safety procedures?"
+  },
+  {
+   "id": "fb034",
+   "tags": [
+    "argent"
+   ],
+   "text": "The cost of living has [outp|outpaced] wage growth for several years in a row."
+  },
+  {
+   "id": "fb035",
+   "tags": [
+    "études"
+   ],
+   "text": "The results of the study [sh|shed] new light on how children learn languages."
+  },
+  {
+   "id": "fb036",
+   "tags": [
+    "voyage"
+   ],
+   "text": "We decided to [str|stretch] our legs after sitting on the bus for six hours."
+  },
+  {
+   "id": "fb037",
+   "tags": [
+    "technologie"
+   ],
+   "text": "Hackers managed to [bre|breach] the company's security system last night."
+  },
+  {
+   "id": "fb038",
+   "tags": [
+    "alimentation"
+   ],
+   "text": "The recipe calls for a [pi|pinch] of salt and two cups of flour."
+  },
+  {
+   "id": "fb039",
+   "tags": [
+    "ville"
+   ],
+   "text": "The neighborhood has [unde|undergone] major changes over the past decade."
+  },
+  {
+   "id": "fb040",
+   "tags": [
+    "société"
+   ],
+   "text": "Volunteers [ral|rallied] behind the campaign to save the local library."
+  },
+  {
+   "id": "fb041",
+   "tags": [
+    "travail"
+   ],
+   "text": "I need to [to|touch] base with the client before we finalize the contract."
+  },
+  {
+   "id": "fb042",
+   "tags": [
+    "santé"
+   ],
+   "text": "She has been [batt|battling] a bad cold for more than a week now."
+  },
+  {
+   "id": "fb043",
+   "tags": [
+    "argent"
+   ],
+   "text": "Investors were [wa|wary] of putting money into such an unstable market."
+  },
+  {
+   "id": "fb044",
+   "tags": [
+    "études"
+   ],
+   "text": "He [scr|scraped] through the exam with the lowest possible passing grade."
+  },
+  {
+   "id": "fb045",
+   "tags": [
+    "environnement"
+   ],
+   "text": "The factory was fined for [dum|dumping] chemicals into the river."
+  },
+  {
+   "id": "fb046",
+   "tags": [
+    "loisirs"
+   ],
+   "text": "My grandfather likes to [wh|while] away the afternoons reading in the garden."
+  },
+  {
+   "id": "fb047",
+   "tags": [
+    "travail"
+   ],
+   "text": "The proposal was [tur|turned] down because it was far too expensive."
+  },
+  {
+   "id": "fb048",
+   "tags": [
+    "société"
+   ],
+   "text": "Critics argue that the reform does not go [f|far] enough to protect workers."
+  }
+ ]
+}

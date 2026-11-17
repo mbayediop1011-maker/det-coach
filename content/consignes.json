@@ -1,0 +1,91 @@
+{
+  "read-and-select": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "fill-in-the-blanks": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "read-and-complete": {
+    "format": "Un passage de 70 à 100 mots dont un mot sur deux est amputé. 3 minutes.",
+    "mesure": "Pas ton vocabulaire : ta capacité à prédire le mot à partir du sens de la phrase.",
+    "methode": [
+      "Deux passes. Première passe, 90 secondes : tu ne remplis que ce qui vient en moins de 3 secondes.",
+      "Deuxième passe, 90 secondes : tu reprends les cases restantes, les plus courtes d'abord.",
+      "Un mot facile et un mot difficile valent un point chacun.",
+      "Une case = une lettre. Si le compte ne tombe pas juste, le mot est faux."
+    ],
+    "piege": "Tu laisses des mots faciles vides en fin de texte parce que tu t'es attardé sur un mot dur au début."
+  },
+  "interactive-reading": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "listen-and-type": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "interactive-listening": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "dictee-longue": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "write-about-the-photo": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "interactive-writing": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "writing-sample": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "speak-about-the-photo": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "read-then-speak": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "interactive-speaking": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  },
+  "speaking-sample": {
+    "format": "",
+    "mesure": "",
+    "methode": [],
+    "piege": ""
+  }
+}

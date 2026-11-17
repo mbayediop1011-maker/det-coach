@@ -1,0 +1,213 @@
+{
+ "_note": "Interactive Speaking : 2 thèmes par séance, 3 à 4 questions chacun, posées à l'oral (entendues une seule fois), 35 s par réponse. Guide 2026 §4.6.",
+ "items": [
+  {
+   "id": "is001",
+   "tags": [
+    "travail"
+   ],
+   "topic": "Your work",
+   "questions": [
+    "What do you do for a living, or what would you like to do?",
+    "What do you enjoy most about this kind of work?",
+    "How do you think this job will change in the future?",
+    "What advice would you give someone who wants to do the same job?"
+   ]
+  },
+  {
+   "id": "is002",
+   "tags": [
+    "études"
+   ],
+   "topic": "Studying",
+   "questions": [
+    "What are you studying at the moment, or what did you study?",
+    "How do you usually organize your study time?",
+    "What is the hardest part of learning something new for you?",
+    "Do you think exams are a good way to measure what students know? Why?"
+   ]
+  },
+  {
+   "id": "is003",
+   "tags": [
+    "voyage"
+   ],
+   "topic": "Travel",
+   "questions": [
+    "Where did you go on your last holiday?",
+    "What do you usually do first when you arrive in a new place?",
+    "Do you prefer to plan everything in advance or to improvise? Why?",
+    "How has travelling changed the way you see your own country?"
+   ]
+  },
+  {
+   "id": "is004",
+   "tags": [
+    "technologie"
+   ],
+   "topic": "Technology",
+   "questions": [
+    "Which device do you use the most in your daily life?",
+    "What did you use it for yesterday?",
+    "Do you think you spend too much time on screens? Why or why not?",
+    "Should schools teach students how to use technology responsibly?"
+   ]
+  },
+  {
+   "id": "is005",
+   "tags": [
+    "ville"
+   ],
+   "topic": "Your hometown",
+   "questions": [
+    "Where did you grow up?",
+    "What is your favorite place there, and why?",
+    "How has your hometown changed since you were a child?",
+    "Would you like to live there in the future? Explain."
+   ]
+  },
+  {
+   "id": "is006",
+   "tags": [
+    "santé"
+   ],
+   "topic": "Health and sport",
+   "questions": [
+    "What do you do to stay in shape?",
+    "How often do you exercise during a typical week?",
+    "Why do you think many people stop exercising after a few weeks?",
+    "Should companies give employees time to exercise during the day?"
+   ]
+  },
+  {
+   "id": "is007",
+   "tags": [
+    "alimentation"
+   ],
+   "topic": "Food",
+   "questions": [
+    "What did you eat for dinner yesterday?",
+    "Do you enjoy cooking? Why or why not?",
+    "How are your eating habits different from your parents' habits?",
+    "Do you think people should eat less meat? Explain your view."
+   ]
+  },
+  {
+   "id": "is008",
+   "tags": [
+    "loisirs"
+   ],
+   "topic": "Free time",
+   "questions": [
+    "What do you like to do on weekends?",
+    "When did you start this activity?",
+    "Do you prefer spending your free time alone or with others? Why?",
+    "Do people today have enough free time? Explain."
+   ]
+  },
+  {
+   "id": "is009",
+   "tags": [
+    "argent"
+   ],
+   "topic": "Money",
+   "questions": [
+    "Do you usually plan how you spend your money?",
+    "What was the last thing you bought that you really needed?",
+    "Is it easy for young people to save money today? Why?",
+    "Should people use cash less often? Explain your opinion."
+   ]
+  },
+  {
+   "id": "is010",
+   "tags": [
+    "environnement"
+   ],
+   "topic": "The environment",
+   "questions": [
+    "What do you do at home to reduce waste?",
+    "Is recycling easy where you live?",
+    "Who has more responsibility for the environment: individuals or companies?",
+    "What will be the biggest environmental challenge in twenty years?"
+   ]
+  },
+  {
+   "id": "is011",
+   "tags": [
+    "société"
+   ],
+   "topic": "Friendship",
+   "questions": [
+    "How did you meet your best friend?",
+    "What do you usually do together?",
+    "What makes someone a good friend, in your opinion?",
+    "Is it harder to make friends as an adult? Why?"
+   ]
+  },
+  {
+   "id": "is012",
+   "tags": [
+    "loisirs"
+   ],
+   "topic": "Music",
+   "questions": [
+    "What kind of music do you listen to?",
+    "When do you usually listen to music?",
+    "Have your musical tastes changed over the years? How?",
+    "Should music be a compulsory subject at school? Why?"
+   ]
+  },
+  {
+   "id": "is013",
+   "tags": [
+    "études"
+   ],
+   "topic": "Languages",
+   "questions": [
+    "Why are you learning English?",
+    "How long have you been studying it?",
+    "What is the most difficult part of English for you?",
+    "Will people still need to learn languages in the future, with translation apps? Explain."
+   ]
+  },
+  {
+   "id": "is014",
+   "tags": [
+    "travail"
+   ],
+   "topic": "Teamwork",
+   "questions": [
+    "Do you prefer working alone or in a team?",
+    "Describe a team project you took part in.",
+    "What problems often happen in teams, and how can they be solved?",
+    "Should schools give more group projects? Why or why not?"
+   ]
+  },
+  {
+   "id": "is015",
+   "tags": [
+    "voyage"
+   ],
+   "topic": "Transport",
+   "questions": [
+    "How do you usually get to work or school?",
+    "How long does the journey take?",
+    "What would improve public transport where you live?",
+    "Will self-driving cars be common in the future? Explain."
+   ]
+  },
+  {
+   "id": "is016",
+   "tags": [
+    "société"
+   ],
+   "topic": "Celebrations",
+   "questions": [
+    "What is your favorite holiday or celebration?",
+    "How did you celebrate it last time?",
+    "How have celebrations changed in your family over time?",
+    "Are traditional celebrations becoming too commercial? Explain."
+   ]
+  }
+ ]
+}

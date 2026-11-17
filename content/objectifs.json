@@ -1,0 +1,72 @@
+{
+  "read-and-select": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "fill-in-the-blanks": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "read-and-complete": {
+    "metrique": "sur 23",
+    "objectif": 18,
+    "actuel": 9
+  },
+  "interactive-reading": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "listen-and-type": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "interactive-listening": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "dictee-longue": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "write-about-the-photo": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "interactive-writing": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "writing-sample": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "speak-about-the-photo": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "read-then-speak": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "interactive-speaking": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  },
+  "speaking-sample": {
+    "metrique": "",
+    "objectif": null,
+    "actuel": null
+  }
+}
