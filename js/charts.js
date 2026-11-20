@@ -1,7 +1,7 @@
 // Courbes simples en SVG (aucune bibliothèque) avec ligne d'objectif.
 import { fmtNum } from './ui.js';
 
-export function lineChart({ series, objective = null, unit = '', height = 220, yMin = null, yMax = null }) {
+export function lineChart({ series, objective = null, objectiveLabel = 'objectif', unit = '', height = 220, yMin = null, yMax = null }) {
   const W = 640, H = height, padL = 44, padR = 16, padT = 16, padB = 34;
   const pts = series.flatMap(s => s.points);
   if (!pts.length) return `<p class="muted">Pas encore de données.</p>`;
@@ -25,7 +25,7 @@ export function lineChart({ series, objective = null, unit = '', height = 220, y
   // Objectif
   if (objective != null) {
     svg += `<line x1="${padL}" x2="${W - padR}" y1="${Y(objective)}" y2="${Y(objective)}" stroke="#fbbf24" stroke-width="2" stroke-dasharray="7 6"/>`;
-    svg += `<text x="${W - padR}" y="${Y(objective) - 6}" text-anchor="end" font-size="12" font-weight="700" fill="#fbbf24">objectif ${fmtNum(objective, objective % 1 ? 1 : 0)}${unit}</text>`;
+    svg += `<text x="${W - padR}" y="${Y(objective) - 6}" text-anchor="end" font-size="12" font-weight="700" fill="#fbbf24">${objectiveLabel} ${fmtNum(objective, objective % 1 ? 1 : 0)}${unit}</text>`;
   }
   for (const s of series) {
     const p = s.points;

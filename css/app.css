@@ -129,6 +129,16 @@ button.mini-card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,
 .brief-actions{position:sticky;bottom:0;padding:16px 0 calc(8px + env(safe-area-inset-bottom));margin-top:18px;background:linear-gradient(transparent,var(--bg) 35%);display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .brief-actions .btn.go{flex:1;min-width:220px}
 
+/* Niveaux de la dictée */
+.level-panel{padding:16px 18px;border-radius:18px;margin-bottom:12px;background:linear-gradient(135deg,rgba(250,204,21,.16),rgba(251,146,60,.12));border:1px solid rgba(250,204,21,.35)}
+.lvl-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.lvl-step{padding:10px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid var(--line);display:flex;flex-direction:column;font-size:13px;color:var(--muted)}
+.lvl-step b{font-size:15px;color:var(--text)}
+.lvl-step.done{opacity:.6}
+.lvl-step.done b::after{content:" ✓";color:var(--ok)}
+.lvl-step.on{background:linear-gradient(135deg,var(--extra1),var(--extra2));color:#2a1500;border-color:transparent}
+.lvl-step.on b{color:#2a1500}
+
 /* Écran d'exercice */
 .ex{max-width:900px;margin:0 auto}
 .ex-top{display:flex;align-items:center;gap:14px;margin-bottom:16px}

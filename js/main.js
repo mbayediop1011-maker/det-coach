@@ -10,6 +10,7 @@ import { Recorder, analyzeSpeech, vuMeter, micSupported, releaseMic, getThreshol
 import { speak, cancelSpeech, pickVoices, voicesReady, getRate, setRate, ttsSupported, srSupported, unlockSpeech } from './speech.js';
 import { getAudioCtx } from './audio.js';
 import { runExam } from './exam.js';
+import { dicteeLevel, itemLevel, criterionText, rangeText, LEVEL_UP_PCT } from './levels.js';
 
 const app = document.getElementById('app');
 let keyHandlers = {};
@@ -119,7 +120,7 @@ async function homeView() {
     const grid = h('div', { class: 'grid' });
     for (const ex of list) {
       const card = h('button', { class: 'card ' + (ex.extra ? SKILLS.extra.cls : meta.cls), onclick: () => openExercise(ex.id) },
-        h('span', { class: 'chip' }, ex.extra ? 'hors test · ' + ex.time : ex.time),
+        h('span', { class: 'chip', 'data-chip': ex.id }, ex.extra ? 'hors test · ' + ex.time : ex.time),
         h('span', { class: 'ico', html: icon(ex.icon) }),
         h('span', { class: 'name' }, ex.name),
         h('span', { class: 'fr' }, ex.fr),
@@ -136,9 +137,17 @@ async function homeView() {
   // Compteurs « items vus sur N » (asynchrones pour ne pas retarder l'affichage).
   for (const ex of EXERCISES) {
     loadItems(ex).then(async items => {
+      let prefix = '';
+      if (ex.id === 'dictee-longue') {
+        const L = await dicteeLevel();
+        items = items.filter(it => itemLevel(it) === L.level);
+        prefix = `Niv. ${L.level} · `;
+        const chip = view.querySelector(`[data-chip="${ex.id}"]`);
+        if (chip) chip.textContent = `hors test · niveau ${L.level}/3`;
+      }
       const n = await seenCount(ex.id, items);
       const el = view.querySelector(`[data-seen="${ex.id}"]`);
-      if (el) el.textContent = `${n} vus sur ${items.length}`;
+      if (el) el.textContent = `${prefix}${n} vus sur ${items.length}`;
     }).catch(() => {
       const el = view.querySelector(`[data-seen="${ex.id}"]`);
       if (el) el.textContent = 'contenu introuvable';
@@ -212,6 +221,7 @@ async function briefView(id) {
   const view = h('section', { class: 'brief ' + SKILLS[ex.skill].cls },
     h('div', { class: 'brief-head' }, h('div', { class: 'ico', html: icon(ex.icon) }),
       h('div', {}, h('div', { class: 'muted small', style: { fontWeight: 800 } }, SKILLS[ex.skill].name + ' · ' + ex.time), h('h1', {}, ex.name))),
+    id === 'dictee-longue' ? await levelPanel() : null,
     h('div', { class: 'blocks' },
       ...([c.format, c.mesure, c.methode, c.piege].some(hasText)
         ? [block('1 · Ce que c’est', c.format),
@@ -225,6 +235,16 @@ async function briefView(id) {
       h('button', { class: 'btn ghost', 'data-nav': 'home' }, 'Retour')));
   mount(view);
   setKeys({ Enter: () => go('run/' + id), Escape: () => go('home'), forceEnter: true });
+}
+
+async function levelPanel() {
+  const L = await dicteeLevel();
+  const steps = [1, 2, 3].map(k => h('div', { class: 'lvl-step' + (k < L.level ? ' done' : k === L.level ? ' on' : '') },
+    h('b', {}, `Niveau ${k}`), h('span', {}, rangeText(k))));
+  return h('div', { class: 'level-panel' },
+    h('div', { class: 'lvl-steps' }, steps),
+    h('p', { style: { margin: '10px 0 0', fontWeight: 700 } }, `Tu es au niveau ${L.level} : phrases de ${rangeText(L.level)}.`),
+    h('p', { class: 'muted', style: { margin: '4px 0 0' } }, criterionText(L) + (L.lastPct != null && !L.max ? ` Dernière séance à ce niveau : ${fmtNum(L.lastPct, 1)} %.` : '')));
 }
 
 // ---------- Lancement d'un exercice ----------
@@ -263,7 +283,12 @@ function makeCtx(ex, body, progress, { exam = false, tryQuit }) {
 }
 
 export async function runOne(ex, { exam = false, count = null, onQuit = null, tryQuitOverride = null } = {}) {
-  const items = await loadItems(ex);
+  let items = await loadItems(ex);
+  const meta = {};
+  if (ex.id === 'dictee-longue') {
+    meta.level = await dicteeLevel();
+    items = items.filter(it => itemLevel(it) === meta.level.level);
+  }
   const n = count || ex.perRun;
   const picked = await pickItems(ex.id, items, n);
   if (!picked.length) throw new Error('Aucun item disponible pour ' + ex.name);
@@ -272,6 +297,7 @@ export async function runOne(ex, { exam = false, count = null, onQuit = null, tr
   const { shell, body, progress, tryQuit } = exerciseShell(ex, { onQuit });
   mount(shell, { exercise: true });
   const ctx = makeCtx(ex, body, progress, { exam, tryQuit: tryQuitOverride || tryQuit });
+  ctx.meta = meta;
   ctx.setKeys({});
   const t0 = Date.now();
   const res = await mod.run(ctx, picked);
@@ -419,6 +445,11 @@ async function historyView(filter) {
   if (current === 'dictee-longue') {
     charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Score au premier passage et au deuxième (sur 10)'),
       h('div', { html: lineChart({ series: [{ name: '1er passage', color: '#facc15', points: pts('firstPass') }, { name: '2e passage', color: '#fb923c', points: pts('secondPass') }], objective: o ? o.objectif : null, yMin: 0, yMax: 10 }) })));
+    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Position du décrochage — part moyenne de la phrase tenue au 1er passage (%)'),
+      h('div', { html: lineChart({ series: [{ name: 'phrase tenue', color: '#22d3ee', points: pts('keptPct1') }], yMin: 0, yMax: 100, unit: ' %' }) })));
+    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Mots justes et taux d’omission au 1er passage (%)'),
+      h('div', { html: lineChart({ series: [{ name: 'mots justes', color: '#a3e635', points: pts('firstWordsPct') }, { name: 'taux d’omission', color: '#fb7185', points: pts('omissionRate1') }], objective: LEVEL_UP_PCT, objectiveLabel: 'seuil de niveau', yMin: 0, yMax: 100, unit: ' %' }) }),
+      h('p', { class: 'small muted' }, `Ligne pointillée : ${LEVEL_UP_PCT} % de mots justes, le seuil pour monter de niveau.`)));
   } else {
     charts.append(h('div', { class: 'chart-card' }, h('h3', {}, `${ex.name} — ${(o && o.metrique) || ex.metric}`),
       h('div', { html: lineChart({ series: [{ name: ex.metric, color: 'var(--c1)', points: pts(null) }], objective: o ? o.objectif : null, unit: '' }) })));

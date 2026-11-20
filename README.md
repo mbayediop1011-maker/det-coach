@@ -24,7 +24,7 @@ Les durées suivent le guide officiel *Duolingo English Test — Scoring Guide f
 | Interactive Reading | 5 tâches enchaînées, 7 min (8 min si 7 trous ou plus) |
 | Listen and Type | 5 phrases, 3 écoutes maximum, 1 min chacune |
 | Interactive Listening | Listen and Complete + Listen and Respond (6 min 30), puis résumé (75 s, chrono séparé) |
-| Dictée longue *(hors test)* | 10 phrases, exactement 2 écoutes imposées, score du 1er passage séparé |
+| Dictée longue *(hors test)* | 10 phrases, exactement 2 écoutes imposées, score du 1er passage séparé. Trois niveaux de longueur (voir plus bas) |
 | Write About the Photo | 3 photos, 1 min chacune |
 | Interactive Writing | jusqu'à 30 s de lecture, 5 min, puis relance en 3 min |
 | Writing Sample | jusqu'à 30 s, puis 5 min |
@@ -119,6 +119,16 @@ Déposer l'image dans `content/photos/` et ajouter une ligne dans `content/photo
 ### Après une modification
 
 Lancer `python3 tools/build-sw.py` pour mettre à jour la liste des fichiers disponibles hors ligne, puis publier.
+
+## La dictée longue : niveaux et mesures
+
+**Niveaux de longueur.** Niveau 1 = phrases de 6 à 8 mots, niveau 2 = 9 à 11, niveau 3 = 12 à 16 (mots comptés tels qu'écrits). On commence au niveau 1 et on monte d'un niveau après une séance entière à **80 % de mots justes au premier passage** ou plus. Le niveau se recalcule à partir de l'historique ; il s'affiche sur la carte d'accueil, sur l'écran de consignes avec le critère pour monter, et dans le rapport. Réglages dans `js/levels.js`.
+
+**Règles de correction** (communes à la dictée et à Listen and Type) :
+- Une contraction et sa forme développée sont équivalentes : *there's / there is, I'm / I am, she's / she is (ou she has), don't / do not*… Ce n'est ni une faute de mot, ni une faute de frontière.
+- **Erreur de découpage** : comptée seulement là où quelque chose est écrit des deux côtés de la frontière. Exemples : *pickedit* pour *picked it*, *setup* pour *set up*, *re port* pour *report*, et les formes réduites écrites en un mot (*wanna, gonna, lotta*…).
+- **Taux d'omission** : mots attendus absents de la réponse, divisés par le nombre de mots attendus. Un mot omis n'est pas une erreur de découpage.
+- **Position du décrochage** : rang, dans la phrase, du dernier mot juste avant la première série de 2 mots attendus perdus d'affilée (omis ou remplacés par un mot sans rapport). Une faute d'orthographe proche ou un collage ne fait pas décrocher. Pour chaque séance : nombre de phrases qui décrochent, rang moyen, et part moyenne de la phrase tenue (une phrase qui ne décroche pas compte pour 100 %). Le seuil de 2 mots est `COLLAPSE_RUN` dans `js/compare.js`.
 
 ## Ce que l'application mesure, et ce qu'elle ne fait pas
 

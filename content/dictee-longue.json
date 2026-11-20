@@ -1,5 +1,5 @@
 {
- "_note": "Dictée longue (hors test officiel). Dix phrases par séance, deux écoutes imposées. Chaque phrase contient au moins un enchaînement naturel ; le champ features les décrit (affiché seulement après validation).",
+ "_note": "Dictée longue (hors test officiel). Dix phrases par séance, deux écoutes imposées. Le niveau dépend de la longueur de la phrase (nombre de mots écrits) : niveau 1 = 6 à 8 mots, niveau 2 = 9 à 11, niveau 3 = 12 à 16. Chaque phrase contient au moins un enchaînement naturel ; le champ features les décrit (affiché seulement après validation).",
  "items": [
   {
    "id": "dl001",
@@ -880,6 +880,678 @@
    ],
    "sentence": "If it doesn't rain soon, the farmers are going to lose their crops.",
    "features": "if it doesn't ; going to → gonna"
+  },
+  {
+   "id": "dl111",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "I want to leave a bit early.",
+   "features": "want to → wanna ; a bit (t battu)"
+  },
+  {
+   "id": "dl112",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "We're going to need more time.",
+   "features": "going to → gonna"
+  },
+  {
+   "id": "dl113",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "Can you send it to me?",
+   "features": "send it to (liaison)"
+  },
+  {
+   "id": "dl114",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "She picked it up this morning.",
+   "features": "picked it up (liaisons)"
+  },
+  {
+   "id": "dl115",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "I've got to call him back.",
+   "features": "got to → gotta ; call him (h muet)"
+  },
+  {
+   "id": "dl116",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "Put it on my desk, please.",
+   "features": "put it on (t battu + liaison)"
+  },
+  {
+   "id": "dl117",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "Let me know what you think.",
+   "features": "let me → lemme ; what you → whatcha"
+  },
+  {
+   "id": "dl118",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "He had to work all weekend.",
+   "features": "had to → hafta ; work all (liaison)"
+  },
+  {
+   "id": "dl119",
+   "tags": [
+    "études"
+   ],
+   "sentence": "I don't know what it means.",
+   "features": "don't know → dunno ; what it (t battu)"
+  },
+  {
+   "id": "dl120",
+   "tags": [
+    "études"
+   ],
+   "sentence": "Look it up in the dictionary.",
+   "features": "look it up (liaisons)"
+  },
+  {
+   "id": "dl121",
+   "tags": [
+    "études"
+   ],
+   "sentence": "We had a lot of homework.",
+   "features": "a lot of (t battu)"
+  },
+  {
+   "id": "dl122",
+   "tags": [
+    "études"
+   ],
+   "sentence": "Can you read it out loud?",
+   "features": "read it out (liaisons + t battu)"
+  },
+  {
+   "id": "dl123",
+   "tags": [
+    "études"
+   ],
+   "sentence": "I'm going to study a bit tonight.",
+   "features": "going to → gonna"
+  },
+  {
+   "id": "dl124",
+   "tags": [
+    "études"
+   ],
+   "sentence": "She got a better grade than me.",
+   "features": "got a (t battu) ; better (t battu)"
+  },
+  {
+   "id": "dl125",
+   "tags": [
+    "études"
+   ],
+   "sentence": "You have to turn it in Friday.",
+   "features": "turn it in (liaisons)"
+  },
+  {
+   "id": "dl126",
+   "tags": [
+    "études"
+   ],
+   "sentence": "I kind of get it now.",
+   "features": "kind of → kinda ; get it (t battu)"
+  },
+  {
+   "id": "dl127",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "We missed the last bus last night.",
+   "features": "missed the ; last bus"
+  },
+  {
+   "id": "dl128",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Did you pack an umbrella for tomorrow?",
+   "features": "did you → didja ; pack an umbrella (liaisons)"
+  },
+  {
+   "id": "dl129",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Let's check out at about eleven.",
+   "features": "check out at eleven (liaisons + t battu)"
+  },
+  {
+   "id": "dl130",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "I want to get away soon.",
+   "features": "want to → wanna ; get away (t battu)"
+  },
+  {
+   "id": "dl131",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Put the bags in the car.",
+   "features": "put the ; bags in (liaison)"
+  },
+  {
+   "id": "dl132",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "We ran out of gas on the highway.",
+   "features": "ran out of (liaisons)"
+  },
+  {
+   "id": "dl133",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "The hotel is a little far.",
+   "features": "little (t battu) ; is a (liaison)"
+  },
+  {
+   "id": "dl134",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Get off at the next stop.",
+   "features": "get off at (t battu + liaisons)"
+  },
+  {
+   "id": "dl135",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "I need to lie down for a while.",
+   "features": "need to"
+  },
+  {
+   "id": "dl136",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "You ought to drink more water.",
+   "features": "ought to → oughta ; water (t battu)"
+  },
+  {
+   "id": "dl137",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "He's feeling a lot better this week.",
+   "features": "a lot (t battu) ; better (t battu)"
+  },
+  {
+   "id": "dl138",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "Try to take it easy this week.",
+   "features": "take it easy (liaisons)"
+  },
+  {
+   "id": "dl139",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "I have to get up early.",
+   "features": "have to → hafta ; get up (t battu)"
+  },
+  {
+   "id": "dl140",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "She gave up sugar last year.",
+   "features": "gave up (liaison)"
+  },
+  {
+   "id": "dl141",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "Eat a bit of fruit every day.",
+   "features": "eat a bit of (t battu)"
+  },
+  {
+   "id": "dl142",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "What are you taking for it?",
+   "features": "what are (t battu) ; for it"
+  },
+  {
+   "id": "dl143",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Turn it off and on again.",
+   "features": "turn it off and on again (liaisons)"
+  },
+  {
+   "id": "dl144",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Just plug it in over there.",
+   "features": "plug it in (liaisons)"
+  },
+  {
+   "id": "dl145",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "I'm going to restart it right now.",
+   "features": "going to → gonna ; restart it (t battu)"
+  },
+  {
+   "id": "dl146",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Did you set up the printer?",
+   "features": "did you → didja ; set up (t battu)"
+  },
+  {
+   "id": "dl147",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "The battery is about to die.",
+   "features": "about to (t battu)"
+  },
+  {
+   "id": "dl148",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Can you figure it out on your own?",
+   "features": "figure it out (liaisons + t battu)"
+  },
+  {
+   "id": "dl149",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "There's a lot of traffic today.",
+   "features": "there's a (liaison) ; a lot of (t battu)"
+  },
+  {
+   "id": "dl150",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Turn left at the next light.",
+   "features": "left at the (liaison)"
+  },
+  {
+   "id": "dl151",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Let's eat at that café on the corner.",
+   "features": "eat at (t battu) ; that café"
+  },
+  {
+   "id": "dl152",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "They tore it down last year.",
+   "features": "tore it down (liaison)"
+  },
+  {
+   "id": "dl153",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "It's only a matter of minutes.",
+   "features": "matter of (t battu)"
+  },
+  {
+   "id": "dl154",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Walk around and look at it.",
+   "features": "walk around (liaison) ; look at it (liaisons + t battu)"
+  },
+  {
+   "id": "dl155",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "I can't afford it right now.",
+   "features": "afford it (liaison) ; right now"
+  },
+  {
+   "id": "dl156",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "Try to put a little money aside.",
+   "features": "put a (t battu) ; little (t battu)"
+  },
+  {
+   "id": "dl157",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "He paid it off in a year.",
+   "features": "paid it off (liaisons)"
+  },
+  {
+   "id": "dl158",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "It's worth a lot of money.",
+   "features": "worth a ; a lot of (t battu)"
+  },
+  {
+   "id": "dl159",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "We ended up spending a lot more.",
+   "features": "ended up (liaison)"
+  },
+  {
+   "id": "dl160",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Heat it up for a minute.",
+   "features": "heat it up (t battu + liaisons)"
+  },
+  {
+   "id": "dl161",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "I'll pick some up on my way.",
+   "features": "pick some up ; later (t battu)"
+  },
+  {
+   "id": "dl162",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Get a bottle of water for me.",
+   "features": "get a (t battu) ; bottle of"
+  },
+  {
+   "id": "dl163",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Do you want to order a pizza?",
+   "features": "want to → wanna ; order a (liaison)"
+  },
+  {
+   "id": "dl164",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Cut it into small pieces first.",
+   "features": "cut it into (t battu + liaisons)"
+  },
+  {
+   "id": "dl165",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "I used to play tennis on Sundays.",
+   "features": "used to → useta"
+  },
+  {
+   "id": "dl166",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "Let's meet at eight in the lobby.",
+   "features": "meet at eight (t battu + liaison)"
+  },
+  {
+   "id": "dl167",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "She's going to sign up next week.",
+   "features": "going to → gonna ; sign up (liaison)"
+  },
+  {
+   "id": "dl168",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "We could go out for dinner tonight.",
+   "features": "go out (liaison)"
+  },
+  {
+   "id": "dl169",
+   "tags": [
+    "société"
+   ],
+   "sentence": "A lot of people agree with you.",
+   "features": "a lot of (t battu)"
+  },
+  {
+   "id": "dl170",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "Turn off the lights when you leave.",
+   "features": "turn off the (liaison)"
+  },
+  {
+   "id": "dl171",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "I want to talk about it before the meeting.",
+   "features": "want to → wanna ; talk about it (liaisons)"
+  },
+  {
+   "id": "dl172",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "We're going to send it out to everyone on Monday.",
+   "features": "going to → gonna ; send it out (liaisons)"
+  },
+  {
+   "id": "dl173",
+   "tags": [
+    "travail"
+   ],
+   "sentence": "He put all of the files on a USB key.",
+   "features": "put all of (t battu + liaisons)"
+  },
+  {
+   "id": "dl174",
+   "tags": [
+    "études"
+   ],
+   "sentence": "What are you going to write about this time?",
+   "features": "what are (t battu) ; going to → gonna ; write about"
+  },
+  {
+   "id": "dl175",
+   "tags": [
+    "études"
+   ],
+   "sentence": "I had to read it again to understand it.",
+   "features": "had to → hafta ; read it again (liaisons)"
+  },
+  {
+   "id": "dl176",
+   "tags": [
+    "études"
+   ],
+   "sentence": "She looked it up but couldn't find an answer.",
+   "features": "looked it up (liaisons) ; find an answer"
+  },
+  {
+   "id": "dl177",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "We got off the train at the wrong station.",
+   "features": "got off (t battu + liaison)"
+  },
+  {
+   "id": "dl178",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "Do you want to get a taxi or walk?",
+   "features": "want to → wanna ; get a (t battu)"
+  },
+  {
+   "id": "dl179",
+   "tags": [
+    "voyage"
+   ],
+   "sentence": "I think I left it at the hotel this morning.",
+   "features": "left it at the (liaisons + t battu)"
+  },
+  {
+   "id": "dl180",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "You really need to get a lot more sleep at night.",
+   "features": "get a lot (t battu)"
+  },
+  {
+   "id": "dl181",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "I'm going to take it easy at home this weekend.",
+   "features": "going to → gonna ; take it easy (liaisons)"
+  },
+  {
+   "id": "dl182",
+   "tags": [
+    "santé"
+   ],
+   "sentence": "She hurt her arm while she was cycling to work.",
+   "features": "hurt her arm (t battu + liaison)"
+  },
+  {
+   "id": "dl183",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Did you remember to back up all your files?",
+   "features": "did you → didja ; back up all (liaisons)"
+  },
+  {
+   "id": "dl184",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "I can't get it to work on my laptop.",
+   "features": "get it to (t battu) ; work on"
+  },
+  {
+   "id": "dl185",
+   "tags": [
+    "technologie"
+   ],
+   "sentence": "Hold on a second, I need to charge it first.",
+   "features": "hold on (liaison) ; charge it"
+  },
+  {
+   "id": "dl186",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "There isn't a lot of parking around here at night.",
+   "features": "isn't a (liaison) ; a lot of (t battu) ; around here"
+  },
+  {
+   "id": "dl187",
+   "tags": [
+    "ville"
+   ],
+   "sentence": "Let's get out of the city for a day this weekend.",
+   "features": "get out of (t battu + liaisons) ; city (t battu)"
+  },
+  {
+   "id": "dl188",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "I'd better put a little money aside every month.",
+   "features": "better (t battu) ; put a little (t battu)"
+  },
+  {
+   "id": "dl189",
+   "tags": [
+    "argent"
+   ],
+   "sentence": "We ran out of cash at the end of the trip.",
+   "features": "ran out of (liaisons) ; end of the"
+  },
+  {
+   "id": "dl190",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "Could you pass me a bottle of water from the fridge?",
+   "features": "bottle of ; water (t battu)"
+  },
+  {
+   "id": "dl191",
+   "tags": [
+    "alimentation"
+   ],
+   "sentence": "I want to try out that new restaurant near the station.",
+   "features": "want to → wanna ; try out (liaison) ; that new"
+  },
+  {
+   "id": "dl192",
+   "tags": [
+    "loisirs"
+   ],
+   "sentence": "We used to go out a lot on Fridays.",
+   "features": "used to → useta ; go out a lot (liaisons + t battu)"
+  },
+  {
+   "id": "dl193",
+   "tags": [
+    "société"
+   ],
+   "sentence": "Most of us want to help out in some way.",
+   "features": "most of us (liaisons) ; want to → wanna ; help out"
+  },
+  {
+   "id": "dl194",
+   "tags": [
+    "environnement"
+   ],
+   "sentence": "We picked up all the trash on the beach.",
+   "features": "picked up all (liaisons)"
   }
  ]
 }
