@@ -443,13 +443,12 @@ async function historyView(filter) {
   const pts = key => list.filter(s => (key ? s.data && s.data[key] != null : s.primary != null)).map(s => ({ x: new Date(s.date).getTime(), y: key ? s.data[key] : s.primary }));
   const charts = h('div', { class: SKILLS[ex.skill].cls });
   if (current === 'dictee-longue') {
-    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Score au premier passage et au deuxième (sur 10)'),
-      h('div', { html: lineChart({ series: [{ name: '1er passage', color: '#facc15', points: pts('firstPass') }, { name: '2e passage', color: '#fb923c', points: pts('secondPass') }], objective: o ? o.objectif : null, yMin: 0, yMax: 10 }) })));
+    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Mots justes au premier et au deuxième passage (%)'),
+      h('div', { html: lineChart({ series: [{ name: '1er passage', color: '#facc15', points: pts('firstWordsPct') }, { name: '2e passage', color: '#fb923c', points: pts('secondWordsPct') }], objective: o ? o.objectif : LEVEL_UP_PCT, objectiveLabel: 'objectif et seuil de niveau', yMin: 0, yMax: 100, unit: ' %' }) })));
     charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Position du décrochage — part moyenne de la phrase tenue au 1er passage (%)'),
       h('div', { html: lineChart({ series: [{ name: 'phrase tenue', color: '#22d3ee', points: pts('keptPct1') }], yMin: 0, yMax: 100, unit: ' %' }) })));
-    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Mots justes et taux d’omission au 1er passage (%)'),
-      h('div', { html: lineChart({ series: [{ name: 'mots justes', color: '#a3e635', points: pts('firstWordsPct') }, { name: 'taux d’omission', color: '#fb7185', points: pts('omissionRate1') }], objective: LEVEL_UP_PCT, objectiveLabel: 'seuil de niveau', yMin: 0, yMax: 100, unit: ' %' }) }),
-      h('p', { class: 'small muted' }, `Ligne pointillée : ${LEVEL_UP_PCT} % de mots justes, le seuil pour monter de niveau.`)));
+    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Taux d’omission au 1er passage (%)'),
+      h('div', { html: lineChart({ series: [{ name: 'taux d’omission', color: '#fb7185', points: pts('omissionRate1') }], yMin: 0, unit: ' %' }) })));
   } else {
     charts.append(h('div', { class: 'chart-card' }, h('h3', {}, `${ex.name} — ${(o && o.metrique) || ex.metric}`),
       h('div', { html: lineChart({ series: [{ name: ex.metric, color: 'var(--c1)', points: pts(null) }], objective: o ? o.objectif : null, unit: '' }) })));
@@ -605,8 +604,21 @@ async function router() {
 
 window.addEventListener('hashchange', router);
 
+async function migrate() {
+  try {
+    for (const s of await sessionsOf('dictee-longue')) {
+      if (s.data && s.data.firstWordsPct != null && !s.data.pctPrimary) {
+        s.primary = Math.round(s.data.firstWordsPct * 10) / 10;
+        s.data.pctPrimary = true;
+        await db.put('sessions', s);
+      }
+    }
+  } catch (e) { console.warn(e); }
+}
+
 (async function init() {
   askPersistence();
+  await migrate();
   await recoverRecordings();
   const first = !(await getPref('launched', false));
   await setPref('launched', true);

@@ -24,7 +24,7 @@ Les durées suivent le guide officiel *Duolingo English Test — Scoring Guide f
 | Interactive Reading | 5 tâches enchaînées, 7 min (8 min si 7 trous ou plus) |
 | Listen and Type | 5 phrases, 3 écoutes maximum, 1 min chacune |
 | Interactive Listening | Listen and Complete + Listen and Respond (6 min 30), puis résumé (75 s, chrono séparé) |
-| Dictée longue *(hors test)* | 10 phrases, exactement 2 écoutes imposées, score du 1er passage séparé. Trois niveaux de longueur (voir plus bas) |
+| Dictée longue *(hors test)* | 10 phrases, exactement 2 écoutes imposées, saisie possible pendant l'audio, score du 1er passage séparé. Trois niveaux de longueur (voir plus bas) |
 | Write About the Photo | 3 photos, 1 min chacune |
 | Interactive Writing | jusqu'à 30 s de lecture, 5 min, puis relance en 3 min |
 | Writing Sample | jusqu'à 30 s, puis 5 min |
@@ -67,7 +67,7 @@ Un objectif chiffré par exercice. Tant que `objectif` vaut `null`, l'écran aff
 | `read-and-select`, `fill-in-the-blanks`, `interactive-reading`, `interactive-listening` | pourcentage |
 | `read-and-complete` | mots justes sur 23 |
 | `listen-and-type` | phrases exactes sur 5 |
-| `dictee-longue` | phrases exactes sur 10 au premier passage |
+| `dictee-longue` | % de mots justes au premier passage, au niveau en cours (objectif 80 %, qui est aussi le seuil pour monter de niveau) |
 | `write-about-the-photo` | mots en 60 s (moyenne des 3 photos) |
 | `interactive-writing`, `writing-sample` | mots en 5 min |
 | `speak-about-the-photo`, `read-then-speak` | mots en 90 s |
@@ -83,7 +83,7 @@ Les valeurs de départ prévues dans le cahier des charges, à recopier dans `ob
 "interactive-speaking":   { "metrique": "mots par réponse de 35 s",  "objectif": 60,  "actuel": 55 },
 "speaking-sample":        { "metrique": "mots par minute sur 3 min", "objectif": 80,  "actuel": 57 },
 "listen-and-type":        { "metrique": "phrases exactes sur 5",     "objectif": 5,   "actuel": 4 },
-"dictee-longue":          { "metrique": "sur 10 au premier passage", "objectif": 6,   "actuel": null },
+"dictee-longue":          { "metrique": "% de mots justes au 1er passage (niveau en cours)", "objectif": 80, "actuel": null },
 "read-and-select":        { "metrique": "pourcentage",               "objectif": 85,  "actuel": null },
 "fill-in-the-blanks":     { "metrique": "pourcentage",               "objectif": 80,  "actuel": null },
 "interactive-reading":    { "metrique": "pourcentage",               "objectif": 80,  "actuel": null },

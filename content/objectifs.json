@@ -30,8 +30,8 @@
     "actuel": null
   },
   "dictee-longue": {
-    "metrique": "sur 10 au premier passage",
-    "objectif": 6,
+    "metrique": "% de mots justes au 1er passage (niveau en cours)",
+    "objectif": 80,
     "actuel": null
   },
   "write-about-the-photo": {

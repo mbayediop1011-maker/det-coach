@@ -75,14 +75,14 @@ export async function run(ctx, items) {
   ].filter(Boolean).join('\n');
   return {
     durationMs: performance.now() - t0,
-    score: { text: `1er passage : ${first}/${N} exactes · ${fmtNum(pct1)} % de mots · 2e : ${second}/${N}`, pct: first / N },
-    primary: first,
+    score: { text: `1er passage : ${fmtNum(pct1, 1)} % de mots justes · 2e passage : ${fmtNum(pct2, 1)} %`, pct: pct1 / 100 },
+    primary: Math.round(pct1 * 10) / 10,
     sections: [
       { title: 'Scores', body: scores },
       { title: 'Détail par phrase', body: results.map((r, i) => `${i + 1}. ${r.sentence}${r.item.features ? ` _(${r.item.features})_` : ''}\n   - 1er passage (${r.a1.correct}/${r.a1.total}, ${r.a1.omitted} omis, ${colText(r.a1.collapse)}) : ${r.t1.trim() || '(vide)'}${r.a1.exact ? '' : `\n     - Écarts : ${diffText(r.a1.ops)}`}\n   - 2e passage (${r.a2.correct}/${r.a2.total}) : ${r.t2.trim() || '(vide)'}${r.a2.exact ? '' : `\n     - Écarts : ${diffText(r.a2.ops)}`}${r.seg1.length ? `\n   - Découpage : ${r.seg1.map(s => s.detail).join(' ; ')}` : ''}`).join('\n') },
     ],
     view,
-    data: { level: L.level, levelUp, firstPass: first, secondPass: second, firstWordsPct: pct1, secondWordsPct: pct2, segErrors: segs.length, omissionRate1: omRate1, keptPct1: keptPct, collapsed1: collapsed.length, avgCollapseRank1: avgRank },
+    data: { pctPrimary: true, level: L.level, levelUp, firstPass: first, secondPass: second, firstWordsPct: pct1, secondWordsPct: pct2, segErrors: segs.length, omissionRate1: omRate1, keptPct1: keptPct, collapsed1: collapsed.length, avgCollapseRank1: avgRank },
   };
 }
 
@@ -97,7 +97,7 @@ function one(ctx, item, idx) {
     const ta = h('textarea', { class: 'answer', placeholder: 'Écris ce que tu as entendu…', spellcheck: 'false', autocorrect: 'off', autocapitalize: 'sentences', lang: 'en', style: { minHeight: '110px' }, disabled: true });
     const action = h('button', { class: 'btn go' });
     ctx.root.replaceChildren(h('div', { class: 'panel' },
-      h('div', { class: 'instruction' }, 'Deux écoutes imposées : écris après la première, corrige après la seconde.'),
+      h('div', { class: 'instruction' }, 'Deux écoutes imposées. Écris pendant l’audio : au fil de la 1re écoute, puis complète et corrige pendant la 2e.'),
       h('div', { class: 'listen-zone' }, playBtn, dots, caption), ta,
       h('div', { class: 'row mt' }, h('div', { class: 'speed' }, 'Vitesse', slider), h('span', { class: 'spacer' }), action)));
 
@@ -106,14 +106,17 @@ function one(ctx, item, idx) {
     const setStage = s => {
       stage = s;
       if (s === 0) { caption.textContent = 'Écoute 1 sur 2 — appuie pour lancer'; action.innerHTML = '<span>Écoute 1</span> <kbd>Espace</kbd>'; action.disabled = false; }
-      if (s === 1) { caption.textContent = 'Écris ce que tu as entendu'; action.innerHTML = '<span>J’ai écrit → écoute 2</span> <kbd>Ctrl+Entrée</kbd>'; action.disabled = false; ta.disabled = false; ta.focus(); }
-      if (s === 2) { caption.textContent = 'Écoute 2 sur 2…'; action.disabled = true; }
-      if (s === 3) { caption.textContent = 'Corrige ta phrase, puis valide'; action.innerHTML = '<span>Valider</span> <kbd>Ctrl+Entrée</kbd>'; action.disabled = false; ta.disabled = false; ta.focus(); }
+      if (s === 1) { caption.textContent = 'Termine ce que tu as entendu, puis lance la 2e écoute'; action.innerHTML = '<span>Écoute 2</span> <kbd>Ctrl+Entrée</kbd>'; action.disabled = false; ta.focus(); }
+      if (s === 2) { caption.textContent = 'Écoute 2 sur 2… complète et corrige pendant l’audio'; action.disabled = true; }
+      if (s === 3) { caption.textContent = 'Dernières corrections, puis valide'; action.innerHTML = '<span>Valider</span> <kbd>Ctrl+Entrée</kbd>'; action.disabled = false; ta.focus(); }
     };
     const play = async n => {
-      playBtn.disabled = true; playBtn.classList.add('playing'); action.disabled = true; ta.disabled = true;
+      playBtn.disabled = true; playBtn.classList.add('playing'); action.disabled = true;
+      action.innerHTML = '<span>Lecture en cours…</span>';
+      // On écrit PENDANT l'audio : la zone de saisie est active dès le début de la lecture.
+      ta.disabled = false; ta.focus();
       dots.children[n - 1].classList.add('used');
-      caption.textContent = `Écoute ${n} sur 2…`;
+      caption.textContent = n === 1 ? 'Écoute 1 sur 2… tape au fil de ce que tu entends' : 'Écoute 2 sur 2… complète et corrige pendant l’audio';
       try { await speak(item.sentence); } catch { caption.textContent = 'Lecture impossible sur cet appareil.'; }
       playBtn.classList.remove('playing');
     };

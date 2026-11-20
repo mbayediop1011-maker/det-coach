@@ -53,16 +53,16 @@
     "piege": "75 secondes, c'est quatre phrases, pas cinq. Tu commences toujours par planter le décor et tu arrives au fond trop tard. Ici, si tu ne commences pas par le fond, tu n'y arriveras jamais."
   },
   "dictee-longue": {
-    "format": "Dix phrases de 9 à 16 mots, lues à vitesse de conversation réelle. Exactement deux écoutes, imposées. Tu écris après chacune. Cet exercice n'existe pas dans le test : c'est de l'entraînement pur.",
-    "mesure": "Ton score au PREMIER passage. C'est le seul chiffre qui dise ce que tu comprends réellement. Le second mesure autre chose : ta capacité à réparer.",
+    "format": "Dix phrases par séance, lues à vitesse de conversation réelle. La longueur dépend du niveau : niveau 1 = 6 à 8 mots, niveau 2 = 9 à 11, niveau 3 = 12 à 16. Exactement deux écoutes, imposées. Le texte ne s'affiche qu'à la fin.",
+    "mesure": "Ton pourcentage de mots justes AU PREMIER PASSAGE. Pas le nombre de phrases exactes — une phrase de quatorze mots comptée fausse pour un seul mot ne mesure rien.",
     "methode": [
-      "Écris ce que tu as entendu, même si c'est incohérent. Un mot entendu de travers m'en dit plus qu'une case vide.",
-      "Ne t'arrête jamais pendant la lecture pour réfléchir à un mot. Tu suis jusqu'au bout, tu écris après.",
-      "Pose d'abord les mots porteurs que tu as saisis, puis remplis les petits mots entre eux. Une phrase anglaise se reconstruit par le squelette, pas de gauche à droite.",
-      "Pendant la deuxième écoute, ne relis pas ce que tu as écrit. Écoute, puis corrige.",
+      "Écris PENDANT l'audio, pas après. Personne ne retient quatorze mots avant d'en taper un seul.",
+      "Première écoute : tu tapes au fil de ce que tu entends, même en désordre, même incomplet. Deuxième écoute : tu complètes et tu corriges.",
+      "Pose d'abord les mots porteurs, puis remplis les petits mots entre eux. Une phrase anglaise se reconstruit par le squelette, pas de gauche à droite.",
+      "Écris les nombres en lettres : five o'clock, jamais 5 o'clock.",
       "Relis ton orthographe avant de valider. Un mot bien entendu mais mal écrit est compté faux."
     ],
-    "piege": "Deux choses. Tes frontières de mots : tu cherches 'want' et 'to' quand le locuteur a dit 'wanna'. Et ton orthographe sous pression : fondemental, mathematicas, particalar, wether — des mots que tu connais, écrits de travers."
+    "piege": "Trois choses, toutes mesurées le 17 novembre. Tes frontières de mots : tu cherches 'want' et 'to' quand le locuteur a dit 'wanna'. Tes prépositions, surtout ON : cut down ON sugar, cut back ON clothes, rules FOR transport. Et ton orthographe sous pression : trafic, afer, prodcut, wether."
   },
   "write-about-the-photo": {
     "format": "",
