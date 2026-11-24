@@ -32,6 +32,7 @@ export async function run(ctx, items) {
   ctx.setKeys({ Space: () => lb.play(), Enter: () => next.click() });
   await Promise.race([new Promise(r => next.addEventListener('click', r)), timeUpP]);
   cancelSpeech();
+  const scenarioPlays = lb.used;
   const part1 = inputs.map(({ c, inp }) => ({ text: c.text, answer: c.answer, given: inp.value.trim(), score: overlapScore(c.answer, inp.value) }));
 
   // 2. Listen and Respond
@@ -114,12 +115,15 @@ export async function run(ctx, items) {
     h('div', { class: 'panel mt' }, h('h3', {}, 'La conversation'), h('div', { class: 'convo' }, fullTranscript.map(l => h('div', { class: 'bubble ' + (l.startsWith('Toi') ? 'me' : 'them') }, l.replace(/^[^:]+ : /, ''))))),
     writingMetricsView(w, { title: 'Ton résumé (75 s)' }));
 
+  const reminders = [];
+  if (scenarioPlays <= 1) reminders.push(`Scénario écouté ${scenarioPlays} fois seulement (réécoutes illimitées).`);
   return {
     durationMs: performance.now() - t0,
+    reminders,
     score: { text: `${fmtNum(p1 + p2, 1)} / ${n} points (${fmtNum(p, 0)} %) · résumé : ${w.words} mots`, pct: p / 100 },
     primary: p,
     sections: [
-      { title: 'Listen and Complete', body: part1.map(r => `- ${r.text} — attendu « ${r.answer} », donné ${r.given ? '« ' + r.given + ' »' : 'vide'} — ${Math.round(r.score * 100)} %`).join('\n') },
+      { title: 'Listen and Complete', body: `- Écoutes du scénario : ${scenarioPlays}\n` + part1.map(r => `- ${r.text} — attendu « ${r.answer} », donné ${r.given ? '« ' + r.given + ' »' : 'vide'} — ${Math.round(r.score * 100)} %`).join('\n') },
       { title: 'Listen and Respond', body: part2.map((r, i) => `- Réplique ${i + 1} : ${r.ok ? 'juste' : r.given ? `FAUX — donné « ${r.given} », attendu « ${r.answer} »` : `non répondu — attendu « ${r.answer} »`}`).join('\n') },
       { title: 'Summarize the Conversation (75 s)', body: writingReportLines(w) },
       { title: 'Conversation', body: fullTranscript.map(l => '- ' + l).join('\n') },

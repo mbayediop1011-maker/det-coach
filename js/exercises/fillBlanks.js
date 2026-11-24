@@ -17,13 +17,17 @@ export async function run(ctx, items) {
     h('div', { html: r.sentenceHtml }),
     r.status !== 'ok' ? h('div', { class: 'small' }, `Attendu : `, h('b', {}, r.word), r.status === 'bad' ? ` · donné : ${r.given}` : '') : null,
     r.note ? h('div', { class: 'small muted' }, r.note) : null)));
+  const quick = results.filter(r => !r.timedOut && r.rt < 10000);
+  const avgRt = results.reduce((a, r) => a + r.rt, 0) / results.length;
+  const reminders = quick.length ? [`Validé en moins de 10 s sur ${quick.length} question(s) sur ${results.length} (temps moyen ${fmtNum(avgRt / 1000, 1)} s sur 20 s).`] : [];
   return {
     durationMs: performance.now() - t0,
+    reminders,
     score: { text: `${ok} / ${results.length} justes (${fmtNum(p, 0)} %)`, pct: p / 100 },
     primary: p,
     sections: [
       { title: 'Items ratés', body: results.filter(r => r.status !== 'ok').map(r => `- ${r.plain} — attendu « ${r.word} », donné ${r.status === 'empty' ? 'vide' : '« ' + r.given + ' » (faux)'} — ${fmtNum(r.rt / 1000, 1)} s`).join('\n') || 'Aucun.' },
-      { title: 'Temps par item', body: results.map(r => `- ${r.word} : ${fmtNum(r.rt / 1000, 1)} s${r.timedOut ? ' (20 s écoulées)' : ''} — ${r.status === 'ok' ? 'juste' : r.status === 'empty' ? 'vide' : 'faux'}`).join('\n') },
+      { title: 'Temps par item', body: `Temps moyen : ${fmtNum(avgRt / 1000, 1)} s sur 20 s · validées en moins de 10 s : ${quick.length}/${results.length}\n` + results.map(r => `- ${r.word} : ${fmtNum(r.rt / 1000, 1)} s${r.timedOut ? ' (20 s écoulées)' : ''} — ${r.status === 'ok' ? 'juste' : r.status === 'empty' ? 'vide' : 'faux'}`).join('\n') },
     ],
     view,
   };

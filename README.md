@@ -133,7 +133,7 @@ Lancer `python3 tools/build-sw.py` pour mettre à jour la liste des fichiers dis
 ## Ce que l'application mesure, et ce qu'elle ne fait pas
 
 - **À l'oral** : audio brut (opus 128 kbps quand le navigateur le permet, sinon AAC sur iPhone), écrit seconde par seconde dans IndexedDB et récupérable si l'onglet se ferme. La détection des silences se fait sur le signal (RMS sur 50 ms, seuil calibré au test micro, `autoGainControl: false`). L'application mesure la durée de parole effective, les silences de plus d'une seconde (nombre, durée, position), le nombre de mots, les mots par minute (sur la durée totale et sur la parole effective) et le temps non utilisé. La transcription du navigateur est affichée comme indice, pas comme vérité.
-- **À l'écrit** : nombre de mots, mots par minute, courbe de frappe, temps non utilisé, mots pleins employés plus de trois fois.
+- **À l'écrit** : nombre de mots, mots par minute, courbe de frappe, plus longue pause d'écriture, temps non utilisé, mots pleins employés 3 fois ou plus.
 - **Aucune note de contenu** n'est inventée par l'application. Les rapports contiennent seulement des chiffres bruts. Le bouton **« Corriger avec Claude »** copie une demande de correction aux critères officiels du DET, à coller dans Claude : la correction se fait hors de l'application.
 
 ## Lancer en local

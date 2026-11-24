@@ -312,7 +312,7 @@ export async function writePhase(ctx, area, seconds, { label = 'Temps restant', 
           if (firstKey != null && used >= seconds - 0.05 && used - lastKey > gap) { gap = used - lastKey; at = lastKey; }
           return { maxPauseSec: firstKey == null ? null : gap, maxPauseAtSec: at };
         })(),
-        samples, repetitions: repetitions(text),
+        samples, repetitions: repetitions(text, 3),
       });
     };
     t.onEnd = finish;
@@ -336,8 +336,8 @@ export function writingMetricsView(w, { title = '' } = {}) {
     h('div', { class: 'small muted' }, 'Courbe de frappe (mots écrits au fil du temps)'),
     h('div', { html: typingCurve(w.samples, w.allowedSec) }),
     w.repetitions.length
-      ? h('div', { class: 'reminder', style: { background: 'rgba(251,191,36,.12)', borderColor: 'rgba(251,191,36,.4)' } }, 'Mots répétés plus de trois fois : ' + w.repetitions.map(r => `${r.word} ×${r.n}`).join(', '))
-      : h('p', { class: 'small muted' }, 'Aucun mot plein répété plus de trois fois.'),
+      ? h('div', { class: 'reminder', style: { background: 'rgba(251,191,36,.12)', borderColor: 'rgba(251,191,36,.4)' } }, 'Mots pleins employés 3 fois ou plus : ' + w.repetitions.map(r => `${r.word} ×${r.n}`).join(', '))
+      : h('p', { class: 'small muted' }, 'Aucun mot plein employé 3 fois ou plus.'),
     h('div', { class: 'transcript' }, w.text || '(vide)'));
 }
 
@@ -349,14 +349,14 @@ export function writingReportLines(w, label = '') {
   L.push(`- Premier mot à ${w.firstTypingSec == null ? '—' : fmtNum(w.firstTypingSec, 1) + ' s'} · dernière frappe à ${fmtNum(w.lastTypingSec, 1)} s`);
   L.push(`- Plus longue pause d'écriture : ${w.maxPauseSec == null ? '—' : `${fmtNum(w.maxPauseSec, 1)} s (à partir de ${fmtNum(w.maxPauseAtSec, 0)} s)`}`);
   L.push(`- Courbe de frappe (s : mots) : ${w.samples.filter((s, i) => i % 3 === 0 || i === w.samples.length - 1).map(s => `${Math.round(s.t)}:${s.w}`).join(' ')}`);
-  L.push(`- Répétitions (même mot plus de trois fois) : ${w.repetitions.length ? w.repetitions.map(r => `${r.word} ×${r.n}`).join(', ') : 'aucune'}`);
+  L.push(`- Répétitions (même mot plein employé 3 fois ou plus) : ${w.repetitions.length ? w.repetitions.map(r => `${r.word} ×${r.n}`).join(', ') : 'aucune'}`);
   L.push(`- Texte : « ${w.text.trim() || '(vide)'} »`);
   return L.join('\n');
 }
 
 export function writingClaudeMeasures(w) {
   return `- ${w.words} mots en ${fmtNum(w.usedSec, 0)} s sur ${w.allowedSec} s accordées (${fmtNum(w.wpm)} mots/min)
-- mots répétés plus de trois fois : ${w.repetitions.length ? w.repetitions.map(r => `${r.word} ×${r.n}`).join(', ') : 'aucun'}`;
+- mots pleins employés 3 fois ou plus : ${w.repetitions.length ? w.repetitions.map(r => `${r.word} ×${r.n}`).join(', ') : 'aucun'}`;
 }
 
 // ---------- Bouton d'écoute ----------

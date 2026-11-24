@@ -29,7 +29,7 @@ export async function run(ctx, items) {
 
   const reminders = [];
   if (!m.skipped && m.unusedSec >= 20) reminders.push(`Prise arrêtée avec ${Math.round(m.unusedSec)} s encore au compteur.`);
-  if (!m.skipped && id === 'speak-about-the-photo') {
+  if (!m.skipped && (id === 'speak-about-the-photo' || id === 'read-then-speak')) {
     if (m.analysis.leadMs >= 2000) reminders.push(`Premier mot après ${fmtNum(m.analysis.leadMs / 1000, 1)} s.`);
     if (m.loops && m.loops.length) reminders.push(`Séquence répétée en boucle : ${m.loops.map(l => `« ${l.seq} » ×${l.n}`).join(', ')}.`);
   }

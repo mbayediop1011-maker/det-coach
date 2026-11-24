@@ -23,8 +23,8 @@ export async function run(ctx, items) {
   const w2 = await writePhase(ctx, area2, 180, { tall: true });
   if (ctx.aborted) return null;
   const reminders = [];
-  if (w1.unusedSec >= 30) reminders.push(`Étape 1 validée avec ${Math.round(w1.unusedSec)} s inutilisées.`);
-  if (w2.unusedSec >= 30) reminders.push(`Étape 2 validée avec ${Math.round(w2.unusedSec)} s inutilisées.`);
+  if (w1.unusedSec >= 10) reminders.push(`Étape 1 validée avec ${Math.round(w1.unusedSec)} s inutilisées.`);
+  if (w2.unusedSec >= 10) reminders.push(`Étape 2 validée avec ${Math.round(w2.unusedSec)} s inutilisées.`);
   return {
     durationMs: performance.now() - t0,
     score: { text: `Étape 1 : ${w1.words} mots · étape 2 : ${w2.words} mots`, pct: null },

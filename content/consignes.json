@@ -12,10 +12,15 @@
     "piege": "Le 24 novembre : 6/8 sur les mots inventés, mais 4/10 sur les mots RÉELS. Tu rejettes les vrais mots — et tu les rejettes vite. Tes six rejets ont pris en moyenne 1,51 seconde quand tes bonnes réponses en prenaient 2 à 3. Tu as déclaré « fragile » inventé en 1,27 seconde. En dessous de deux secondes, tu ne réponds pas : tu devines. Et tu as bouclé 18 mots en 41 secondes alors que tu disposais de 90 — rendre tôt ne rapporte rien."
   },
   "fill-in-the-blanks": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Une phrase avec un mot inachevé : tu vois le début, tu tapes les lettres manquantes. 20 secondes par question, 6 à 9 questions. L'orthographe doit être exacte.",
+    "mesure": "Ta capacité à trouver le mot par le SENS de la phrase. Et souvent, c'est le second sens d'un mot courant qui est testé : a lead (une piste), to grill somebody (cuisiner quelqu'un), to run low on (être bientôt à court de).",
+    "methode": [
+      "Lis la phrase entière avant d'écrire. Toujours. Le mot se devine par ce qui vient après autant que par ce qui précède.",
+      "LA GRAMMAIRE TRANCHE, PAS LE COMPTE DE LETTRES. Quand deux mots rentrent dans les cases, regarde ce que la phrase exige : un pluriel, un verbe conjugué, un adjectif.",
+      "Compte les cases en vérification, jamais en méthode.",
+      "Tu as 20 secondes. Prends-les. Tu rends systématiquement en moins de la moitié du temps."
+    ],
+    "piege": "Ton erreur récurrente est l'appariement par longueur : « commotion » pour « companies » le 16 novembre (neuf lettres chacun, mais « several… have » exigeait un pluriel), « aim » pour « are » le 22. Et l'orthographe : « recommand » pour recommend."
   },
   "read-and-complete": {
     "format": "Un passage de 70 à 100 mots dont un mot sur deux est amputé. 3 minutes.",
@@ -29,10 +34,16 @@
     "piege": "Tu laisses des mots faciles vides en fin de texte parce que tu t'es attardé sur un mot dur au début."
   },
   "interactive-reading": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Un passage long suivi de cinq étapes : compléter des phrases (mots à choisir dans une liste), choisir la phrase manquante, surligner la réponse dans le texte, identifier l'idée principale, titrer le passage. 7 à 8 minutes par texte.",
+    "mesure": "Ta compréhension globale, pas ta vitesse de lecture. Les deux dernières étapes valent autant que les trois premières.",
+    "methode": [
+      "Lis le passage une fois en entier AVANT de répondre à quoi que ce soit. Les étapes 4 et 5 portent sur l'ensemble.",
+      "Pour Highlight the Answer : la réponse est dans le texte, mot pour mot. Ne reformule pas, ne cherche pas la phrase « intelligente » — surligne celle qui répond.",
+      "Pour Identify the Idea : l'idée principale est presque toujours dans la première ou la dernière phrase du passage.",
+      "Pour Title the Passage : un titre couvre TOUT le texte. Si ton titre ne décrit qu'un paragraphe, il est faux.",
+      "Tu as 7 à 8 minutes. C'est long. Relis avant de valider."
+    ],
+    "piege": "Tu lis vite et tu réponds vite. Sur ce type-là, la vitesse ne rapporte rien : seules les bonnes réponses comptent, et tu as le temps."
   },
   "listen-and-type": {
     "format": "Une phrase dictée, jusqu'à 20 mots. Trois écoutes maximum, à ton choix. 60 secondes pour écrire.",
@@ -47,10 +58,15 @@
     "piege": "Trois choses mesurées. Les mots-outils collés — at, about, a lot, worth — qui représentaient sept de tes neuf omissions le 22 novembre. Tes prépositions, surtout ON : cut down ON sugar, cut back ON clothes. Et l'orthographe que le français écrit à ta place : trafic → traffic, afer → after, recommand → recommend."
   },
   "interactive-listening": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Trois tâches sur un même scénario. Listen and Complete (un audio réécoutable à volonté, 3 ou 4 phrases à compléter) et Listen and Respond (une conversation de 5 ou 6 répliques, tu choisis la meilleure réponse à chaque fois) PARTAGENT 6 min 30. Puis Summarize the Conversation, avec un chronomètre SÉPARÉ de 75 secondes. Le temps non utilisé NE se reporte PAS.",
+    "mesure": "Ta compréhension d'un échange, et ta capacité à le restituer en quatre phrases.",
+    "methode": [
+      "Listen and Complete : l'audio est réécoutable autant que tu veux. Réécoute. C'est gratuit.",
+      "Listen and Respond : tu choisis la réplique la plus NATURELLE, pas la plus complète. Une réponse courte et pertinente bat une réponse longue et hors sujet.",
+      "Garde en tête, pendant toute la conversation : QUI veut QUOI, et sur QUOI ils finissent par s'entendre. C'est ce qu'on te demandera à la fin.",
+      "Les 75 secondes du résumé sont à part. Tu ne peux pas les augmenter en allant vite avant."
+    ],
+    "piege": "Pendant trois semaines je t'ai donné un budget faux — un chronomètre unique de 5 minutes avec report du temps. C'est faux : 6 min 30 partagées, puis 75 secondes à part. Les deux conversations portent toujours sur la vie universitaire : une prof-étudiant, une étudiant-étudiant."
   },
   "summarize-the-conversation": {
     "format": "Tu résumes par écrit la conversation que tu viens d'entendre. 75 secondes, chronomètre séparé. Le temps des deux tâches précédentes NE se reporte PAS.",
@@ -90,16 +106,27 @@
     "piege": "Ton goulot est le verbe principal. Le 24 novembre : « surfing » est venu tout de suite → 25 mots ; « harvesting » n'est pas venu → tu as écrit « harving » et la phrase s'est arrêtée net. Surveille aussi : it LOOKS like, jamais « it's look like » (deux fois le 24 nov.), et « a motorbike », pas « a moto »."
   },
   "interactive-writing": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Un sujet. Jusqu'à 30 secondes pour lire et réfléchir, puis 5 minutes d'écriture. Ensuite une deuxième question sur le même sujet, 3 minutes, sans préparation. Ta première réponse reste visible pendant la deuxième.",
+    "mesure": "Ton nombre de mots, ta structure, et la variété de ton vocabulaire.",
+    "methode": [
+      "Ossature B, sans réfléchir : réponse directe à la question / point + exemple / point + exemple / conclusion.",
+      "Les six connecteurs, dans cet ordre : rien · First of all, · For example, · In addition, · However, · Overall,",
+      "La deuxième question porte sur le même sujet : garde un argument en réserve pendant la première partie.",
+      "Écris jusqu'à la dernière seconde des 5 minutes. Puis des 3 minutes."
+    ],
+    "piege": "La répétition lexicale te coûte plus que les fautes : « product » dix fois le 20 novembre, « a lot of » sept fois, « alone » sept fois. Si un mot est déjà sorti deux fois, cherche un remplaçant avant de l'écrire une troisième. Et tiens le passé jusqu'au bout quand tu racontes."
   },
   "writing-sample": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Un sujet ouvert. Jusqu'à 30 secondes pour lire, puis jusqu'à 5 minutes pour écrire.",
+    "mesure": "Ton nombre de mots en 5 minutes, ta structure et ta variété lexicale. Objectif 200 mots.",
+    "methode": [
+      "Ossature B : réponse directe / point + exemple / point + exemple / conclusion.",
+      "Un exemple CONCRET par point : une date, un lieu, un chiffre, un nom propre. Le flou est ce qui te fait répéter les mêmes mots.",
+      "Tu peux puiser dans tes quatre histoires préparées — elles sont faites pour ça.",
+      "Jamais de « something » : a kind of… / some sort of… / something you use to…",
+      "Écris jusqu'à la dernière seconde."
+    ],
+    "piege": "Tes trois défauts mesurés à l'écrit : le passé qui lâche au milieu du récit, le même mot répété, et les prépositions — surtout ON."
   },
   "speak-about-the-photo": {
     "format": "Une photo. 20 secondes de préparation, puis 90 secondes de parole.",
@@ -115,16 +142,28 @@
     "piege": "Le 24 novembre : 93 mots, mais 4,8 secondes avant le premier mot et 11,5 secondes de silences — 16 secondes de temps mort, soit une vingtaine de mots perdus. Et les vingt dernières secondes tournaient en boucle sur « look like winter, not winter, look like winter » alors qu'il y avait un échiquier devant toi à décrire."
   },
   "read-then-speak": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Un sujet écrit avec deux ou trois sous-questions. 20 secondes de préparation, puis 90 secondes de réponse orale. Le sujet reste affiché.",
+    "mesure": "Ton nombre de mots en 90 secondes, et le temps mort — délai avant le premier mot, silences de plus d'une seconde.",
+    "methode": [
+      "PENDANT LES 20 SECONDES, choisis laquelle de tes quatre histoires tu vas utiliser. Rien d'autre.",
+      "TA PREMIÈRE PHRASE PART À LA PREMIÈRE SECONDE : réponds directement à la question posée, avant tout développement.",
+      "Traite les sous-questions dans l'ordre. Elles sont ta structure, tu n'as pas à en inventer une.",
+      "Le sujet reste à l'écran : relis-le si tu perds le fil, c'est gratuit.",
+      "Jamais « So that's all ». Tu finis sur « And that's why… » ou tu t'arrêtes en silence."
+    ],
+    "piege": "Le 12 novembre : 83 mots en 80 secondes, soit 62 mots/minute, et tu t'es arrêté avant la fin. Ton débit en rafale courte monte à 103 — ce n'est pas la vitesse qui te manque, c'est la matière. D'où les histoires."
   },
   "interactive-speaking": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "6 à 8 questions réparties sur DEUX thèmes (3 ou 4 par thème), 35 secondes chacune. La question est posée à l'oral et entendue UNE SEULE FOIS. Le chrono démarre quand le personnage a fini de parler, et il faut cliquer pour enregistrer.",
+    "mesure": "Ton nombre de mots par réponse, et ta régularité d'une question à l'autre.",
+    "methode": [
+      "La question n'est dite qu'une fois : écoute-la en entier avant de commencer à formuler quoi que ce soit.",
+      "35 secondes = environ 60 mots = trois phrases. Réponse directe, une raison, un exemple. Pas plus.",
+      "Commence par répondre, pas par introduire. « I prefer travelling alone » avant tout le reste.",
+      "Tes quatre histoires doivent couvrir DEUX domaines, parce que le test pose deux thèmes.",
+      "Ne t'arrête pas avant la fin des 35 secondes."
+    ],
+    "piege": "C'est ton meilleur exercice : 88 à 103 mots/minute mesurés le 12 novembre. Ton débit n'est pas en cause. Le risque ici est l'inverse : tu finis trop tôt parce que tu as dit l'essentiel en quinze secondes. Ajoute toujours un exemple."
   },
   "speaking-sample": {
     "format": "",

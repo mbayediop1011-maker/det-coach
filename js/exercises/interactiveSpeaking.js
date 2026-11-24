@@ -35,6 +35,10 @@ export async function run(ctx, items) {
   const wpmS = valid.length ? valid.reduce((s, a) => s + (a.m.wpmSpeech || 0), 0) / valid.length : null;
   const silN = answers.reduce((s, a) => s + (a.m && !a.m.skipped ? a.m.silenceCount : 0), 0);
   const silS = answers.reduce((s, a) => s + (a.m && !a.m.skipped ? a.m.silenceSec : 0), 0);
+  // Régularité d'une question à l'autre : mots par réponse, écart-type.
+  const perAnswer = answers.map(a => (a.m && !a.m.skipped && a.m.words != null ? a.m.words : null));
+  const known = perAnswer.filter(x => x != null);
+  const sd = known.length > 1 ? Math.sqrt(known.reduce((s2, x) => s2 + (x - known.reduce((a, b) => a + b, 0) / known.length) ** 2, 0) / known.length) : null;
   const reminders = [];
   const early = answers.filter(a => a.m && !a.m.skipped && a.m.unusedSec >= 10);
   if (early.length) reminders.push(`${early.length} réponse(s) arrêtée(s) avec 10 s ou plus encore au compteur.`);
@@ -46,9 +50,14 @@ export async function run(ctx, items) {
     score: { text: `${avg == null ? '?' : fmtNum(avg, 1)} mots par réponse en moyenne · ${answers.length} questions`, pct: null },
     primary: avg == null ? null : Math.round(avg * 10) / 10,
     reminders,
-    sections: answers.map((a, i) => ({ title: `Question ${i + 1} — ${a.topic}`, body: `- Question : ${a.q}\n${oralReportLines(a.m)}` })),
+    sections: [
+      { title: 'Régularité', body: `- Mots par réponse : ${perAnswer.map(x => x == null ? '—' : x).join(', ')}${known.length ? ` · min ${Math.min(...known)} · max ${Math.max(...known)}` : ''}${sd == null ? '' : ` · écart-type ${fmtNum(sd, 1)}`}\n- Temps non utilisé par réponse : ${answers.map(a => a.m && !a.m.skipped ? Math.round(a.m.unusedSec) + ' s' : '—').join(', ')}` },
+      ...answers.map((a, i) => ({ title: `Question ${i + 1} — ${a.topic}`, body: `- Question : ${a.q}\n${oralReportLines(a.m)}` })),
+    ],
     audio: answers.filter(a => a.m && a.m.recId).map((a, i) => ({ recId: a.m.recId, label: `Question ${i + 1}` })),
-    view: h('div', {}, answers.map((a, i) => h('div', {}, h('div', { class: 'panel mt' }, h('div', { class: 'small muted' }, `Question ${i + 1} · ${a.topic}`), h('b', {}, a.q)), oralMetricsView(a.m, {})))),
+    view: h('div', {}, h('div', { class: 'panel' }, h('h3', {}, 'Régularité'), h('div', { class: 'metrics' },
+      ...perAnswer.map((x, i) => h('div', { class: 'metric' }, h('div', { class: 'v' }, x == null ? '—' : x), h('div', { class: 'k' }, `mots · Q${i + 1}`))),
+      h('div', { class: 'metric' }, h('div', { class: 'v' }, sd == null ? '—' : fmtNum(sd, 1)), h('div', { class: 'k' }, 'écart-type')))), answers.map((a, i) => h('div', {}, h('div', { class: 'panel mt' }, h('div', { class: 'small muted' }, `Question ${i + 1} · ${a.topic}`), h('b', {}, a.q)), oralMetricsView(a.m, {})))),
     claude: [{ exerciseName: 'Interactive Speaking (35 s par réponse)', kind: 'speaking', prompt: answers.map((a, i) => `Q${i + 1} (${a.topic}) : ${a.q}`).join('\n'), response: answers.map((a, i) => `Q${i + 1} : ${a.m && !a.m.skipped ? (a.m.transcript || '(aucun mot reconnu)') : '(pas de réponse)'}`).join('\n'), measures: answers.map((a, i) => `Q${i + 1} :\n${oralClaudeMeasures(a.m)}`).join('\n') }],
     data: { wpmTotal: wpmT, wpmSpeech: wpmS, silenceCount: silN, silenceSec: silS },
   };

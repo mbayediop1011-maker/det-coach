@@ -39,7 +39,14 @@ export async function run(ctx, items) {
   timer.start();
 
   const results = { sentences: [], passage: null, highlight: [], idea: null, title: null };
-  const setStep = i => { [...dots.children].forEach((d, k) => { d.classList.toggle('on', k === i); d.classList.toggle('done', k < i); }); ctx.setProgress(STEP_NAMES[i]); };
+  const stepTimes = [];
+  let stepStart = performance.now(), curStep = null;
+  const setStep = i => {
+    const now = performance.now();
+    if (curStep != null) stepTimes.push({ step: STEP_NAMES[curStep] + (curStep === 3 ? ' 2' : curStep === 2 ? ' 1' : ''), sec: (now - stepStart) / 1000 });
+    stepStart = now; curStep = i;
+    [...dots.children].forEach((d, k) => { d.classList.toggle('on', k === i); d.classList.toggle('done', k < i); }); ctx.setProgress(STEP_NAMES[i]);
+  };
   const nextBtn = (label = 'Suivant') => h('button', { class: 'btn go', html: `<span>${label}</span> <kbd>Entrée</kbd>` });
   const waitNext = btn => Promise.race([new Promise(r => { btn.addEventListener('click', r); ctx.setKeys({ Enter: r }); }), timeUpP]);
 
@@ -108,6 +115,9 @@ export async function run(ctx, items) {
   }
   timer.stop();
   if (ctx.aborted) return null;
+  if (curStep != null) stepTimes.push({ step: STEP_NAMES[curStep] + (curStep === 3 ? ' 2' : curStep === 2 ? ' 1' : ''), sec: (performance.now() - stepStart) / 1000 });
+  const leftSec = timeUp ? 0 : timer.remaining;
+  const reminders = leftSec >= 120 ? [`Terminé avec ${Math.floor(leftSec / 60)} min ${String(Math.round(leftSec % 60)).padStart(2, '0')} s encore au chrono.`] : [];
 
   // Score : une question = un point (Highlight en crédit partiel), comme le guide 2026.
   const groups = {
@@ -146,7 +156,8 @@ export async function run(ctx, items) {
     durationMs: performance.now() - t0,
     score: { text: `${fmtNum(sum, sum % 1 ? 1 : 0)} / ${n} points (${fmtNum(p, 0)} %)`, pct: p / 100 },
     primary: p,
-    sections: [{ title: 'Score par type de question', body: md.join('\n') }, { title: 'Items ratés', body: missed.join('\n') || 'Aucun.' }],
+    reminders,
+    sections: [{ title: 'Score par type de question', body: md.join('\n') }, { title: 'Temps par étape', body: stepTimes.map(t => `- ${t.step} : ${fmtNum(t.sec, 0)} s`).join('\n') + `\n- Temps restant à la fin : ${Math.round(leftSec)} s` }, { title: 'Items ratés', body: missed.join('\n') || 'Aucun.' }],
     view,
   };
 }

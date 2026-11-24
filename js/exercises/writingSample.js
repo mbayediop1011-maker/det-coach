@@ -15,7 +15,7 @@ export async function run(ctx, items) {
   ctx.setProgress('Rédaction — 5 min');
   const w = await writePhase(ctx, area, 300, { tall: true });
   if (ctx.aborted) return null;
-  const reminders = w.unusedSec >= 60 ? [`Validé avec ${Math.round(w.unusedSec)} s inutilisées.`] : [];
+  const reminders = w.unusedSec >= 10 ? [`Validé avec ${Math.round(w.unusedSec)} s inutilisées.`] : [];
   return {
     durationMs: performance.now() - t0,
     score: { text: `${w.words} mots · ${fmtNum(w.wpm)} mots/min`, pct: null },
