@@ -1,9 +1,15 @@
 {
   "read-and-select": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "15 à 18 mots présentés un par un. Pour chacun, tu dis s'il s'agit d'un vrai mot anglais ou d'un mot inventé. Environ 5 secondes par mot.",
+    "mesure": "Ton étendue de vocabulaire, brute. Mais une mauvaise stratégie peut te faire descendre très au-dessous de ton niveau réel.",
+    "methode": [
+      "NE RÉPONDS JAMAIS AVANT D'AVOIR COMPTÉ JUSQU'À TROIS. Même quand tu es sûr. Surtout quand tu veux répondre « inventé ».",
+      "Ensuite, trois réflexes dans cet ordre. 1. Le mot t'est familier, même sans savoir ce qu'il veut dire → VRAI.",
+      "2. Le mot ressemble à du français (fragile, coherent, perceive, detrimental) → VRAI. L'anglais a pris des milliers de mots au français : la ressemblance est un indice fort, pas un piège.",
+      "3. Ni l'un ni l'autre → FAUX.",
+      "La règle de fond : VRAI par défaut, FAUX en dernier recours."
+    ],
+    "piege": "Le 24 novembre : 6/8 sur les mots inventés, mais 4/10 sur les mots RÉELS. Tu rejettes les vrais mots — et tu les rejettes vite. Tes six rejets ont pris en moyenne 1,51 seconde quand tes bonnes réponses en prenaient 2 à 3. Tu as déclaré « fragile » inventé en 1,27 seconde. En dessous de deux secondes, tu ne réponds pas : tu devines. Et tu as bouclé 18 mots en 41 secondes alors que tu disposais de 90 — rendre tôt ne rapporte rien."
   },
   "fill-in-the-blanks": {
     "format": "",
@@ -29,10 +35,16 @@
     "piege": ""
   },
   "listen-and-type": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Une phrase dictée, jusqu'à 20 mots. Trois écoutes maximum, à ton choix. 60 secondes pour écrire.",
+    "mesure": "Ta perception des frontières de mots sous contrainte de temps. Chaque mot exact compte.",
+    "methode": [
+      "Écris PENDANT l'audio, dès la première écoute. Attendre la fin pour commencer te coûte la moitié de la phrase — mesuré le 17 novembre.",
+      "Prends tes trois écoutes, toujours, même si tu crois avoir fini après deux. Elles sont gratuites et tu ne récupères rien en rendant tôt.",
+      "Pose les mots porteurs d'abord, remplis les petits mots entre eux ensuite.",
+      "Écris les nombres en lettres : five o'clock, jamais 5 o'clock.",
+      "Relis ton orthographe avant de valider. Un mot bien entendu mais mal écrit est compté faux."
+    ],
+    "piege": "Trois choses mesurées. Les mots-outils collés — at, about, a lot, worth — qui représentaient sept de tes neuf omissions le 22 novembre. Tes prépositions, surtout ON : cut down ON sugar, cut back ON clothes. Et l'orthographe que le français écrit à ta place : trafic → traffic, afer → after, recommand → recommend."
   },
   "interactive-listening": {
     "format": "",
