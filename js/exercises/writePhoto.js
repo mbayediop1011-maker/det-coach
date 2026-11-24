@@ -17,6 +17,8 @@ export async function run(ctx, items) {
   const avg = res.reduce((a, r) => a + r.w.words, 0) / res.length;
   const reminders = [];
   const early = res.filter(r => r.w.unusedSec >= 15);
+  const stalls = res.filter(r => r.w.maxPauseSec != null && r.w.maxPauseSec >= 5);
+  if (stalls.length) reminders.push(`Arrêt d'écriture de 5 s ou plus sur ${stalls.length} photo(s) (${stalls.map(r => fmtNum(r.w.maxPauseSec, 1) + ' s').join(', ')}).`);
   if (early.length) reminders.push(`Validé avec du temps restant sur ${early.length} photo(s) (${early.map(r => Math.round(r.w.unusedSec) + ' s').join(', ')}).`);
   const view = h('div', {}, res.map((r, i) => h('div', {},
     h('div', { class: 'panel mt' }, h('img', { class: 'photo', src: 'content/photos/' + r.item.file, alt: '', style: { maxHeight: '220px' } })),

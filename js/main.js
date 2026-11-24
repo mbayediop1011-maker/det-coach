@@ -197,7 +197,12 @@ async function briefView(id) {
     const empty = !hasText(content);
     const b = h('div', { class: 'block ' + cls + (empty ? ' empty' : '') }, h('div', { class: 'bt' }, title));
     if (empty) b.append(h('div', {}, 'Consignes pas encore écrites par ton professeur.'));
-    else if (Array.isArray(content)) b.append(h('ol', {}, content.filter(x => String(x).trim()).map(x => h('li', { html: mdInline(x) }))));
+    else if (Array.isArray(content)) {
+      const list = content.filter(x => String(x).trim());
+      // Si le professeur numérote lui-même (« 1. OBLIGATOIRE… »), on n'ajoute pas nos numéros.
+      const own = list.some(x => /(^|\s)\d+\.\s/.test(x));
+      b.append(h(own ? 'ul' : 'ol', { class: own ? 'own-num' : '' }, list.map(x => h('li', { html: mdInline(x) }))));
+    }
     else b.append(h('div', { html: mdInline(content) }));
     return b;
   };

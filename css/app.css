@@ -117,6 +117,8 @@ button.mini-card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,
 .block{padding:18px 20px;border-radius:18px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--c1)}
 .block .bt{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;font-weight:900;color:var(--c1);margin-bottom:6px}
 .block ol{margin:0;padding-left:1.3em}
+.block ul.own-num{list-style:none;padding-left:0;margin:0}
+.block ul.own-num li{margin:.5em 0;font-weight:600;padding-left:12px;border-left:3px solid rgba(255,255,255,.15)}
 .block ol li{margin:.35em 0;font-weight:600}
 .block.trap{border-left-color:var(--bad)}
 .block.trap .bt{color:var(--bad)}

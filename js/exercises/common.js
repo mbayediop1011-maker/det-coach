@@ -262,9 +262,13 @@ export async function writePhase(ctx, area, seconds, { label = 'Temps restant', 
   const submit = h('button', { class: 'btn go', html: `<span>Valider</span> <kbd>Ctrl+Entrée</kbd>` });
   area.replaceChildren(h('div', {}, above, t.el, ta, canSubmitEarly ? h('div', { class: 'row end mt' }, submit) : null));
   const samples = [{ t: 0, w: 0 }];
-  let lastKey = 0, firstKey = null;
+  let lastKey = 0, firstKey = null, maxGap = 0, maxGapAt = null;
   const iv = setInterval(() => samples.push({ t: Math.round(t.elapsed * 10) / 10, w: countWords(ta.value) }), 2000);
-  ta.addEventListener('input', () => { lastKey = t.elapsed; if (firstKey == null) firstKey = t.elapsed; });
+  ta.addEventListener('input', () => {
+    const now = t.elapsed;
+    if (firstKey != null && now - lastKey > maxGap) { maxGap = now - lastKey; maxGapAt = lastKey; }
+    lastKey = now; if (firstKey == null) firstKey = now;
+  });
   ctx.onCleanup(() => { t.stop(); clearInterval(iv); });
   setTimeout(() => ta.focus(), 50);
   return new Promise(resolve => {
@@ -281,6 +285,12 @@ export async function writePhase(ctx, area, seconds, { label = 'Temps restant', 
         text, words, allowedSec: seconds, usedSec: used, unusedSec: Math.max(0, seconds - used),
         wpm: used > 0 ? words / (used / 60) : 0,
         lastTypingSec: lastKey, firstTypingSec: firstKey,
+        // Plus longue pause d'écriture, y compris l'arrêt avant la fin quand le chrono est allé au bout.
+        ...(() => {
+          let gap = maxGap, at = maxGapAt;
+          if (firstKey != null && used >= seconds - 0.05 && used - lastKey > gap) { gap = used - lastKey; at = lastKey; }
+          return { maxPauseSec: firstKey == null ? null : gap, maxPauseAtSec: at };
+        })(),
         samples, repetitions: repetitions(text),
       });
     };
@@ -300,7 +310,8 @@ export function writingMetricsView(w, { title = '' } = {}) {
       mt(fmtNum(w.wpm), 'mots par minute'),
       mt(fmtNum(w.unusedSec, 0) + ' s', 'temps non utilisé'),
       mt(w.firstTypingSec == null ? '—' : fmtNum(w.firstTypingSec, 1) + ' s', 'avant le premier mot'),
-      mt(w.lastTypingSec ? fmtNum(w.lastTypingSec, 0) + ' s' : '—', 'dernière frappe à')),
+      mt(w.lastTypingSec ? fmtNum(w.lastTypingSec, 0) + ' s' : '—', 'dernière frappe à'),
+      mt(w.maxPauseSec == null ? '—' : fmtNum(w.maxPauseSec, 1) + ' s', 'plus longue pause d’écriture')),
     h('div', { class: 'small muted' }, 'Courbe de frappe (mots écrits au fil du temps)'),
     h('div', { html: typingCurve(w.samples, w.allowedSec) }),
     w.repetitions.length
@@ -315,6 +326,7 @@ export function writingReportLines(w, label = '') {
   L.push(`- Temps accordé : ${w.allowedSec} s · utilisé : ${fmtNum(w.usedSec, 1)} s · non utilisé : ${fmtNum(w.unusedSec, 1)} s`);
   L.push(`- Mots : ${w.words} · mots par minute : ${fmtNum(w.wpm, 1)}`);
   L.push(`- Premier mot à ${w.firstTypingSec == null ? '—' : fmtNum(w.firstTypingSec, 1) + ' s'} · dernière frappe à ${fmtNum(w.lastTypingSec, 1)} s`);
+  L.push(`- Plus longue pause d'écriture : ${w.maxPauseSec == null ? '—' : `${fmtNum(w.maxPauseSec, 1)} s (à partir de ${fmtNum(w.maxPauseAtSec, 0)} s)`}`);
   L.push(`- Courbe de frappe (s : mots) : ${w.samples.filter((s, i) => i % 3 === 0 || i === w.samples.length - 1).map(s => `${Math.round(s.t)}:${s.w}`).join(' ')}`);
   L.push(`- Répétitions (même mot plus de trois fois) : ${w.repetitions.length ? w.repetitions.map(r => `${r.word} ×${r.n}`).join(', ') : 'aucune'}`);
   L.push(`- Texte : « ${w.text.trim() || '(vide)'} »`);

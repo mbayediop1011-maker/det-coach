@@ -77,10 +77,17 @@
     "piege": "Trois choses, toutes mesurées le 17 novembre. Tes frontières de mots : tu cherches 'want' et 'to' quand le locuteur a dit 'wanna'. Tes prépositions, surtout ON : cut down ON sugar, cut back ON clothes, rules FOR transport. Et ton orthographe sous pression : trafic, afer, prodcut, wether."
   },
   "write-about-the-photo": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Une photo. 60 secondes. Aucune préparation.",
+    "mesure": "Ton nombre de mots en 60 secondes. Objectif 55.",
+    "methode": [
+      "Trois phrases obligatoires, deux en réserve. Tu ne coches pas une liste : tu ne dois jamais t'arrêter d'écrire, et les phrases 4 et 5 sont là pour ça.",
+      "1. OBLIGATOIRE — The photo depicts a man harvesting a field. Sujet + participe en -ing, JAMAIS « who is » : la relative coûte deux mots et fait écrire des phrases bancales.",
+      "2. OBLIGATOIRE — In the foreground, there is… / there are… C'est la structure la plus rapide de l'anglais pour poser un décor.",
+      "3. OBLIGATOIRE — In the background, I can see… Si foreground/background te fait hésiter, prends On the left… / On the right… / Behind them… : ça vaut autant et ça ne coûte aucune seconde.",
+      "4. RÉSERVE — The colours are mostly… 5. RÉSERVE — It looks like… / They seem…",
+      "SI LE VERBE NE VIENT PAS EN DEUX SECONDES, prends un générique et avance : is busy with… / is working on… / is taking care of… / is dealing with… Un générique vaut mieux qu'un mot inventé et ne coûte pas quinze secondes."
+    ],
+    "piege": "Ton goulot est le verbe principal. Le 24 novembre : « surfing » est venu tout de suite → 25 mots ; « harvesting » n'est pas venu → tu as écrit « harving » et la phrase s'est arrêtée net. Surveille aussi : it LOOKS like, jamais « it's look like » (deux fois le 24 nov.), et « a motorbike », pas « a moto »."
   },
   "interactive-writing": {
     "format": "",
