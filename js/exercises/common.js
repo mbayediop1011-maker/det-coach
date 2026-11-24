@@ -160,6 +160,21 @@ export async function recordPhase(ctx, area, seconds, { label = 'Parle maintenan
   });
 }
 
+// Boucles : une même suite de 3 mots (ou plus) qui revient au moins 3 fois dans la transcription.
+export function repeatedSequences(text, size = 3, min = 3) {
+  const w = String(text || '').toLowerCase().replace(/[^a-z' ]/g, ' ').split(/\s+/).filter(Boolean);
+  const counts = new Map();
+  for (let i = 0; i + size <= w.length; i++) {
+    const k = w.slice(i, i + size).join(' ');
+    counts.set(k, (counts.get(k) || 0) + 1);
+  }
+  const found = [...counts.entries()].filter(([, n]) => n >= min).sort((a, b) => b[1] - a[1]);
+  // On ne garde pas les sous-séquences d'une séquence déjà retenue.
+  const out = [];
+  for (const [seq, n] of found) if (!out.some(o => o.seq.includes(seq) || seq.includes(o.seq))) out.push({ seq, n });
+  return out.slice(0, 5);
+}
+
 function measures(r, txt, threshold, allowedSec, usedSec, startedAt) {
   const a = analyzeSpeech(r.rms, threshold, r.durationMs);
   // Si le moteur a échoué (réseau, refus…) sans rien reconnaître, on ne compte pas « 0 mot » : c'est inconnu.
@@ -183,6 +198,9 @@ function measures(r, txt, threshold, allowedSec, usedSec, startedAt) {
     wpmSpeech: words != null && speechMin > 0 ? words / speechMin : null,
     silenceCount: a.silences.length,
     silenceSec: a.silenceMs / 1000,
+    // Temps mort = délai avant le premier mot + silences de plus d'une seconde.
+    deadSec: (a.leadMs + a.silenceMs) / 1000,
+    loops: txt.supported ? repeatedSequences(txt.text) : [],
     clipCount: r.clipCount,
   };
 }
@@ -219,6 +237,7 @@ export function oralMetricsView(m, { title = '', intended = '' } = {}) {
       mt(a.silences.length, 'silences > 1 s'),
       mt(fmtNum(a.silenceMs / 1000, 1) + ' s', 'durée des silences'),
       mt(fmtNum(a.leadMs / 1000, 1) + ' s', 'délai avant de parler'),
+      mt(fmtNum(m.deadSec, 1) + ' s', 'temps mort (délai + silences)'),
       mt(fmtNum(m.unusedSec, 0) + ' s', 'temps non utilisé')),
     h('div', { class: 'small muted' }, 'Frise de la prise (dégradé = parole, jaune = silence, vide = temps non utilisé)'),
     timelineBar(a, m.allowedSec * 1000),
@@ -239,6 +258,8 @@ export function oralReportLines(m, label = '') {
   L.push(`- Temps accordé : ${m.allowedSec} s · utilisé : ${fmtNum(m.usedSec, 1)} s · non utilisé : ${fmtNum(m.unusedSec, 1)} s`);
   L.push(`- Durée enregistrée : ${fmtNum(m.durationMs / 1000, 1)} s · parole effective (hors silences > 1 s, début et fin) : ${fmtNum(a.speechMs / 1000, 1)} s`);
   L.push(`- Délai avant la première parole : ${fmtNum(a.leadMs / 1000, 1)} s`);
+  L.push(`- Temps mort (délai + silences de plus d'une seconde) : ${fmtNum(m.deadSec, 1)} s`);
+  if (m.loops && m.loops.length) L.push(`- Séquences répétées (transcription) : ${m.loops.map(l => `« ${l.seq} » ×${l.n}`).join(', ')}`);
   L.push(`- Silences de plus d'une seconde : ${a.silences.length} (total ${fmtNum(a.silenceMs / 1000, 1)} s)${a.silences.length ? ' — ' + a.silences.map(s => `${fmtNum(s.ms / 1000, 1)} s à ${fmtNum(s.startMs / 1000, 1)} s`).join(', ') : ''}`);
   L.push(`- Mots (transcription navigateur) : ${m.words == null ? 'non disponible' : m.words}`);
   L.push(`- Mots par minute : ${m.wpmTotal == null ? '—' : fmtNum(m.wpmTotal)} (durée totale) · ${m.wpmSpeech == null ? '—' : fmtNum(m.wpmSpeech)} (parole effective)`);
@@ -251,7 +272,7 @@ export function oralClaudeMeasures(m) {
   if (!m || m.skipped) return '- pas de réponse';
   const a = m.analysis;
   return `- durée accordée ${m.allowedSec} s, utilisée ${fmtNum(m.usedSec, 1)} s
-- parole effective ${fmtNum(a.speechMs / 1000, 1)} s, ${a.silences.length} silence(s) de plus d'une seconde (${fmtNum(a.silenceMs / 1000, 1)} s au total), délai avant de parler ${fmtNum(a.leadMs / 1000, 1)} s
+- temps mort ${fmtNum(m.deadSec, 1)} s, parole effective ${fmtNum(a.speechMs / 1000, 1)} s, ${a.silences.length} silence(s) de plus d'une seconde (${fmtNum(a.silenceMs / 1000, 1)} s au total), délai avant de parler ${fmtNum(a.leadMs / 1000, 1)} s
 - ${m.words ?? '?'} mots reconnus, ${m.wpmTotal == null ? '?' : fmtNum(m.wpmTotal)} mots/min (total), ${m.wpmSpeech == null ? '?' : fmtNum(m.wpmSpeech)} mots/min (parole effective)`;
 }
 

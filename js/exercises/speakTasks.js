@@ -29,6 +29,10 @@ export async function run(ctx, items) {
 
   const reminders = [];
   if (!m.skipped && m.unusedSec >= 20) reminders.push(`Prise arrêtée avec ${Math.round(m.unusedSec)} s encore au compteur.`);
+  if (!m.skipped && id === 'speak-about-the-photo') {
+    if (m.analysis.leadMs >= 2000) reminders.push(`Premier mot après ${fmtNum(m.analysis.leadMs / 1000, 1)} s.`);
+    if (m.loops && m.loops.length) reminders.push(`Séquence répétée en boucle : ${m.loops.map(l => `« ${l.seq} » ×${l.n}`).join(', ')}.`);
+  }
   const promptText = id === 'speak-about-the-photo' ? `Photo : ${item.title}${item.description ? ' — ' + item.description : ''}` : [item.prompt, ...(item.bullets || []).map(b => '- ' + b)].join('\n');
   const words = m.words ?? 0;
   const usedMin = Math.max(0.01, (m.durationMs || 1) / 60000);
@@ -48,6 +52,6 @@ export async function run(ctx, items) {
     audio: m.recId ? [{ recId: m.recId, label: ctx.ex.name }] : [],
     view: h('div', {}, promptView, oralMetricsView(m, {})),
     claude: m.skipped ? [] : [{ exerciseName: `${ctx.ex.name} (${cfg.prep} s de préparation, ${cfg.speak} s de parole)`, kind: 'speaking', prompt: promptText, response: m.transcript, measures: oralClaudeMeasures(m) }],
-    data: { wpmTotal: m.wpmTotal, wpmSpeech: m.wpmSpeech, silenceCount: m.silenceCount, silenceSec: m.silenceSec, unusedSec: m.unusedSec },
+    data: { wpmTotal: m.wpmTotal, wpmSpeech: m.wpmSpeech, silenceCount: m.silenceCount, silenceSec: m.silenceSec, unusedSec: m.unusedSec, deadSec: m.deadSec, leadSec: m.analysis.leadMs / 1000 },
   };
 }

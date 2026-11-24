@@ -461,8 +461,8 @@ async function historyView(filter) {
   if (ORAL.includes(current)) {
     charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Mots par minute'),
       h('div', { html: lineChart({ series: [{ name: 'sur la durée totale', color: '#a3e635', points: pts('wpmTotal') }, { name: 'sur la parole effective', color: '#22d3ee', points: pts('wpmSpeech') }] }) })));
-    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Silences de plus d’une seconde'),
-      h('div', { html: lineChart({ series: [{ name: 'nombre', color: '#fbbf24', points: pts('silenceCount') }, { name: 'durée totale (s)', color: '#fb7185', points: pts('silenceSec') }] }) })));
+    charts.append(h('div', { class: 'chart-card' }, h('h3', {}, 'Silences et temps mort'),
+      h('div', { html: lineChart({ series: [{ name: 'silences > 1 s (nombre)', color: '#fbbf24', points: pts('silenceCount') }, { name: 'durée des silences (s)', color: '#fb7185', points: pts('silenceSec') }, { name: 'temps mort : délai + silences (s)', color: '#c084fc', points: pts('deadSec') }] }) })));
   }
   view.append(charts);
   view.append(h('h2', { class: 'mt' }, 'Séances'));

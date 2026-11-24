@@ -102,10 +102,17 @@
     "piege": ""
   },
   "speak-about-the-photo": {
-    "format": "",
-    "mesure": "",
-    "methode": [],
-    "piege": ""
+    "format": "Une photo. 20 secondes de préparation, puis 90 secondes de parole.",
+    "mesure": "Ton nombre de mots en 90 secondes, et le temps mort — délai avant le premier mot, silences de plus d'une seconde.",
+    "methode": [
+      "PENDANT LES 20 SECONDES DE PRÉPARATION, cherche UNIQUEMENT le verbe principal. Rien d'autre. C'est lui qui te bloque. Si tu l'as, le reste suit.",
+      "TA PREMIÈRE PHRASE PART À LA PREMIÈRE SECONDE. « The photo depicts… » est une formule fixe, elle ne demande aucune réflexion.",
+      "Déroule l'ossature : The photo depicts [qqn] [verbe]-ing… / In the foreground, there is… / In the background, I can see… / The colours are mostly… / It looks like…",
+      "Si le verbe ne vient pas en deux secondes : is working on… / is busy with… / is taking care of… Un générique vaut mieux qu'un silence.",
+      "QUAND TU ES À COURT, DESCENDS D'UN CRAN : un vêtement, une couleur, une expression de visage, un objet sur la table. Ne recycle jamais une phrase déjà dite.",
+      "Jamais « So that's all ». Tu finis sur « And that's why… » ou tu t'arrêtes en silence."
+    ],
+    "piege": "Le 24 novembre : 93 mots, mais 4,8 secondes avant le premier mot et 11,5 secondes de silences — 16 secondes de temps mort, soit une vingtaine de mots perdus. Et les vingt dernières secondes tournaient en boucle sur « look like winter, not winter, look like winter » alors qu'il y avait un échiquier devant toi à décrire."
   },
   "read-then-speak": {
     "format": "",
