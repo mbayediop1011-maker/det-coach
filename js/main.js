@@ -548,7 +548,7 @@ async function micView(returnTo) {
     voiceBox.replaceChildren(
       h('h3', {}, '🔊 Voix anglaise (américaine)'),
       ttsSupported()
-        ? h('p', { class: 'muted small' }, vs.a ? `Voix principale : ${vs.a.name} (${vs.a.lang})${vs.b && !vs.sameVoice ? ` · second interlocuteur : ${vs.b.name}` : ''}` : 'Aucune voix anglaise trouvée sur cet appareil.')
+        ? h('p', { class: 'muted small' }, vs.a ? `Voix principale : ${vs.a.name} (${vs.a.lang}) · second interlocuteur : ${vs.sameVoice ? 'même voix (aucune seconde voix de qualité supérieure sur cet appareil)' : vs.b.name}` : 'Aucune voix anglaise trouvée sur cet appareil.')
         : h('p', { class: 'reminder' }, 'La synthèse vocale n’est pas disponible dans ce navigateur.'),
       vs.hasUS ? null : h('p', { class: 'reminder' }, 'Aucune voix en-US installée. Sur iPhone : Réglages → Accessibilité → Contenu énoncé → Voix → Anglais (États-Unis).'),
       h('div', { class: 'row' }, h('button', { class: 'btn', onclick: () => speak('Hello! This is the voice you will hear in the listening exercises. I am going to read at a natural speed.').catch(() => toast('Lecture impossible')) }, '▶ Écouter la voix A'),

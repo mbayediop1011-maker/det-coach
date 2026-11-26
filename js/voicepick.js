@@ -25,14 +25,16 @@ export function voiceScore(v) {
 }
 
 // Renvoie la voix principale (a) et celle du second interlocuteur (b).
-// Si aucune seconde voix claire n'existe, b = a : mieux vaut la même voix nette qu'une voix robotique.
+// Si aucune seconde voix de qualité supérieure n'existe, b = a : mieux vaut la même voix nette qu'une voix hachée.
 export function chooseVoices(all) {
   let pool = all.filter(isUS);
   if (!pool.length) pool = all.filter(v => /^en/i.test(v.lang));
   const ok = pool.filter(v => voiceScore(v) > -1000);
   const ranked = ok.slice().sort((x, y) => voiceScore(y) - voiceScore(x) || (y.localService - x.localService));
   const a = ranked[0] || pool[0] || null;
-  const others = ranked.filter(v => v !== a && v.name !== (a && a.name) && voiceScore(v) >= 40);
+  // Seconde voix seulement si elle est de qualité supérieure (Premium, Enhanced, Natural, Google) :
+  // les voix standard masculines restent souvent hachées. Sinon, même voix claire pour tout le monde.
+  const others = ranked.filter(v => v !== a && v.name !== (a && a.name) && voiceScore(v) >= 80);
   const male = others.filter(v => has(v, GOOD_MALE));
   const b = male[0] || others[0] || a;
   return { a, b, sameVoice: !b || b === a, hasUS: all.some(isUS) };
