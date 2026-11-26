@@ -1,5 +1,6 @@
 // Synthèse vocale (anglais américain) et reconnaissance vocale du navigateur.
 import { getPref, setPref } from './db.js';
+import { chooseVoices } from './voicepick.js';
 
 const synth = window.speechSynthesis;
 let voicesCache = [];
@@ -27,25 +28,9 @@ export async function voicesReady(timeout = 2500) {
   return voicesCache;
 }
 
-const PREFERRED = ['Google US English', 'Samantha', 'Ava', 'Allison', 'Aria', 'Jenny', 'Zoe', 'Susan', 'Microsoft Aria', 'Microsoft Jenny', 'Nicky'];
-const MALE = ['Alex', 'Tom', 'Evan', 'Nathan', 'Aaron', 'Fred', 'Guy', 'Microsoft Guy', 'Microsoft Christopher', 'Microsoft Eric', 'Microsoft Davis', 'Microsoft Andrew', 'Microsoft Brian', 'Reed', 'Rocko', 'Eddy', 'Ralph'];
-
-function isUS(v) { return /^en[-_]US/i.test(v.lang); }
-function rank(v, list) {
-  const i = list.findIndex(n => v.name.includes(n));
-  return i === -1 ? 999 : i;
-}
-
-// Voix A (principale) et voix B (second interlocuteur), toutes deux en-US si possible.
+// Voix A (principale) et voix B (second interlocuteur) : voir voicepick.js.
 export function pickVoices() {
-  const all = voicesCache.length ? voicesCache : loadVoices();
-  let us = all.filter(isUS);
-  if (!us.length) us = all.filter(v => /^en/i.test(v.lang));
-  const sorted = us.slice().sort((a, b) => rank(a, PREFERRED) - rank(b, PREFERRED) || (b.localService - a.localService));
-  const a = sorted[0] || null;
-  const males = us.filter(v => rank(v, MALE) < 999 && v !== a).sort((x, y) => rank(x, MALE) - rank(y, MALE));
-  const b = males[0] || us.find(v => v !== a) || a;
-  return { a, b, sameVoice: !b || b === a, hasUS: all.some(isUS) };
+  return chooseVoices(voicesCache.length ? voicesCache : loadVoices());
 }
 
 export async function getRate() { return (await getPref('ttsRate', 1)) || 1; }
@@ -80,7 +65,7 @@ export async function speak(text, { voice = 'a', rate = null, pitch = null } = {
   const vs = pickVoices();
   const v = voice === 'b' ? vs.b : vs.a;
   const r = rate ?? await getRate();
-  const p = pitch ?? (voice === 'b' && vs.sameVoice ? 0.8 : 1);
+  const p = pitch ?? 1; // jamais de hauteur modifiée : ça déforme la voix et nuit à la compréhension
   for (const sentence of splitSentences(text)) {
     if (token !== speakingToken) return;
     await new Promise(resolve => {
